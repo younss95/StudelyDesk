@@ -1,0 +1,37 @@
+[project]
+name = "studelydesk"
+version = "0.1.0"
+description = "CLI StudelyDesk"
+readme = "README.md"
+requires-python = "==3.12.*"
+dependencies = [
+    "click>=8.1.7",
+    "sqlalchemy>=2.0.40",
+    "tabulate>=0.9.0",
+    "flask>=3.1.0",
+    "python-dotenv>=1.1.0",
+]
+authors = [
+    {name = "younes", email = "younesazirgui@gmail.com"},
+]
+license = {text = "MIT"}
+
+[project.scripts]
+studelydesk = "studelydesk.views:cli"
+
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.scripts]
+start = "flask --app studelydesk.views --debug run"
+cli = "python -m studelydesk.views.cli"
+
+[tool.pdm.scripts._]
+env_file = "dev.env"

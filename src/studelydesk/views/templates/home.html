@@ -1,0 +1,23 @@
+
+<!--  AUTEUR : Younes AZIRGUI-->
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Gestionnaire de budget</title>
+</head>
+<body>
+
+<section class="form-container-parent">
+    <div class="form-container">
+        <h1 class="text-center">Bienvenue sur le gestionnaire de budget</h1>
+
+        <a href="{{ url_for('web_ui.create_ticket') }}" class="form-button">Créer un produit</a>
+</div>
+</section>
+
+</body>
+</html>

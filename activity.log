@@ -1,0 +1,287 @@
+2025-05-07 16:54:44,323 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-07 16:54:44,324 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-07 16:54:44,328 [INFO]  * Restarting with stat
+2025-05-07 16:54:44,867 [WARNING]  * Debugger is active!
+2025-05-07 16:54:44,870 [INFO]  * Debugger PIN: 297-498-549
+2025-05-07 16:54:46,019 [INFO] 127.0.0.1 - - [07/May/2025 16:54:46] "[33mGET / HTTP/1.1[0m" 404 -
+2025-05-07 16:55:21,708 [INFO] 127.0.0.1 - - [07/May/2025 16:55:21] "[33mGET / HTTP/1.1[0m" 404 -
+2025-05-07 16:55:22,139 [INFO] 127.0.0.1 - - [07/May/2025 16:55:22] "[33mGET / HTTP/1.1[0m" 404 -
+2025-05-07 16:59:49,483 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\studelydesk_starter_cli\\studelydesk-0.1\\src\\studelydesk\\views\\web.py', reloading
+2025-05-07 16:59:49,606 [INFO]  * Restarting with stat
+2025-05-07 16:59:50,333 [WARNING]  * Debugger is active!
+2025-05-07 16:59:50,336 [INFO]  * Debugger PIN: 297-498-549
+2025-05-07 16:59:51,561 [INFO] 127.0.0.1 - - [07/May/2025 16:59:51] "[33mGET / HTTP/1.1[0m" 404 -
+2025-05-07 17:00:10,747 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\studelydesk_starter_cli\\studelydesk-0.1\\src\\studelydesk\\views\\web.py', reloading
+2025-05-07 17:00:10,822 [INFO]  * Restarting with stat
+2025-05-07 17:00:11,361 [WARNING]  * Debugger is active!
+2025-05-07 17:00:11,363 [INFO]  * Debugger PIN: 297-498-549
+2025-05-07 17:00:13,344 [INFO] 127.0.0.1 - - [07/May/2025 17:00:13] "[33mGET / HTTP/1.1[0m" 404 -
+2025-05-07 17:00:26,626 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\studelydesk_starter_cli\\studelydesk-0.1\\src\\studelydesk\\views\\web.py', reloading
+2025-05-07 17:00:26,701 [INFO]  * Restarting with stat
+2025-05-07 17:00:27,230 [WARNING]  * Debugger is active!
+2025-05-07 17:00:27,232 [INFO]  * Debugger PIN: 297-498-549
+2025-05-07 17:00:28,104 [INFO] 127.0.0.1 - - [07/May/2025 17:00:28] "[33mGET / HTTP/1.1[0m" 404 -
+2025-05-07 17:01:14,978 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\studelydesk_starter_cli\\studelydesk-0.1\\src\\studelydesk\\views\\web.py', reloading
+2025-05-07 17:01:15,044 [INFO]  * Restarting with stat
+2025-05-07 17:01:15,572 [WARNING]  * Debugger is active!
+2025-05-07 17:01:15,574 [INFO]  * Debugger PIN: 297-498-549
+2025-05-07 17:01:16,341 [INFO] 127.0.0.1 - - [07/May/2025 17:01:16] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 17:01:16,430 [INFO] 127.0.0.1 - - [07/May/2025 17:01:16] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-07 17:01:16,430 [INFO] 127.0.0.1 - - [07/May/2025 17:01:16] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-07 17:01:16,513 [INFO] 127.0.0.1 - - [07/May/2025 17:01:16] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=hlHV4fVKR86QfzShXffp HTTP/1.1" 200 -
+2025-05-07 17:01:16,903 [INFO] 127.0.0.1 - - [07/May/2025 17:01:16] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-07 17:01:23,732 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\studelydesk_starter_cli\\studelydesk-0.1\\src\\studelydesk\\views\\web.py', reloading
+2025-05-07 17:01:23,797 [INFO]  * Restarting with stat
+2025-05-07 17:01:24,388 [WARNING]  * Debugger is active!
+2025-05-07 17:01:24,390 [INFO]  * Debugger PIN: 297-498-549
+2025-05-07 17:01:25,046 [INFO] 127.0.0.1 - - [07/May/2025 17:01:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 17:01:25,122 [INFO] 127.0.0.1 - - [07/May/2025 17:01:25] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 17:01:25,122 [INFO] 127.0.0.1 - - [07/May/2025 17:01:25] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 17:01:25,175 [INFO] 127.0.0.1 - - [07/May/2025 17:01:25] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=PKIttnOGHRupzB3tBD2D HTTP/1.1" 200 -
+2025-05-07 17:03:15,196 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\studelydesk_starter_cli\\studelydesk-0.1\\src\\studelydesk\\views\\web.py', reloading
+2025-05-07 17:03:15,269 [INFO]  * Restarting with stat
+2025-05-07 17:03:15,861 [WARNING]  * Debugger is active!
+2025-05-07 17:03:15,863 [INFO]  * Debugger PIN: 297-498-549
+2025-05-07 17:03:18,937 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\studelydesk_starter_cli\\studelydesk-0.1\\src\\studelydesk\\views\\web.py', reloading
+2025-05-07 17:03:19,007 [INFO]  * Restarting with stat
+2025-05-07 17:03:19,430 [WARNING]  * Debugger is active!
+2025-05-07 17:03:19,432 [INFO]  * Debugger PIN: 125-692-953
+2025-05-07 17:03:54,943 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\studelydesk_starter_cli\\studelydesk-0.1\\src\\studelydesk\\models.py', reloading
+2025-05-07 17:03:55,001 [INFO]  * Restarting with stat
+2025-05-07 17:03:55,420 [WARNING]  * Debugger is active!
+2025-05-07 17:03:55,422 [INFO]  * Debugger PIN: 125-692-953
+2025-05-07 17:04:19,737 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\studelydesk_starter_cli\\studelydesk-0.1\\src\\studelydesk\\views\\web.py', reloading
+2025-05-07 17:04:19,787 [INFO]  * Restarting with stat
+2025-05-07 17:04:20,193 [WARNING]  * Debugger is active!
+2025-05-07 17:04:20,196 [INFO]  * Debugger PIN: 125-692-953
+2025-05-07 17:04:59,687 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\studelydesk_starter_cli\\studelydesk-0.1\\src\\studelydesk\\views\\web.py', reloading
+2025-05-07 17:04:59,739 [INFO]  * Restarting with stat
+2025-05-07 17:05:00,162 [WARNING]  * Debugger is active!
+2025-05-07 17:05:00,164 [INFO]  * Debugger PIN: 125-692-953
+2025-05-07 17:17:16,506 [INFO] 127.0.0.1 - - [07/May/2025 17:17:16] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 17:17:16,593 [INFO] 127.0.0.1 - - [07/May/2025 17:17:16] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 17:17:16,594 [INFO] 127.0.0.1 - - [07/May/2025 17:17:16] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 17:17:16,684 [INFO] 127.0.0.1 - - [07/May/2025 17:17:16] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=eLzLh9WQCON4udXJg9zD HTTP/1.1" 200 -
+2025-05-07 17:17:44,791 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\studelydesk_starter_cli\\studelydesk-0.1\\src\\studelydesk\\models.py', reloading
+2025-05-07 17:17:44,891 [INFO]  * Restarting with stat
+2025-05-07 17:17:45,900 [WARNING]  * Debugger is active!
+2025-05-07 17:17:45,904 [INFO]  * Debugger PIN: 125-692-953
+2025-05-07 17:17:45,939 [INFO] 127.0.0.1 - - [07/May/2025 17:17:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 17:17:46,001 [INFO] 127.0.0.1 - - [07/May/2025 17:17:46] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 17:17:46,007 [INFO] 127.0.0.1 - - [07/May/2025 17:17:46] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 17:17:46,066 [INFO] 127.0.0.1 - - [07/May/2025 17:17:46] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=k7949bwXKIeSM0q2VDjz HTTP/1.1" 200 -
+2025-05-07 17:18:20,427 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\studelydesk_starter_cli\\studelydesk-0.1\\src\\studelydesk\\views\\web.py', reloading
+2025-05-07 17:18:20,503 [INFO]  * Restarting with stat
+2025-05-07 17:18:21,180 [WARNING]  * Debugger is active!
+2025-05-07 17:18:21,182 [INFO]  * Debugger PIN: 297-498-549
+2025-05-07 17:18:21,472 [INFO] BEGIN (implicit)
+2025-05-07 17:18:21,473 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-07 17:18:21,473 [INFO] [generated in 0.00138s] ()
+2025-05-07 17:18:21,476 [INFO] ROLLBACK
+2025-05-07 17:18:21,489 [INFO] 127.0.0.1 - - [07/May/2025 17:18:21] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 17:18:21,567 [INFO] 127.0.0.1 - - [07/May/2025 17:18:21] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 17:18:21,569 [INFO] 127.0.0.1 - - [07/May/2025 17:18:21] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 17:18:21,626 [INFO] 127.0.0.1 - - [07/May/2025 17:18:21] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=omZipuEGaCvKTFvHgVRW HTTP/1.1" 200 -
+2025-05-07 17:20:41,577 [INFO] BEGIN (implicit)
+2025-05-07 17:20:41,578 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-07 17:20:41,579 [INFO] [cached since 140.1s ago] ()
+2025-05-07 17:20:41,579 [INFO] ROLLBACK
+2025-05-07 17:20:41,591 [INFO] 127.0.0.1 - - [07/May/2025 17:20:41] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 17:20:41,622 [INFO] 127.0.0.1 - - [07/May/2025 17:20:41] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 17:20:41,624 [INFO] 127.0.0.1 - - [07/May/2025 17:20:41] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 17:20:41,701 [INFO] 127.0.0.1 - - [07/May/2025 17:20:41] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=omZipuEGaCvKTFvHgVRW HTTP/1.1[0m" 304 -
+2025-05-07 18:23:29,456 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\studelydesk_starter_cli\\studelydesk-0.1\\src\\studelydesk\\init_db_script.py', reloading
+2025-05-07 18:23:29,609 [INFO]  * Restarting with stat
+2025-05-07 18:23:31,222 [WARNING]  * Debugger is active!
+2025-05-07 18:23:31,230 [INFO]  * Debugger PIN: 297-498-549
+2025-05-07 18:24:26,275 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-07 18:24:26,276 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-07 18:24:26,279 [INFO]  * Restarting with stat
+2025-05-07 18:24:27,708 [WARNING]  * Debugger is active!
+2025-05-07 18:24:27,713 [INFO]  * Debugger PIN: 297-498-549
+2025-05-07 18:24:27,899 [INFO] BEGIN (implicit)
+2025-05-07 18:24:27,900 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-07 18:24:27,903 [INFO] [generated in 0.00446s] ()
+2025-05-07 18:24:27,905 [INFO] ROLLBACK
+2025-05-07 18:24:28,216 [INFO] 127.0.0.1 - - [07/May/2025 18:24:28] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 18:24:28,357 [INFO] 127.0.0.1 - - [07/May/2025 18:24:28] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 18:24:28,372 [INFO] 127.0.0.1 - - [07/May/2025 18:24:28] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 18:24:28,488 [INFO] 127.0.0.1 - - [07/May/2025 18:24:28] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=8TgykFBQtQE3JE7o4947 HTTP/1.1" 200 -
+2025-05-07 18:34:06,069 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-07 18:34:06,070 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-07 18:34:06,072 [INFO]  * Restarting with stat
+2025-05-07 18:34:07,587 [WARNING]  * Debugger is active!
+2025-05-07 18:34:07,595 [INFO]  * Debugger PIN: 297-498-549
+2025-05-07 18:34:07,846 [INFO] BEGIN (implicit)
+2025-05-07 18:34:07,848 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-07 18:34:07,850 [INFO] [generated in 0.00377s] ()
+2025-05-07 18:34:07,854 [INFO] ROLLBACK
+2025-05-07 18:34:07,889 [INFO] 127.0.0.1 - - [07/May/2025 18:34:07] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 18:34:08,184 [INFO] 127.0.0.1 - - [07/May/2025 18:34:08] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 18:34:08,186 [INFO] 127.0.0.1 - - [07/May/2025 18:34:08] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 18:34:08,302 [INFO] 127.0.0.1 - - [07/May/2025 18:34:08] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=ZCBcJBKWkCdtcPKuHXS0 HTTP/1.1" 200 -
+2025-05-07 18:39:12,729 [INFO] BEGIN (implicit)
+2025-05-07 18:39:12,731 [INFO] PRAGMA main.table_info("entries")
+2025-05-07 18:39:12,731 [INFO] [raw sql] ()
+2025-05-07 18:39:12,732 [INFO] PRAGMA temp.table_info("entries")
+2025-05-07 18:39:12,733 [INFO] [raw sql] ()
+2025-05-07 18:39:12,735 [INFO] 
+CREATE TABLE entries (
+	id INTEGER NOT NULL, 
+	title VARCHAR NOT NULL, 
+	description VARCHAR NOT NULL, 
+	name VARCHAR NOT NULL, 
+	date DATETIME NOT NULL, 
+	status VARCHAR NOT NULL, 
+	priority VARCHAR NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-07 18:39:12,736 [INFO] [no key 0.00119s] ()
+2025-05-07 18:39:12,744 [INFO] COMMIT
+2025-05-07 18:39:24,587 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-07 18:39:24,588 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-07 18:39:24,592 [INFO]  * Restarting with stat
+2025-05-07 18:39:26,452 [WARNING]  * Debugger is active!
+2025-05-07 18:39:26,456 [INFO]  * Debugger PIN: 297-498-549
+2025-05-07 18:39:43,134 [INFO] BEGIN (implicit)
+2025-05-07 18:39:43,136 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-07 18:39:43,137 [INFO] [generated in 0.00201s] ()
+2025-05-07 18:39:43,139 [INFO] ROLLBACK
+2025-05-07 18:39:43,305 [INFO] 127.0.0.1 - - [07/May/2025 18:39:43] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 18:39:43,415 [INFO] 127.0.0.1 - - [07/May/2025 18:39:43] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 18:39:43,415 [INFO] 127.0.0.1 - - [07/May/2025 18:39:43] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 18:39:43,483 [INFO] 127.0.0.1 - - [07/May/2025 18:39:43] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=uZNj23JY7K7yXJHQ71bJ HTTP/1.1" 200 -
+2025-05-07 18:41:05,257 [INFO] BEGIN (implicit)
+2025-05-07 18:41:05,258 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-07 18:41:05,259 [INFO] [cached since 82.12s ago] ()
+2025-05-07 18:41:05,261 [INFO] ROLLBACK
+2025-05-07 18:41:05,277 [INFO] 127.0.0.1 - - [07/May/2025 18:41:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 18:41:05,327 [INFO] 127.0.0.1 - - [07/May/2025 18:41:05] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 18:41:05,328 [INFO] 127.0.0.1 - - [07/May/2025 18:41:05] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 18:41:05,430 [INFO] 127.0.0.1 - - [07/May/2025 18:41:05] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=uZNj23JY7K7yXJHQ71bJ HTTP/1.1[0m" 304 -
+2025-05-07 18:41:52,555 [INFO]  * Detected change in 'C:\\Users\\youne\\OneDrive\\Bureau\\studelydesk_starter_cli\\studelydesk-0.1\\src\\studelydesk\\views\\web.py', reloading
+2025-05-07 18:41:52,775 [INFO]  * Restarting with stat
+2025-05-07 18:41:54,239 [WARNING]  * Debugger is active!
+2025-05-07 18:41:54,243 [INFO]  * Debugger PIN: 297-498-549
+2025-05-07 18:41:55,295 [INFO] BEGIN (implicit)
+2025-05-07 18:41:55,297 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-07 18:41:55,298 [INFO] [generated in 0.00284s] ()
+2025-05-07 18:41:55,301 [INFO] ROLLBACK
+2025-05-07 18:41:55,325 [INFO] 127.0.0.1 - - [07/May/2025 18:41:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 18:41:55,425 [INFO] 127.0.0.1 - - [07/May/2025 18:41:55] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 18:41:55,426 [INFO] 127.0.0.1 - - [07/May/2025 18:41:55] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 18:41:55,445 [INFO] 127.0.0.1 - - [07/May/2025 18:41:55] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=0c21Xkx2KyTBX1Q4yP6N HTTP/1.1" 200 -
+2025-05-07 18:41:55,617 [INFO] 127.0.0.1 - - [07/May/2025 18:41:55] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-07 18:41:55,993 [INFO] BEGIN (implicit)
+2025-05-07 18:41:55,994 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-07 18:41:55,995 [INFO] [cached since 0.6997s ago] ()
+2025-05-07 18:41:55,996 [INFO] ROLLBACK
+2025-05-07 18:41:56,010 [INFO] 127.0.0.1 - - [07/May/2025 18:41:56] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 18:41:56,047 [INFO] 127.0.0.1 - - [07/May/2025 18:41:56] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 18:41:56,049 [INFO] 127.0.0.1 - - [07/May/2025 18:41:56] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 18:41:56,069 [INFO] 127.0.0.1 - - [07/May/2025 18:41:56] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=0c21Xkx2KyTBX1Q4yP6N HTTP/1.1[0m" 304 -
+2025-05-07 18:41:56,224 [INFO] 127.0.0.1 - - [07/May/2025 18:41:56] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-07 18:41:56,341 [INFO] BEGIN (implicit)
+2025-05-07 18:41:56,342 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-07 18:41:56,342 [INFO] [cached since 1.047s ago] ()
+2025-05-07 18:41:56,343 [INFO] ROLLBACK
+2025-05-07 18:41:56,357 [INFO] 127.0.0.1 - - [07/May/2025 18:41:56] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 18:41:56,382 [INFO] 127.0.0.1 - - [07/May/2025 18:41:56] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 18:41:56,393 [INFO] 127.0.0.1 - - [07/May/2025 18:41:56] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 18:41:56,404 [INFO] 127.0.0.1 - - [07/May/2025 18:41:56] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=0c21Xkx2KyTBX1Q4yP6N HTTP/1.1[0m" 304 -
+2025-05-07 18:41:56,540 [INFO] 127.0.0.1 - - [07/May/2025 18:41:56] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-07 18:41:56,722 [INFO] BEGIN (implicit)
+2025-05-07 18:41:56,723 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-07 18:41:56,723 [INFO] [cached since 1.428s ago] ()
+2025-05-07 18:41:56,724 [INFO] ROLLBACK
+2025-05-07 18:41:56,746 [INFO] 127.0.0.1 - - [07/May/2025 18:41:56] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 18:41:56,780 [INFO] 127.0.0.1 - - [07/May/2025 18:41:56] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 18:41:56,782 [INFO] 127.0.0.1 - - [07/May/2025 18:41:56] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 18:41:56,793 [INFO] 127.0.0.1 - - [07/May/2025 18:41:56] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=0c21Xkx2KyTBX1Q4yP6N HTTP/1.1[0m" 304 -
+2025-05-07 18:41:56,983 [INFO] 127.0.0.1 - - [07/May/2025 18:41:56] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-07 18:42:28,331 [INFO] BEGIN (implicit)
+2025-05-07 18:42:28,332 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-07 18:42:28,334 [INFO] [cached since 33.04s ago] ()
+2025-05-07 18:42:28,335 [INFO] ROLLBACK
+2025-05-07 18:42:28,348 [INFO] 127.0.0.1 - - [07/May/2025 18:42:28] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 18:42:28,389 [INFO] 127.0.0.1 - - [07/May/2025 18:42:28] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 18:42:28,401 [INFO] 127.0.0.1 - - [07/May/2025 18:42:28] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 18:42:28,414 [INFO] 127.0.0.1 - - [07/May/2025 18:42:28] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=0c21Xkx2KyTBX1Q4yP6N HTTP/1.1[0m" 304 -
+2025-05-07 18:42:28,565 [INFO] 127.0.0.1 - - [07/May/2025 18:42:28] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-07 18:42:29,177 [INFO] BEGIN (implicit)
+2025-05-07 18:42:29,178 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-07 18:42:29,179 [INFO] [cached since 33.88s ago] ()
+2025-05-07 18:42:29,180 [INFO] ROLLBACK
+2025-05-07 18:42:29,193 [INFO] 127.0.0.1 - - [07/May/2025 18:42:29] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 18:42:29,225 [INFO] 127.0.0.1 - - [07/May/2025 18:42:29] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 18:42:29,234 [INFO] 127.0.0.1 - - [07/May/2025 18:42:29] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 18:42:29,244 [INFO] 127.0.0.1 - - [07/May/2025 18:42:29] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=0c21Xkx2KyTBX1Q4yP6N HTTP/1.1[0m" 304 -
+2025-05-07 18:42:29,425 [INFO] 127.0.0.1 - - [07/May/2025 18:42:29] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-07 18:42:32,045 [INFO] BEGIN (implicit)
+2025-05-07 18:42:32,046 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-07 18:42:32,047 [INFO] [cached since 36.75s ago] ()
+2025-05-07 18:42:32,049 [INFO] ROLLBACK
+2025-05-07 18:42:32,072 [INFO] 127.0.0.1 - - [07/May/2025 18:42:32] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 18:42:32,249 [INFO] 127.0.0.1 - - [07/May/2025 18:42:32] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 18:42:32,265 [INFO] 127.0.0.1 - - [07/May/2025 18:42:32] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 18:42:32,382 [INFO] 127.0.0.1 - - [07/May/2025 18:42:32] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=0c21Xkx2KyTBX1Q4yP6N HTTP/1.1[0m" 304 -
+2025-05-07 18:42:40,005 [INFO] BEGIN (implicit)
+2025-05-07 18:42:40,006 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-07 18:42:40,007 [INFO] [cached since 44.71s ago] ()
+2025-05-07 18:42:40,008 [INFO] ROLLBACK
+2025-05-07 18:42:40,029 [INFO] 127.0.0.1 - - [07/May/2025 18:42:40] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-07 18:42:40,354 [INFO] 127.0.0.1 - - [07/May/2025 18:42:40] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 18:42:40,360 [INFO] 127.0.0.1 - - [07/May/2025 18:42:40] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 18:42:40,459 [INFO] 127.0.0.1 - - [07/May/2025 18:42:40] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=0c21Xkx2KyTBX1Q4yP6N HTTP/1.1[0m" 304 -
+2025-05-07 18:42:50,316 [INFO] BEGIN (implicit)
+2025-05-07 18:42:50,317 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-07 18:42:50,317 [INFO] [cached since 55.02s ago] ()
+2025-05-07 18:42:50,319 [INFO] ROLLBACK
+2025-05-07 18:42:50,326 [INFO] 127.0.0.1 - - [07/May/2025 18:42:50] "GET / HTTP/1.1" 200 -
+2025-05-07 18:42:50,376 [INFO] 127.0.0.1 - - [07/May/2025 18:42:50] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-07 18:42:51,743 [INFO] 127.0.0.1 - - [07/May/2025 18:42:51] "[35m[1mGET /create_ticket HTTP/1.1[0m" 500 -
+2025-05-07 18:42:51,835 [INFO] 127.0.0.1 - - [07/May/2025 18:42:51] "GET /create_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-07 18:42:51,838 [INFO] 127.0.0.1 - - [07/May/2025 18:42:51] "GET /create_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-07 18:42:51,854 [INFO] 127.0.0.1 - - [07/May/2025 18:42:51] "GET /create_ticket?__debugger__=yes&cmd=resource&f=console.png&s=0c21Xkx2KyTBX1Q4yP6N HTTP/1.1" 200 -
+2025-05-07 18:42:52,051 [INFO] 127.0.0.1 - - [07/May/2025 18:42:52] "GET /create_ticket?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-07 18:42:56,199 [INFO] 127.0.0.1 - - [07/May/2025 18:42:56] "[35m[1mGET /create_ticket HTTP/1.1[0m" 500 -
+2025-05-07 18:42:56,316 [INFO] 127.0.0.1 - - [07/May/2025 18:42:56] "[36mGET /create_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-07 18:42:56,326 [INFO] 127.0.0.1 - - [07/May/2025 18:42:56] "[36mGET /create_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-07 18:42:56,341 [INFO] 127.0.0.1 - - [07/May/2025 18:42:56] "[36mGET /create_ticket?__debugger__=yes&cmd=resource&f=console.png&s=0c21Xkx2KyTBX1Q4yP6N HTTP/1.1[0m" 304 -
+2025-05-07 18:43:12,711 [INFO] 127.0.0.1 - - [07/May/2025 18:43:12] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-07 18:43:12,744 [INFO] 127.0.0.1 - - [07/May/2025 18:43:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-07 18:43:48,928 [INFO] BEGIN (implicit)
+2025-05-07 18:43:48,930 [INFO] INSERT INTO entries (title, description, name, date, status, priority) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-07 18:43:48,932 [INFO] [generated in 0.00357s] ('probleme outlook', "j'ai un probleme avec ma messagerie", 'younes', '2025-05-07 18:43:48.923284', 'in progress', 'medium')
+2025-05-07 18:43:48,938 [INFO] COMMIT
+2025-05-07 18:43:48,947 [INFO] 127.0.0.1 - - [07/May/2025 18:43:48] "[32mPOST /create_ticket HTTP/1.1[0m" 302 -
+2025-05-07 18:43:48,960 [INFO] BEGIN (implicit)
+2025-05-07 18:43:48,961 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-07 18:43:48,963 [INFO] [cached since 113.7s ago] ()
+2025-05-07 18:43:48,966 [INFO] ROLLBACK
+2025-05-07 18:43:48,969 [INFO] 127.0.0.1 - - [07/May/2025 18:43:48] "GET / HTTP/1.1" 200 -
+2025-05-07 18:43:49,037 [INFO] 127.0.0.1 - - [07/May/2025 18:43:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-07 18:43:51,094 [INFO] 127.0.0.1 - - [07/May/2025 18:43:51] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-07 18:43:51,138 [INFO] 127.0.0.1 - - [07/May/2025 18:43:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
