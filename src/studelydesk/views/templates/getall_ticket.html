@@ -1,0 +1,54 @@
+<!-- AUTEUR : Younes AZIRGUI -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Gestionnaire de tickets</title>
+</head>
+<body>
+
+<section class="form-container-parent">
+    <div class="form-container">
+        <h1 class="text-center">Consulter tous les tickets</h1>
+
+        {% if entries %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Titre</th>
+                        <th>Description</th>
+                        <th>Nom</th>
+                        <th>Date</th>
+                        <th>Statut</th>
+                        <th>Priorité</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for entry in entries %}
+                    <tr>
+                        <td>{{entry.id}}</td>
+                        <td>{{ entry.title }}</td>
+                        <td>{{ entry.description }}</td>
+                        <td>{{ entry.name }}</td>
+                        <td>{{ entry.date.strftime('%Y-%m-%d %H:%M') }}</td>
+                        <td>{{ entry.status }}</td>
+                        <td>{{ entry.priority }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>Aucun ticket pour le moment.</p>
+        {% endif %}
+
+        <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour</a>
+    </div>
+
+</section>
+
+</body>
+</html>
+

@@ -7,15 +7,20 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>Gestionnaire de budget</title>
+    <title>Gestionnaire de ticket</title>
 </head>
 <body>
 
 <section class="form-container-parent">
     <div class="form-container">
-        <h1 class="text-center">Bienvenue sur le gestionnaire de budget</h1>
+        <h1 class="text-center">Bienvenue sur le gestionnaire de ticket StudelyDesk</h1>
 
-        <a href="{{ url_for('web_ui.create_ticket') }}" class="form-button">Créer un produit</a>
+        <a href="{{ url_for('web_ui.create_ticket') }}" class="form-button">Créer un Ticket</a>
+        <a href="{{ url_for('web_ui.delete_ticket') }}" class="form-button">Supprimer un ticket</a>
+        <a href="{{ url_for('web_ui.get_ticket') }}" class="form-button">Consulter un ticket</a>
+        <a href="{{ url_for('web_ui.getall_ticket') }}" class="form-button">Consulter tout les tickets</a>
+        <a href="{{ url_for('web_ui.update_ticket') }}" class="form-button">Modifier un Ticket</a>
+
 </div>
 </section>
 

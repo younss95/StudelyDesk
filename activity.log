@@ -285,3 +285,1845 @@ FROM entries
 2025-05-07 18:43:49,037 [INFO] 127.0.0.1 - - [07/May/2025 18:43:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 2025-05-07 18:43:51,094 [INFO] 127.0.0.1 - - [07/May/2025 18:43:51] "GET /create_ticket HTTP/1.1" 200 -
 2025-05-07 18:43:51,138 [INFO] 127.0.0.1 - - [07/May/2025 18:43:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 10:46:25,320 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-09 10:46:25,320 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-09 10:46:25,330 [INFO]  * Restarting with stat
+2025-05-09 10:46:26,167 [WARNING]  * Debugger is active!
+2025-05-09 10:46:26,167 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 10:46:28,484 [INFO] BEGIN (implicit)
+2025-05-09 10:46:28,484 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 10:46:28,484 [INFO] [generated in 0.00112s] ()
+2025-05-09 10:46:28,495 [INFO] ROLLBACK
+2025-05-09 10:46:28,516 [INFO] 127.0.0.1 - - [09/May/2025 10:46:28] "GET / HTTP/1.1" 200 -
+2025-05-09 10:46:28,785 [INFO] 127.0.0.1 - - [09/May/2025 10:46:28] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-09 10:46:28,803 [INFO] 127.0.0.1 - - [09/May/2025 10:46:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-09 10:46:56,277 [INFO] BEGIN (implicit)
+2025-05-09 10:46:56,278 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 10:46:56,280 [INFO] [cached since 27.79s ago] ()
+2025-05-09 10:46:56,283 [INFO] ROLLBACK
+2025-05-09 10:46:56,283 [INFO] 127.0.0.1 - - [09/May/2025 10:46:56] "GET / HTTP/1.1" 200 -
+2025-05-09 10:46:56,342 [INFO] 127.0.0.1 - - [09/May/2025 10:46:56] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-09 10:46:56,399 [INFO] 127.0.0.1 - - [09/May/2025 10:46:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-09 10:46:57,892 [INFO] 127.0.0.1 - - [09/May/2025 10:46:57] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-09 10:46:57,927 [INFO] 127.0.0.1 - - [09/May/2025 10:46:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 10:47:16,946 [INFO] BEGIN (implicit)
+2025-05-09 10:47:16,946 [INFO] INSERT INTO entries (title, description, name, date, status, priority) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-09 10:47:16,947 [INFO] [generated in 0.00151s] ('probleme pc', "mon pc s'eteint", 'Ney', '2025-05-09 10:47:16.944349', 'in progress', 'high')
+2025-05-09 10:47:16,950 [INFO] COMMIT
+2025-05-09 10:47:16,950 [INFO] 127.0.0.1 - - [09/May/2025 10:47:16] "[32mPOST /create_ticket HTTP/1.1[0m" 302 -
+2025-05-09 10:47:16,958 [INFO] BEGIN (implicit)
+2025-05-09 10:47:16,958 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 10:47:16,958 [INFO] [cached since 48.47s ago] ()
+2025-05-09 10:47:16,958 [INFO] ROLLBACK
+2025-05-09 10:47:16,958 [INFO] 127.0.0.1 - - [09/May/2025 10:47:16] "GET / HTTP/1.1" 200 -
+2025-05-09 10:47:16,997 [INFO] 127.0.0.1 - - [09/May/2025 10:47:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 10:47:41,991 [INFO] 127.0.0.1 - - [09/May/2025 10:47:41] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-09 10:47:42,029 [INFO] 127.0.0.1 - - [09/May/2025 10:47:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 10:47:47,160 [INFO] BEGIN (implicit)
+2025-05-09 10:47:47,161 [INFO] INSERT INTO entries (title, description, name, date, status, priority) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-09 10:47:47,161 [INFO] [cached since 30.22s ago] ('jj ', 'jnjkj', 'kjnjk ', '2025-05-09 10:47:47.159850', 'open', 'low')
+2025-05-09 10:47:47,163 [INFO] COMMIT
+2025-05-09 10:47:47,166 [INFO] 127.0.0.1 - - [09/May/2025 10:47:47] "[32mPOST /create_ticket HTTP/1.1[0m" 302 -
+2025-05-09 10:47:47,175 [INFO] BEGIN (implicit)
+2025-05-09 10:47:47,175 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 10:47:47,176 [INFO] [cached since 78.69s ago] ()
+2025-05-09 10:47:47,177 [INFO] ROLLBACK
+2025-05-09 10:47:47,177 [INFO] 127.0.0.1 - - [09/May/2025 10:47:47] "GET / HTTP/1.1" 200 -
+2025-05-09 10:47:47,246 [INFO] 127.0.0.1 - - [09/May/2025 10:47:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 10:52:16,377 [INFO] BEGIN (implicit)
+2025-05-09 10:52:16,378 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 10:52:16,378 [INFO] [raw sql] ()
+2025-05-09 10:52:16,381 [INFO] COMMIT
+2025-05-09 10:52:44,430 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-09 10:52:44,430 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-09 10:52:44,430 [INFO]  * Restarting with stat
+2025-05-09 10:52:45,265 [WARNING]  * Debugger is active!
+2025-05-09 10:52:45,265 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 10:52:46,173 [INFO] BEGIN (implicit)
+2025-05-09 10:52:46,176 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 10:52:46,176 [INFO] [generated in 0.00172s] ()
+2025-05-09 10:52:46,176 [INFO] ROLLBACK
+2025-05-09 10:52:46,191 [INFO] 127.0.0.1 - - [09/May/2025 10:52:46] "GET / HTTP/1.1" 200 -
+2025-05-09 10:52:46,303 [INFO] 127.0.0.1 - - [09/May/2025 10:52:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 10:52:48,477 [INFO] 127.0.0.1 - - [09/May/2025 10:52:48] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-09 10:52:48,493 [INFO] 127.0.0.1 - - [09/May/2025 10:52:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 10:52:52,120 [INFO] BEGIN (implicit)
+2025-05-09 10:52:52,120 [INFO] INSERT INTO entries (title, description, name, date, status, priority) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-09 10:52:52,120 [INFO] [generated in 0.00136s] ('bbihb', 'hbihbhi', 'bbihb', '2025-05-09 10:52:52.120172', 'open', 'low')
+2025-05-09 10:52:52,130 [INFO] COMMIT
+2025-05-09 10:52:52,134 [INFO] 127.0.0.1 - - [09/May/2025 10:52:52] "[32mPOST /create_ticket HTTP/1.1[0m" 302 -
+2025-05-09 10:52:52,141 [INFO] BEGIN (implicit)
+2025-05-09 10:52:52,142 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 10:52:52,142 [INFO] [cached since 5.967s ago] ()
+2025-05-09 10:52:52,143 [INFO] ROLLBACK
+2025-05-09 10:52:52,143 [INFO] 127.0.0.1 - - [09/May/2025 10:52:52] "GET / HTTP/1.1" 200 -
+2025-05-09 10:52:52,164 [INFO] 127.0.0.1 - - [09/May/2025 10:52:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 10:53:26,685 [INFO] 127.0.0.1 - - [09/May/2025 10:53:26] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-09 10:53:26,707 [INFO] 127.0.0.1 - - [09/May/2025 10:53:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 10:55:02,240 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 10:55:02,341 [INFO]  * Restarting with stat
+2025-05-09 10:55:03,195 [WARNING]  * Debugger is active!
+2025-05-09 10:55:03,200 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 10:55:43,586 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 10:55:43,675 [INFO]  * Restarting with stat
+2025-05-09 10:55:44,859 [WARNING]  * Debugger is active!
+2025-05-09 10:55:44,859 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 10:56:30,001 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 10:56:30,129 [INFO]  * Restarting with stat
+2025-05-09 10:56:30,828 [WARNING]  * Debugger is active!
+2025-05-09 10:56:30,828 [INFO]  * Debugger PIN: 464-659-859
+2025-05-09 10:56:56,587 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 10:56:56,680 [INFO]  * Restarting with stat
+2025-05-09 10:56:57,361 [INFO] BEGIN (implicit)
+2025-05-09 10:56:57,362 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 10:56:57,362 [INFO] [raw sql] ()
+2025-05-09 10:56:57,366 [INFO] COMMIT
+2025-05-09 10:56:57,529 [WARNING]  * Debugger is active!
+2025-05-09 10:56:57,529 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 10:57:01,117 [INFO] BEGIN (implicit)
+2025-05-09 10:57:01,117 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 10:57:01,131 [INFO] [generated in 0.00093s] ()
+2025-05-09 10:57:01,133 [INFO] ROLLBACK
+2025-05-09 10:57:01,140 [INFO] 127.0.0.1 - - [09/May/2025 10:57:01] "GET / HTTP/1.1" 200 -
+2025-05-09 10:57:01,213 [INFO] 127.0.0.1 - - [09/May/2025 10:57:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 10:57:01,950 [INFO] 127.0.0.1 - - [09/May/2025 10:57:01] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-09 10:57:01,979 [INFO] 127.0.0.1 - - [09/May/2025 10:57:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 10:57:05,596 [INFO] BEGIN (implicit)
+2025-05-09 10:57:05,612 [INFO] INSERT INTO entries (title, description, name, date, status, priority) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-09 10:57:05,612 [INFO] [generated in 0.00146s] ('uvv', 'ubub', 'hyubo', '2025-05-09 10:57:05.596558', 'open', 'low')
+2025-05-09 10:57:05,618 [INFO] COMMIT
+2025-05-09 10:57:05,622 [INFO] 127.0.0.1 - - [09/May/2025 10:57:05] "[32mPOST /create_ticket HTTP/1.1[0m" 302 -
+2025-05-09 10:57:05,627 [INFO] BEGIN (implicit)
+2025-05-09 10:57:05,628 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 10:57:05,628 [INFO] [cached since 4.498s ago] ()
+2025-05-09 10:57:05,629 [INFO] ROLLBACK
+2025-05-09 10:57:05,629 [INFO] 127.0.0.1 - - [09/May/2025 10:57:05] "GET / HTTP/1.1" 200 -
+2025-05-09 10:57:05,648 [INFO] 127.0.0.1 - - [09/May/2025 10:57:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:18:10,055 [INFO] BEGIN (implicit)
+2025-05-09 11:18:10,061 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:18:10,063 [INFO] [cached since 1269s ago] ()
+2025-05-09 11:18:10,082 [INFO] ROLLBACK
+2025-05-09 11:18:10,186 [INFO] 127.0.0.1 - - [09/May/2025 11:18:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:18:10,227 [INFO] 127.0.0.1 - - [09/May/2025 11:18:10] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-09 11:18:10,314 [INFO] 127.0.0.1 - - [09/May/2025 11:18:10] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-09 11:18:10,400 [INFO] 127.0.0.1 - - [09/May/2025 11:18:10] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=qB0S8yKtK0TuskihwlAO HTTP/1.1" 200 -
+2025-05-09 11:18:10,447 [INFO] 127.0.0.1 - - [09/May/2025 11:18:10] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-09 11:18:56,275 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 11:18:56,620 [INFO]  * Restarting with stat
+2025-05-09 11:18:58,072 [WARNING]  * Debugger is active!
+2025-05-09 11:18:58,088 [INFO]  * Debugger PIN: 464-659-859
+2025-05-09 11:18:58,631 [INFO] 127.0.0.1 - - [09/May/2025 11:18:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:18:58,870 [INFO] 127.0.0.1 - - [09/May/2025 11:18:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:18:58,997 [INFO] 127.0.0.1 - - [09/May/2025 11:18:58] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:18:58,998 [INFO] 127.0.0.1 - - [09/May/2025 11:18:58] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:18:59,036 [INFO] 127.0.0.1 - - [09/May/2025 11:18:59] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=QfMTgAn5Tt52KL8IieQO HTTP/1.1" 200 -
+2025-05-09 11:18:59,086 [INFO] 127.0.0.1 - - [09/May/2025 11:18:59] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:18:59,169 [INFO] 127.0.0.1 - - [09/May/2025 11:18:59] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:18:59,191 [INFO] 127.0.0.1 - - [09/May/2025 11:18:59] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:18:59,194 [INFO] 127.0.0.1 - - [09/May/2025 11:18:59] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:18:59,212 [INFO] 127.0.0.1 - - [09/May/2025 11:18:59] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=QfMTgAn5Tt52KL8IieQO HTTP/1.1[0m" 304 -
+2025-05-09 11:18:59,222 [INFO] 127.0.0.1 - - [09/May/2025 11:18:59] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:12,058 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 11:19:12,134 [INFO]  * Restarting with stat
+2025-05-09 11:19:13,305 [WARNING]  * Debugger is active!
+2025-05-09 11:19:13,311 [INFO]  * Debugger PIN: 464-659-859
+2025-05-09 11:19:13,361 [INFO] 127.0.0.1 - - [09/May/2025 11:19:13] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:13,452 [INFO] 127.0.0.1 - - [09/May/2025 11:19:13] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:13,454 [INFO] 127.0.0.1 - - [09/May/2025 11:19:13] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:13,468 [INFO] 127.0.0.1 - - [09/May/2025 11:19:13] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=ZUQK1UQcULuSswt5RnhG HTTP/1.1" 200 -
+2025-05-09 11:19:13,478 [INFO] 127.0.0.1 - - [09/May/2025 11:19:13] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:13,908 [INFO] 127.0.0.1 - - [09/May/2025 11:19:13] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:13,936 [INFO] 127.0.0.1 - - [09/May/2025 11:19:13] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:13,936 [INFO] 127.0.0.1 - - [09/May/2025 11:19:13] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:13,952 [INFO] 127.0.0.1 - - [09/May/2025 11:19:13] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=ZUQK1UQcULuSswt5RnhG HTTP/1.1[0m" 304 -
+2025-05-09 11:19:13,976 [INFO] 127.0.0.1 - - [09/May/2025 11:19:13] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,097 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:14,119 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,122 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,139 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=ZUQK1UQcULuSswt5RnhG HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,175 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,268 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:14,289 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,289 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,306 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=ZUQK1UQcULuSswt5RnhG HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,328 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,433 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:14,455 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,455 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,476 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=ZUQK1UQcULuSswt5RnhG HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,519 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,599 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:14,616 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,619 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,628 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=ZUQK1UQcULuSswt5RnhG HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,648 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,769 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:14,791 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,796 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,812 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=ZUQK1UQcULuSswt5RnhG HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,851 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,920 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:14,945 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,946 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,969 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=ZUQK1UQcULuSswt5RnhG HTTP/1.1[0m" 304 -
+2025-05-09 11:19:14,997 [INFO] 127.0.0.1 - - [09/May/2025 11:19:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:15,079 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:15,098 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:15,104 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:15,117 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=ZUQK1UQcULuSswt5RnhG HTTP/1.1[0m" 304 -
+2025-05-09 11:19:15,160 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:15,231 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:15,247 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:15,254 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:15,266 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=ZUQK1UQcULuSswt5RnhG HTTP/1.1[0m" 304 -
+2025-05-09 11:19:15,291 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:15,387 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:15,412 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:15,412 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:15,435 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=ZUQK1UQcULuSswt5RnhG HTTP/1.1[0m" 304 -
+2025-05-09 11:19:15,482 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:15,537 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:15,559 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:15,562 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:15,580 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=ZUQK1UQcULuSswt5RnhG HTTP/1.1[0m" 304 -
+2025-05-09 11:19:15,605 [INFO] 127.0.0.1 - - [09/May/2025 11:19:15] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:22,693 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 11:19:22,782 [INFO]  * Restarting with stat
+2025-05-09 11:19:23,516 [INFO] BEGIN (implicit)
+2025-05-09 11:19:23,516 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 11:19:23,517 [INFO] [raw sql] ()
+2025-05-09 11:19:23,521 [INFO] COMMIT
+2025-05-09 11:19:23,773 [WARNING]  * Debugger is active!
+2025-05-09 11:19:23,778 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 11:19:47,758 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 11:19:47,857 [INFO]  * Restarting with stat
+2025-05-09 11:19:48,631 [WARNING]  * Debugger is active!
+2025-05-09 11:19:48,635 [INFO]  * Debugger PIN: 464-659-859
+2025-05-09 11:19:49,487 [INFO] 127.0.0.1 - - [09/May/2025 11:19:49] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:49,588 [INFO] 127.0.0.1 - - [09/May/2025 11:19:49] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:49,589 [INFO] 127.0.0.1 - - [09/May/2025 11:19:49] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:49,600 [INFO] 127.0.0.1 - - [09/May/2025 11:19:49] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=Ep1cJiDeO7QB8jtBiLJS HTTP/1.1" 200 -
+2025-05-09 11:19:49,644 [INFO] 127.0.0.1 - - [09/May/2025 11:19:49] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,179 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:50,225 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,235 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,272 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=Ep1cJiDeO7QB8jtBiLJS HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,308 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,344 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:50,371 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,372 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,394 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=Ep1cJiDeO7QB8jtBiLJS HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,479 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:50,500 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,507 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,519 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=Ep1cJiDeO7QB8jtBiLJS HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,554 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,623 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:50,647 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,649 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,673 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=Ep1cJiDeO7QB8jtBiLJS HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,698 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,779 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:50,808 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,811 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,839 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=Ep1cJiDeO7QB8jtBiLJS HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,949 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,966 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:50,991 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:50,998 [INFO] 127.0.0.1 - - [09/May/2025 11:19:50] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:51,018 [INFO] 127.0.0.1 - - [09/May/2025 11:19:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=Ep1cJiDeO7QB8jtBiLJS HTTP/1.1[0m" 304 -
+2025-05-09 11:19:51,087 [INFO] 127.0.0.1 - - [09/May/2025 11:19:51] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:51,134 [INFO] 127.0.0.1 - - [09/May/2025 11:19:51] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:51,142 [INFO] 127.0.0.1 - - [09/May/2025 11:19:51] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:51,175 [INFO] 127.0.0.1 - - [09/May/2025 11:19:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=Ep1cJiDeO7QB8jtBiLJS HTTP/1.1[0m" 304 -
+2025-05-09 11:19:51,217 [INFO] 127.0.0.1 - - [09/May/2025 11:19:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:51,253 [INFO] 127.0.0.1 - - [09/May/2025 11:19:51] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:51,278 [INFO] 127.0.0.1 - - [09/May/2025 11:19:51] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:51,278 [INFO] 127.0.0.1 - - [09/May/2025 11:19:51] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:51,294 [INFO] 127.0.0.1 - - [09/May/2025 11:19:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=Ep1cJiDeO7QB8jtBiLJS HTTP/1.1[0m" 304 -
+2025-05-09 11:19:51,318 [INFO] 127.0.0.1 - - [09/May/2025 11:19:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:19:51,631 [INFO] 127.0.0.1 - - [09/May/2025 11:19:51] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 11:19:51,658 [INFO] 127.0.0.1 - - [09/May/2025 11:19:51] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:19:51,658 [INFO] 127.0.0.1 - - [09/May/2025 11:19:51] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:19:51,669 [INFO] 127.0.0.1 - - [09/May/2025 11:19:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=Ep1cJiDeO7QB8jtBiLJS HTTP/1.1[0m" 304 -
+2025-05-09 11:19:51,715 [INFO] 127.0.0.1 - - [09/May/2025 11:19:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 11:20:08,814 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 11:20:08,915 [INFO]  * Restarting with stat
+2025-05-09 11:20:09,684 [INFO] BEGIN (implicit)
+2025-05-09 11:20:09,685 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 11:20:09,685 [INFO] [raw sql] ()
+2025-05-09 11:20:09,686 [INFO] COMMIT
+2025-05-09 11:20:09,889 [WARNING]  * Debugger is active!
+2025-05-09 11:20:09,894 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 11:20:10,790 [INFO] BEGIN (implicit)
+2025-05-09 11:20:10,791 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:20:10,791 [INFO] [generated in 0.00103s] ()
+2025-05-09 11:20:10,798 [INFO] ROLLBACK
+2025-05-09 11:20:10,807 [INFO] 127.0.0.1 - - [09/May/2025 11:20:10] "GET / HTTP/1.1" 200 -
+2025-05-09 11:20:10,866 [INFO] 127.0.0.1 - - [09/May/2025 11:20:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:20:11,992 [INFO] 127.0.0.1 - - [09/May/2025 11:20:11] "[35m[1mGET /delete_ticket HTTP/1.1[0m" 500 -
+2025-05-09 11:20:12,018 [INFO] 127.0.0.1 - - [09/May/2025 11:20:12] "GET /delete_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-09 11:20:12,027 [INFO] 127.0.0.1 - - [09/May/2025 11:20:12] "GET /delete_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-09 11:20:12,035 [INFO] 127.0.0.1 - - [09/May/2025 11:20:12] "GET /delete_ticket?__debugger__=yes&cmd=resource&f=console.png&s=Ucccj6NdZqZ8GNOVsTmV HTTP/1.1" 200 -
+2025-05-09 11:20:12,043 [INFO] 127.0.0.1 - - [09/May/2025 11:20:12] "GET /delete_ticket?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-09 11:20:15,663 [INFO] 127.0.0.1 - - [09/May/2025 11:20:15] "[35m[1mGET /get_ticket HTTP/1.1[0m" 500 -
+2025-05-09 11:20:15,687 [INFO] 127.0.0.1 - - [09/May/2025 11:20:15] "GET /get_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-09 11:20:15,695 [INFO] 127.0.0.1 - - [09/May/2025 11:20:15] "GET /get_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-09 11:20:15,702 [INFO] 127.0.0.1 - - [09/May/2025 11:20:15] "GET /get_ticket?__debugger__=yes&cmd=resource&f=console.png&s=Ucccj6NdZqZ8GNOVsTmV HTTP/1.1" 200 -
+2025-05-09 11:20:15,708 [INFO] 127.0.0.1 - - [09/May/2025 11:20:15] "GET /get_ticket?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-09 11:20:17,094 [INFO] 127.0.0.1 - - [09/May/2025 11:20:17] "[35m[1mGET /getall_ticket HTTP/1.1[0m" 500 -
+2025-05-09 11:20:17,111 [INFO] 127.0.0.1 - - [09/May/2025 11:20:17] "GET /getall_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-09 11:20:17,116 [INFO] 127.0.0.1 - - [09/May/2025 11:20:17] "GET /getall_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-09 11:20:17,131 [INFO] 127.0.0.1 - - [09/May/2025 11:20:17] "GET /getall_ticket?__debugger__=yes&cmd=resource&f=console.png&s=Ucccj6NdZqZ8GNOVsTmV HTTP/1.1" 200 -
+2025-05-09 11:20:17,171 [INFO] 127.0.0.1 - - [09/May/2025 11:20:17] "GET /getall_ticket?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-09 11:20:18,858 [INFO] 127.0.0.1 - - [09/May/2025 11:20:18] "[35m[1mGET /update_ticket HTTP/1.1[0m" 500 -
+2025-05-09 11:20:18,876 [INFO] 127.0.0.1 - - [09/May/2025 11:20:18] "GET /update_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-09 11:20:18,887 [INFO] 127.0.0.1 - - [09/May/2025 11:20:18] "GET /update_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-09 11:20:18,909 [INFO] 127.0.0.1 - - [09/May/2025 11:20:18] "GET /update_ticket?__debugger__=yes&cmd=resource&f=console.png&s=Ucccj6NdZqZ8GNOVsTmV HTTP/1.1" 200 -
+2025-05-09 11:20:18,956 [INFO] 127.0.0.1 - - [09/May/2025 11:20:18] "GET /update_ticket?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-09 11:25:56,924 [INFO] BEGIN (implicit)
+2025-05-09 11:25:56,925 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:25:56,925 [INFO] [cached since 346.1s ago] ()
+2025-05-09 11:25:56,926 [INFO] ROLLBACK
+2025-05-09 11:25:56,926 [INFO] 127.0.0.1 - - [09/May/2025 11:25:56] "GET / HTTP/1.1" 200 -
+2025-05-09 11:25:56,944 [INFO] 127.0.0.1 - - [09/May/2025 11:25:56] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-09 11:28:12,243 [INFO] BEGIN (implicit)
+2025-05-09 11:28:12,243 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:28:12,244 [INFO] [cached since 481.5s ago] ()
+2025-05-09 11:28:12,246 [INFO] ROLLBACK
+2025-05-09 11:28:12,251 [INFO] 127.0.0.1 - - [09/May/2025 11:28:12] "GET / HTTP/1.1" 200 -
+2025-05-09 11:28:12,275 [INFO] 127.0.0.1 - - [09/May/2025 11:28:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:30:24,183 [INFO] BEGIN (implicit)
+2025-05-09 11:30:24,184 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:30:24,184 [INFO] [cached since 613.4s ago] ()
+2025-05-09 11:30:24,185 [INFO] ROLLBACK
+2025-05-09 11:30:24,187 [INFO] 127.0.0.1 - - [09/May/2025 11:30:24] "GET / HTTP/1.1" 200 -
+2025-05-09 11:30:24,203 [INFO] 127.0.0.1 - - [09/May/2025 11:30:24] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-09 11:44:14,568 [INFO] BEGIN (implicit)
+2025-05-09 11:44:14,573 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:14,576 [INFO] [cached since 1446s ago] ()
+2025-05-09 11:44:14,579 [INFO] ROLLBACK
+2025-05-09 11:44:14,584 [INFO] 127.0.0.1 - - [09/May/2025 11:44:14] "GET / HTTP/1.1" 200 -
+2025-05-09 11:44:14,629 [INFO] 127.0.0.1 - - [09/May/2025 11:44:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:15,646 [INFO] 127.0.0.1 - - [09/May/2025 11:44:15] "[35m[1mGET /delete_ticket HTTP/1.1[0m" 500 -
+2025-05-09 11:44:15,678 [INFO] 127.0.0.1 - - [09/May/2025 11:44:15] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:15,681 [INFO] 127.0.0.1 - - [09/May/2025 11:44:15] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:44:15,700 [INFO] 127.0.0.1 - - [09/May/2025 11:44:15] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=console.png&s=Ucccj6NdZqZ8GNOVsTmV HTTP/1.1[0m" 304 -
+2025-05-09 11:44:49,650 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 11:44:49,854 [INFO]  * Restarting with stat
+2025-05-09 11:44:50,933 [INFO] BEGIN (implicit)
+2025-05-09 11:44:50,933 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 11:44:50,934 [INFO] [raw sql] ()
+2025-05-09 11:44:50,935 [INFO] COMMIT
+2025-05-09 11:44:51,208 [WARNING]  * Debugger is active!
+2025-05-09 11:44:51,213 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 11:44:53,800 [INFO] BEGIN (implicit)
+2025-05-09 11:44:53,801 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:53,807 [INFO] [generated in 0.00098s] ()
+2025-05-09 11:44:53,809 [INFO] ROLLBACK
+2025-05-09 11:44:53,817 [INFO] 127.0.0.1 - - [09/May/2025 11:44:53] "GET / HTTP/1.1" 200 -
+2025-05-09 11:44:53,884 [INFO] 127.0.0.1 - - [09/May/2025 11:44:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:55,116 [INFO] BEGIN (implicit)
+2025-05-09 11:44:55,116 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:55,116 [INFO] [cached since 1.316s ago] ()
+2025-05-09 11:44:55,117 [INFO] ROLLBACK
+2025-05-09 11:44:55,118 [INFO] 127.0.0.1 - - [09/May/2025 11:44:55] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:55,134 [INFO] 127.0.0.1 - - [09/May/2025 11:44:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:56,593 [INFO] BEGIN (implicit)
+2025-05-09 11:44:56,594 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:56,594 [INFO] [cached since 2.794s ago] ()
+2025-05-09 11:44:56,595 [INFO] ROLLBACK
+2025-05-09 11:44:56,596 [INFO] 127.0.0.1 - - [09/May/2025 11:44:56] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:56,610 [INFO] 127.0.0.1 - - [09/May/2025 11:44:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:57,267 [INFO] BEGIN (implicit)
+2025-05-09 11:44:57,267 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:57,268 [INFO] [cached since 3.467s ago] ()
+2025-05-09 11:44:57,268 [INFO] ROLLBACK
+2025-05-09 11:44:57,269 [INFO] 127.0.0.1 - - [09/May/2025 11:44:57] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:57,282 [INFO] 127.0.0.1 - - [09/May/2025 11:44:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:57,449 [INFO] BEGIN (implicit)
+2025-05-09 11:44:57,449 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:57,450 [INFO] [cached since 3.649s ago] ()
+2025-05-09 11:44:57,450 [INFO] ROLLBACK
+2025-05-09 11:44:57,451 [INFO] 127.0.0.1 - - [09/May/2025 11:44:57] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:57,468 [INFO] 127.0.0.1 - - [09/May/2025 11:44:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:57,571 [INFO] BEGIN (implicit)
+2025-05-09 11:44:57,572 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:57,573 [INFO] [cached since 3.772s ago] ()
+2025-05-09 11:44:57,574 [INFO] ROLLBACK
+2025-05-09 11:44:57,576 [INFO] 127.0.0.1 - - [09/May/2025 11:44:57] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:57,592 [INFO] 127.0.0.1 - - [09/May/2025 11:44:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:57,719 [INFO] BEGIN (implicit)
+2025-05-09 11:44:57,720 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:57,720 [INFO] [cached since 3.92s ago] ()
+2025-05-09 11:44:57,721 [INFO] ROLLBACK
+2025-05-09 11:44:57,722 [INFO] 127.0.0.1 - - [09/May/2025 11:44:57] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:57,733 [INFO] 127.0.0.1 - - [09/May/2025 11:44:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:57,864 [INFO] BEGIN (implicit)
+2025-05-09 11:44:57,864 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:57,865 [INFO] [cached since 4.064s ago] ()
+2025-05-09 11:44:57,865 [INFO] ROLLBACK
+2025-05-09 11:44:57,866 [INFO] 127.0.0.1 - - [09/May/2025 11:44:57] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:57,880 [INFO] 127.0.0.1 - - [09/May/2025 11:44:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:58,002 [INFO] BEGIN (implicit)
+2025-05-09 11:44:58,003 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:58,003 [INFO] [cached since 4.202s ago] ()
+2025-05-09 11:44:58,004 [INFO] ROLLBACK
+2025-05-09 11:44:58,005 [INFO] 127.0.0.1 - - [09/May/2025 11:44:58] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:58,016 [INFO] 127.0.0.1 - - [09/May/2025 11:44:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:58,136 [INFO] BEGIN (implicit)
+2025-05-09 11:44:58,136 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:58,137 [INFO] [cached since 4.336s ago] ()
+2025-05-09 11:44:58,137 [INFO] ROLLBACK
+2025-05-09 11:44:58,138 [INFO] 127.0.0.1 - - [09/May/2025 11:44:58] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:58,150 [INFO] 127.0.0.1 - - [09/May/2025 11:44:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:58,268 [INFO] BEGIN (implicit)
+2025-05-09 11:44:58,268 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:58,269 [INFO] [cached since 4.468s ago] ()
+2025-05-09 11:44:58,269 [INFO] ROLLBACK
+2025-05-09 11:44:58,270 [INFO] 127.0.0.1 - - [09/May/2025 11:44:58] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:58,282 [INFO] 127.0.0.1 - - [09/May/2025 11:44:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:58,401 [INFO] BEGIN (implicit)
+2025-05-09 11:44:58,402 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:58,402 [INFO] [cached since 4.602s ago] ()
+2025-05-09 11:44:58,403 [INFO] ROLLBACK
+2025-05-09 11:44:58,404 [INFO] 127.0.0.1 - - [09/May/2025 11:44:58] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:58,416 [INFO] 127.0.0.1 - - [09/May/2025 11:44:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:58,542 [INFO] BEGIN (implicit)
+2025-05-09 11:44:58,542 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:58,543 [INFO] [cached since 4.743s ago] ()
+2025-05-09 11:44:58,543 [INFO] ROLLBACK
+2025-05-09 11:44:58,544 [INFO] 127.0.0.1 - - [09/May/2025 11:44:58] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:58,555 [INFO] 127.0.0.1 - - [09/May/2025 11:44:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:58,672 [INFO] BEGIN (implicit)
+2025-05-09 11:44:58,672 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:58,673 [INFO] [cached since 4.872s ago] ()
+2025-05-09 11:44:58,674 [INFO] ROLLBACK
+2025-05-09 11:44:58,675 [INFO] 127.0.0.1 - - [09/May/2025 11:44:58] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:58,685 [INFO] 127.0.0.1 - - [09/May/2025 11:44:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:58,808 [INFO] BEGIN (implicit)
+2025-05-09 11:44:58,809 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:58,809 [INFO] [cached since 5.008s ago] ()
+2025-05-09 11:44:58,810 [INFO] ROLLBACK
+2025-05-09 11:44:58,811 [INFO] 127.0.0.1 - - [09/May/2025 11:44:58] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:58,822 [INFO] 127.0.0.1 - - [09/May/2025 11:44:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:58,946 [INFO] BEGIN (implicit)
+2025-05-09 11:44:58,947 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:58,947 [INFO] [cached since 5.147s ago] ()
+2025-05-09 11:44:58,947 [INFO] ROLLBACK
+2025-05-09 11:44:58,948 [INFO] 127.0.0.1 - - [09/May/2025 11:44:58] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:58,959 [INFO] 127.0.0.1 - - [09/May/2025 11:44:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:59,080 [INFO] BEGIN (implicit)
+2025-05-09 11:44:59,081 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:59,081 [INFO] [cached since 5.28s ago] ()
+2025-05-09 11:44:59,082 [INFO] ROLLBACK
+2025-05-09 11:44:59,082 [INFO] 127.0.0.1 - - [09/May/2025 11:44:59] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:59,092 [INFO] 127.0.0.1 - - [09/May/2025 11:44:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:59,332 [INFO] BEGIN (implicit)
+2025-05-09 11:44:59,332 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:59,332 [INFO] [cached since 5.532s ago] ()
+2025-05-09 11:44:59,333 [INFO] ROLLBACK
+2025-05-09 11:44:59,334 [INFO] 127.0.0.1 - - [09/May/2025 11:44:59] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:59,345 [INFO] 127.0.0.1 - - [09/May/2025 11:44:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:59,454 [INFO] BEGIN (implicit)
+2025-05-09 11:44:59,455 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:59,455 [INFO] [cached since 5.655s ago] ()
+2025-05-09 11:44:59,456 [INFO] ROLLBACK
+2025-05-09 11:44:59,457 [INFO] 127.0.0.1 - - [09/May/2025 11:44:59] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:59,469 [INFO] 127.0.0.1 - - [09/May/2025 11:44:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:44:59,576 [INFO] BEGIN (implicit)
+2025-05-09 11:44:59,576 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:44:59,576 [INFO] [cached since 5.776s ago] ()
+2025-05-09 11:44:59,577 [INFO] ROLLBACK
+2025-05-09 11:44:59,577 [INFO] 127.0.0.1 - - [09/May/2025 11:44:59] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:44:59,587 [INFO] 127.0.0.1 - - [09/May/2025 11:44:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:45:08,512 [INFO] 127.0.0.1 - - [09/May/2025 11:45:08] "[35m[1mGET /get_ticket HTTP/1.1[0m" 500 -
+2025-05-09 11:45:08,544 [INFO] 127.0.0.1 - - [09/May/2025 11:45:08] "[36mGET /get_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:45:08,546 [INFO] 127.0.0.1 - - [09/May/2025 11:45:08] "[36mGET /get_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 11:45:08,555 [INFO] 127.0.0.1 - - [09/May/2025 11:45:08] "GET /get_ticket?__debugger__=yes&cmd=resource&f=console.png&s=4gOfathNx8qIoKSnKqd0 HTTP/1.1" 200 -
+2025-05-09 11:45:13,606 [INFO] BEGIN (implicit)
+2025-05-09 11:45:13,607 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:45:13,607 [INFO] [cached since 19.81s ago] ()
+2025-05-09 11:45:13,609 [INFO] ROLLBACK
+2025-05-09 11:45:13,611 [INFO] 127.0.0.1 - - [09/May/2025 11:45:13] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:45:13,691 [INFO] 127.0.0.1 - - [09/May/2025 11:45:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:45:14,718 [INFO] BEGIN (implicit)
+2025-05-09 11:45:14,718 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:45:14,719 [INFO] [cached since 20.92s ago] ()
+2025-05-09 11:45:14,719 [INFO] ROLLBACK
+2025-05-09 11:45:14,720 [INFO] 127.0.0.1 - - [09/May/2025 11:45:14] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:45:14,733 [INFO] 127.0.0.1 - - [09/May/2025 11:45:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:45:18,833 [INFO] BEGIN (implicit)
+2025-05-09 11:45:18,833 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:45:18,834 [INFO] [cached since 25.03s ago] ()
+2025-05-09 11:45:18,834 [INFO] ROLLBACK
+2025-05-09 11:45:18,835 [INFO] 127.0.0.1 - - [09/May/2025 11:45:18] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:45:18,853 [INFO] 127.0.0.1 - - [09/May/2025 11:45:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:45:19,214 [INFO] BEGIN (implicit)
+2025-05-09 11:45:19,215 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:45:19,215 [INFO] [cached since 25.41s ago] ()
+2025-05-09 11:45:19,215 [INFO] ROLLBACK
+2025-05-09 11:45:19,216 [INFO] 127.0.0.1 - - [09/May/2025 11:45:19] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:45:19,231 [INFO] 127.0.0.1 - - [09/May/2025 11:45:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:45:19,367 [INFO] BEGIN (implicit)
+2025-05-09 11:45:19,368 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:45:19,368 [INFO] [cached since 25.57s ago] ()
+2025-05-09 11:45:19,369 [INFO] ROLLBACK
+2025-05-09 11:45:19,369 [INFO] 127.0.0.1 - - [09/May/2025 11:45:19] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:45:19,386 [INFO] 127.0.0.1 - - [09/May/2025 11:45:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:45:19,550 [INFO] BEGIN (implicit)
+2025-05-09 11:45:19,550 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:45:19,550 [INFO] [cached since 25.75s ago] ()
+2025-05-09 11:45:19,551 [INFO] ROLLBACK
+2025-05-09 11:45:19,552 [INFO] 127.0.0.1 - - [09/May/2025 11:45:19] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:45:19,569 [INFO] 127.0.0.1 - - [09/May/2025 11:45:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:45:34,921 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 11:45:35,017 [INFO]  * Restarting with stat
+2025-05-09 11:45:35,690 [INFO] BEGIN (implicit)
+2025-05-09 11:45:35,691 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 11:45:35,691 [INFO] [raw sql] ()
+2025-05-09 11:45:35,692 [INFO] COMMIT
+2025-05-09 11:45:35,865 [WARNING]  * Debugger is active!
+2025-05-09 11:45:35,869 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 11:45:36,376 [INFO] BEGIN (implicit)
+2025-05-09 11:45:36,376 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:45:36,377 [INFO] [generated in 0.00136s] ()
+2025-05-09 11:45:36,379 [INFO] ROLLBACK
+2025-05-09 11:45:36,388 [INFO] 127.0.0.1 - - [09/May/2025 11:45:36] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:45:36,449 [INFO] 127.0.0.1 - - [09/May/2025 11:45:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 11:45:51,738 [INFO] BEGIN (implicit)
+2025-05-09 11:45:51,738 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 11:45:51,739 [INFO] [cached since 15.36s ago] ()
+2025-05-09 11:45:51,741 [INFO] ROLLBACK
+2025-05-09 11:45:51,799 [INFO] 127.0.0.1 - - [09/May/2025 11:45:51] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 11:45:51,882 [INFO] 127.0.0.1 - - [09/May/2025 11:45:51] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-09 12:04:07,449 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 12:05:27,589 [INFO] BEGIN (implicit)
+2025-05-09 12:05:27,590 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 12:05:27,590 [INFO] [raw sql] ()
+2025-05-09 12:05:27,595 [INFO] COMMIT
+2025-05-09 12:05:28,232 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-09 12:05:28,233 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-09 12:05:28,236 [INFO]  * Restarting with stat
+2025-05-09 12:05:29,764 [INFO] BEGIN (implicit)
+2025-05-09 12:05:29,766 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 12:05:29,767 [INFO] [raw sql] ()
+2025-05-09 12:05:29,770 [INFO] COMMIT
+2025-05-09 12:05:30,305 [WARNING]  * Debugger is active!
+2025-05-09 12:05:30,317 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 12:05:32,422 [INFO] BEGIN (implicit)
+2025-05-09 12:05:32,447 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 12:05:32,449 [INFO] [generated in 0.02706s] ()
+2025-05-09 12:05:32,452 [INFO] ROLLBACK
+2025-05-09 12:05:32,668 [INFO] 127.0.0.1 - - [09/May/2025 12:05:32] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 12:05:32,764 [INFO] 127.0.0.1 - - [09/May/2025 12:05:32] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 12:05:32,801 [INFO] 127.0.0.1 - - [09/May/2025 12:05:32] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 12:05:32,910 [INFO] 127.0.0.1 - - [09/May/2025 12:05:32] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=N4jnxyt2ncU8imGk5bAW HTTP/1.1" 200 -
+2025-05-09 12:05:32,987 [INFO] 127.0.0.1 - - [09/May/2025 12:05:32] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 12:06:36,640 [INFO] BEGIN (implicit)
+2025-05-09 12:06:36,640 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 12:06:36,641 [INFO] [cached since 64.22s ago] ()
+2025-05-09 12:06:36,641 [INFO] ROLLBACK
+2025-05-09 12:06:36,657 [INFO] 127.0.0.1 - - [09/May/2025 12:06:36] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 12:06:36,692 [INFO] 127.0.0.1 - - [09/May/2025 12:06:36] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 12:06:36,704 [INFO] 127.0.0.1 - - [09/May/2025 12:06:36] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 12:06:36,719 [INFO] 127.0.0.1 - - [09/May/2025 12:06:36] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N4jnxyt2ncU8imGk5bAW HTTP/1.1[0m" 304 -
+2025-05-09 12:06:36,783 [INFO] 127.0.0.1 - - [09/May/2025 12:06:36] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 12:06:37,224 [INFO] BEGIN (implicit)
+2025-05-09 12:06:37,225 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 12:06:37,225 [INFO] [cached since 64.8s ago] ()
+2025-05-09 12:06:37,226 [INFO] ROLLBACK
+2025-05-09 12:06:37,237 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 12:06:37,267 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 12:06:37,275 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 12:06:37,286 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N4jnxyt2ncU8imGk5bAW HTTP/1.1[0m" 304 -
+2025-05-09 12:06:37,313 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 12:06:37,476 [INFO] BEGIN (implicit)
+2025-05-09 12:06:37,476 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 12:06:37,477 [INFO] [cached since 65.06s ago] ()
+2025-05-09 12:06:37,477 [INFO] ROLLBACK
+2025-05-09 12:06:37,490 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 12:06:37,516 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 12:06:37,517 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 12:06:37,532 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N4jnxyt2ncU8imGk5bAW HTTP/1.1[0m" 304 -
+2025-05-09 12:06:37,576 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 12:06:37,666 [INFO] BEGIN (implicit)
+2025-05-09 12:06:37,667 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 12:06:37,667 [INFO] [cached since 65.25s ago] ()
+2025-05-09 12:06:37,668 [INFO] ROLLBACK
+2025-05-09 12:06:37,681 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 12:06:37,707 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 12:06:37,707 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 12:06:37,727 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N4jnxyt2ncU8imGk5bAW HTTP/1.1[0m" 304 -
+2025-05-09 12:06:37,747 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 12:06:37,843 [INFO] BEGIN (implicit)
+2025-05-09 12:06:37,844 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 12:06:37,845 [INFO] [cached since 65.42s ago] ()
+2025-05-09 12:06:37,846 [INFO] ROLLBACK
+2025-05-09 12:06:37,860 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 12:06:37,898 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 12:06:37,899 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 12:06:37,919 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N4jnxyt2ncU8imGk5bAW HTTP/1.1[0m" 304 -
+2025-05-09 12:06:37,961 [INFO] 127.0.0.1 - - [09/May/2025 12:06:37] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 12:06:38,009 [INFO] BEGIN (implicit)
+2025-05-09 12:06:38,010 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 12:06:38,010 [INFO] [cached since 65.59s ago] ()
+2025-05-09 12:06:38,012 [INFO] ROLLBACK
+2025-05-09 12:06:38,029 [INFO] 127.0.0.1 - - [09/May/2025 12:06:38] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 12:06:38,055 [INFO] 127.0.0.1 - - [09/May/2025 12:06:38] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 12:06:38,065 [INFO] 127.0.0.1 - - [09/May/2025 12:06:38] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 12:06:38,075 [INFO] 127.0.0.1 - - [09/May/2025 12:06:38] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N4jnxyt2ncU8imGk5bAW HTTP/1.1[0m" 304 -
+2025-05-09 12:06:38,095 [INFO] 127.0.0.1 - - [09/May/2025 12:06:38] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 12:06:55,717 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 12:06:55,846 [INFO]  * Restarting with stat
+2025-05-09 12:06:56,976 [INFO] BEGIN (implicit)
+2025-05-09 12:06:56,977 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 12:06:56,977 [INFO] [raw sql] ()
+2025-05-09 12:06:56,978 [INFO] COMMIT
+2025-05-09 12:06:57,203 [WARNING]  * Debugger is active!
+2025-05-09 12:06:57,208 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 12:06:57,261 [INFO] BEGIN (implicit)
+2025-05-09 12:06:57,261 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 12:06:57,262 [INFO] [generated in 0.00111s] ()
+2025-05-09 12:06:57,263 [INFO] ROLLBACK
+2025-05-09 12:06:57,289 [INFO] 127.0.0.1 - - [09/May/2025 12:06:57] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 12:06:57,387 [INFO] 127.0.0.1 - - [09/May/2025 12:06:57] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 12:06:57,387 [INFO] 127.0.0.1 - - [09/May/2025 12:06:57] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 12:06:57,402 [INFO] 127.0.0.1 - - [09/May/2025 12:06:57] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=Oj7SXYBLG3ZQSH8cFl7C HTTP/1.1" 200 -
+2025-05-09 12:06:57,450 [INFO] 127.0.0.1 - - [09/May/2025 12:06:57] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 12:10:50,257 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 12:10:50,513 [INFO]  * Restarting with stat
+2025-05-09 12:10:51,828 [INFO] BEGIN (implicit)
+2025-05-09 12:10:51,830 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 12:10:51,831 [INFO] [raw sql] ()
+2025-05-09 12:10:51,833 [INFO] COMMIT
+2025-05-09 12:10:52,089 [WARNING]  * Debugger is active!
+2025-05-09 12:10:52,097 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 12:10:52,149 [INFO] BEGIN (implicit)
+2025-05-09 12:10:52,150 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 12:10:52,151 [INFO] [generated in 0.00161s] ()
+2025-05-09 12:10:52,151 [INFO] ROLLBACK
+2025-05-09 12:10:52,174 [INFO] 127.0.0.1 - - [09/May/2025 12:10:52] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 12:10:52,267 [INFO] 127.0.0.1 - - [09/May/2025 12:10:52] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 12:10:52,269 [INFO] 127.0.0.1 - - [09/May/2025 12:10:52] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 12:10:52,282 [INFO] 127.0.0.1 - - [09/May/2025 12:10:52] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=FtejTStc1qSgtlngoaGd HTTP/1.1" 200 -
+2025-05-09 12:10:52,334 [INFO] 127.0.0.1 - - [09/May/2025 12:10:52] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 12:11:35,332 [INFO] BEGIN (implicit)
+2025-05-09 12:11:35,332 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 12:11:35,334 [INFO] [cached since 43.18s ago] ()
+2025-05-09 12:11:35,336 [INFO] ROLLBACK
+2025-05-09 12:11:35,398 [INFO] 127.0.0.1 - - [09/May/2025 12:11:35] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 12:11:35,416 [INFO] 127.0.0.1 - - [09/May/2025 12:11:35] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 12:11:35,426 [INFO] 127.0.0.1 - - [09/May/2025 12:11:35] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 12:11:35,443 [INFO] 127.0.0.1 - - [09/May/2025 12:11:35] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=FtejTStc1qSgtlngoaGd HTTP/1.1[0m" 304 -
+2025-05-09 12:11:35,491 [INFO] 127.0.0.1 - - [09/May/2025 12:11:35] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 12:11:35,972 [INFO] BEGIN (implicit)
+2025-05-09 12:11:35,972 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 12:11:35,973 [INFO] [cached since 43.82s ago] ()
+2025-05-09 12:11:35,973 [INFO] ROLLBACK
+2025-05-09 12:11:35,986 [INFO] 127.0.0.1 - - [09/May/2025 12:11:35] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 12:11:36,011 [INFO] 127.0.0.1 - - [09/May/2025 12:11:36] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 12:11:36,012 [INFO] 127.0.0.1 - - [09/May/2025 12:11:36] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 12:11:36,036 [INFO] 127.0.0.1 - - [09/May/2025 12:11:36] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=FtejTStc1qSgtlngoaGd HTTP/1.1[0m" 304 -
+2025-05-09 12:11:36,062 [INFO] 127.0.0.1 - - [09/May/2025 12:11:36] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 12:11:44,867 [INFO] BEGIN (implicit)
+2025-05-09 12:11:44,867 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 12:11:44,868 [INFO] [cached since 52.72s ago] ()
+2025-05-09 12:11:44,869 [INFO] ROLLBACK
+2025-05-09 12:11:44,890 [INFO] 127.0.0.1 - - [09/May/2025 12:11:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 12:11:44,908 [INFO] 127.0.0.1 - - [09/May/2025 12:11:44] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 12:11:44,910 [INFO] 127.0.0.1 - - [09/May/2025 12:11:44] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 12:11:44,933 [INFO] 127.0.0.1 - - [09/May/2025 12:11:44] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=FtejTStc1qSgtlngoaGd HTTP/1.1[0m" 304 -
+2025-05-09 12:11:44,983 [INFO] 127.0.0.1 - - [09/May/2025 12:11:44] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 12:11:45,436 [INFO] BEGIN (implicit)
+2025-05-09 12:11:45,437 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 12:11:45,438 [INFO] [cached since 53.29s ago] ()
+2025-05-09 12:11:45,439 [INFO] ROLLBACK
+2025-05-09 12:11:45,457 [INFO] 127.0.0.1 - - [09/May/2025 12:11:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 12:11:45,481 [INFO] 127.0.0.1 - - [09/May/2025 12:11:45] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 12:11:45,483 [INFO] 127.0.0.1 - - [09/May/2025 12:11:45] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 12:11:45,507 [INFO] 127.0.0.1 - - [09/May/2025 12:11:45] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=FtejTStc1qSgtlngoaGd HTTP/1.1[0m" 304 -
+2025-05-09 12:11:45,543 [INFO] 127.0.0.1 - - [09/May/2025 12:11:45] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 12:11:45,604 [INFO] BEGIN (implicit)
+2025-05-09 12:11:45,604 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 12:11:45,607 [INFO] [cached since 53.46s ago] ()
+2025-05-09 12:11:45,609 [INFO] ROLLBACK
+2025-05-09 12:11:45,634 [INFO] 127.0.0.1 - - [09/May/2025 12:11:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 12:11:45,662 [INFO] 127.0.0.1 - - [09/May/2025 12:11:45] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 12:11:45,664 [INFO] 127.0.0.1 - - [09/May/2025 12:11:45] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 12:11:45,693 [INFO] 127.0.0.1 - - [09/May/2025 12:11:45] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=FtejTStc1qSgtlngoaGd HTTP/1.1[0m" 304 -
+2025-05-09 12:11:45,743 [INFO] 127.0.0.1 - - [09/May/2025 12:11:45] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 12:11:45,776 [INFO] BEGIN (implicit)
+2025-05-09 12:11:45,776 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 12:11:45,777 [INFO] [cached since 53.63s ago] ()
+2025-05-09 12:11:45,777 [INFO] ROLLBACK
+2025-05-09 12:11:45,792 [INFO] 127.0.0.1 - - [09/May/2025 12:11:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 12:11:45,826 [INFO] 127.0.0.1 - - [09/May/2025 12:11:45] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 12:11:45,834 [INFO] 127.0.0.1 - - [09/May/2025 12:11:45] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 12:11:45,851 [INFO] 127.0.0.1 - - [09/May/2025 12:11:45] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=FtejTStc1qSgtlngoaGd HTTP/1.1[0m" 304 -
+2025-05-09 12:11:45,878 [INFO] 127.0.0.1 - - [09/May/2025 12:11:45] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 12:38:03,933 [INFO] BEGIN (implicit)
+2025-05-09 12:38:03,934 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 12:38:03,934 [INFO] [cached since 1632s ago] ()
+2025-05-09 12:38:03,935 [INFO] ROLLBACK
+2025-05-09 12:38:03,951 [INFO] 127.0.0.1 - - [09/May/2025 12:38:03] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 12:38:03,977 [INFO] 127.0.0.1 - - [09/May/2025 12:38:03] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 12:38:04,009 [INFO] 127.0.0.1 - - [09/May/2025 12:38:04] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 12:38:04,022 [INFO] 127.0.0.1 - - [09/May/2025 12:38:04] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=FtejTStc1qSgtlngoaGd HTTP/1.1[0m" 304 -
+2025-05-09 12:38:04,044 [INFO] 127.0.0.1 - - [09/May/2025 12:38:04] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 12:38:24,628 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 12:38:25,016 [INFO]  * Restarting with stat
+2025-05-09 12:38:26,114 [INFO] BEGIN (implicit)
+2025-05-09 12:38:26,115 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 12:38:26,115 [INFO] [raw sql] ()
+2025-05-09 12:38:26,116 [INFO] COMMIT
+2025-05-09 12:38:26,342 [WARNING]  * Debugger is active!
+2025-05-09 12:38:26,348 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 12:38:52,428 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 12:38:52,541 [INFO]  * Restarting with stat
+2025-05-09 12:38:53,008 [WARNING]  * Debugger is active!
+2025-05-09 12:38:53,014 [INFO]  * Debugger PIN: 464-659-859
+2025-05-09 12:39:01,187 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 12:39:01,230 [INFO]  * Restarting with stat
+2025-05-09 12:39:02,132 [WARNING]  * Debugger is active!
+2025-05-09 12:39:02,137 [INFO]  * Debugger PIN: 464-659-859
+2025-05-09 12:39:41,344 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 12:39:41,411 [INFO]  * Restarting with stat
+2025-05-09 12:39:41,825 [WARNING]  * Debugger is active!
+2025-05-09 12:39:41,830 [INFO]  * Debugger PIN: 464-659-859
+2025-05-09 12:39:50,050 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 12:39:50,110 [INFO]  * Restarting with stat
+2025-05-09 12:39:51,259 [WARNING]  * Debugger is active!
+2025-05-09 12:39:51,263 [INFO]  * Debugger PIN: 464-659-859
+2025-05-09 12:41:05,559 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 12:41:05,645 [INFO]  * Restarting with stat
+2025-05-09 12:41:06,827 [WARNING]  * Debugger is active!
+2025-05-09 12:41:06,832 [INFO]  * Debugger PIN: 464-659-859
+2025-05-09 12:41:08,063 [INFO] 127.0.0.1 - - [09/May/2025 12:41:08] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 12:41:08,150 [INFO] 127.0.0.1 - - [09/May/2025 12:41:08] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 12:41:08,155 [INFO] 127.0.0.1 - - [09/May/2025 12:41:08] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 12:41:08,179 [INFO] 127.0.0.1 - - [09/May/2025 12:41:08] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=zmfdnkOGJHJQCQwFXCuA HTTP/1.1" 200 -
+2025-05-09 12:41:08,205 [INFO] 127.0.0.1 - - [09/May/2025 12:41:08] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 13:11:22,910 [INFO] BEGIN (implicit)
+2025-05-09 13:11:22,911 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 13:11:22,911 [INFO] [raw sql] ()
+2025-05-09 13:11:22,916 [INFO] COMMIT
+2025-05-09 13:11:23,302 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-09 13:11:23,302 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-09 13:11:23,306 [INFO]  * Restarting with stat
+2025-05-09 13:11:24,437 [INFO] BEGIN (implicit)
+2025-05-09 13:11:24,438 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 13:11:24,438 [INFO] [raw sql] ()
+2025-05-09 13:11:24,440 [INFO] COMMIT
+2025-05-09 13:11:24,705 [WARNING]  * Debugger is active!
+2025-05-09 13:11:24,719 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 13:11:27,139 [INFO] BEGIN (implicit)
+2025-05-09 13:11:27,141 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:11:27,143 [INFO] [generated in 0.00423s] ()
+2025-05-09 13:11:27,147 [INFO] ROLLBACK
+2025-05-09 13:11:27,206 [INFO] 127.0.0.1 - - [09/May/2025 13:11:27] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:11:27,365 [INFO] 127.0.0.1 - - [09/May/2025 13:11:27] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:11:27,373 [INFO] 127.0.0.1 - - [09/May/2025 13:11:27] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:11:27,500 [INFO] 127.0.0.1 - - [09/May/2025 13:11:27] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=xQVg6jgOsUbnB5QBhLKx HTTP/1.1" 200 -
+2025-05-09 13:11:35,551 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 13:11:36,203 [INFO]  * Restarting with stat
+2025-05-09 13:11:37,932 [INFO] BEGIN (implicit)
+2025-05-09 13:11:37,932 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 13:11:37,933 [INFO] [raw sql] ()
+2025-05-09 13:11:37,934 [INFO] COMMIT
+2025-05-09 13:11:38,243 [WARNING]  * Debugger is active!
+2025-05-09 13:11:38,251 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 13:11:38,325 [INFO] BEGIN (implicit)
+2025-05-09 13:11:38,325 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:11:38,326 [INFO] [generated in 0.00129s] ()
+2025-05-09 13:11:38,327 [INFO] ROLLBACK
+2025-05-09 13:11:38,360 [INFO] 127.0.0.1 - - [09/May/2025 13:11:38] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:11:38,501 [INFO] 127.0.0.1 - - [09/May/2025 13:11:38] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:11:38,502 [INFO] 127.0.0.1 - - [09/May/2025 13:11:38] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:11:38,534 [INFO] 127.0.0.1 - - [09/May/2025 13:11:38] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=Pd8YWTm0lW3ThOpyXoXN HTTP/1.1" 200 -
+2025-05-09 13:11:38,599 [INFO] 127.0.0.1 - - [09/May/2025 13:11:38] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 13:11:40,164 [INFO] BEGIN (implicit)
+2025-05-09 13:11:40,165 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:11:40,165 [INFO] [cached since 1.84s ago] ()
+2025-05-09 13:11:40,168 [INFO] ROLLBACK
+2025-05-09 13:11:40,188 [INFO] 127.0.0.1 - - [09/May/2025 13:11:40] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:11:40,216 [INFO] 127.0.0.1 - - [09/May/2025 13:11:40] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:11:40,225 [INFO] 127.0.0.1 - - [09/May/2025 13:11:40] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:11:40,246 [INFO] 127.0.0.1 - - [09/May/2025 13:11:40] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=Pd8YWTm0lW3ThOpyXoXN HTTP/1.1[0m" 304 -
+2025-05-09 13:11:40,314 [INFO] 127.0.0.1 - - [09/May/2025 13:11:40] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 13:11:40,371 [INFO] BEGIN (implicit)
+2025-05-09 13:11:40,371 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:11:40,372 [INFO] [cached since 2.047s ago] ()
+2025-05-09 13:11:40,373 [INFO] ROLLBACK
+2025-05-09 13:11:40,399 [INFO] 127.0.0.1 - - [09/May/2025 13:11:40] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:11:40,429 [INFO] 127.0.0.1 - - [09/May/2025 13:11:40] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:11:40,430 [INFO] 127.0.0.1 - - [09/May/2025 13:11:40] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:11:40,445 [INFO] 127.0.0.1 - - [09/May/2025 13:11:40] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=Pd8YWTm0lW3ThOpyXoXN HTTP/1.1[0m" 304 -
+2025-05-09 13:11:40,471 [INFO] 127.0.0.1 - - [09/May/2025 13:11:40] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 13:11:40,552 [INFO] BEGIN (implicit)
+2025-05-09 13:11:40,552 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:11:40,552 [INFO] [cached since 2.228s ago] ()
+2025-05-09 13:11:40,553 [INFO] ROLLBACK
+2025-05-09 13:11:40,573 [INFO] 127.0.0.1 - - [09/May/2025 13:11:40] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:11:40,602 [INFO] 127.0.0.1 - - [09/May/2025 13:11:40] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:11:40,609 [INFO] 127.0.0.1 - - [09/May/2025 13:11:40] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:11:40,622 [INFO] 127.0.0.1 - - [09/May/2025 13:11:40] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=Pd8YWTm0lW3ThOpyXoXN HTTP/1.1[0m" 304 -
+2025-05-09 13:11:40,680 [INFO] 127.0.0.1 - - [09/May/2025 13:11:40] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 13:11:45,834 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 13:11:46,008 [INFO]  * Restarting with stat
+2025-05-09 13:11:47,357 [INFO] BEGIN (implicit)
+2025-05-09 13:11:47,358 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 13:11:47,358 [INFO] [raw sql] ()
+2025-05-09 13:11:47,360 [INFO] COMMIT
+2025-05-09 13:11:47,638 [WARNING]  * Debugger is active!
+2025-05-09 13:11:47,645 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 13:11:53,145 [INFO] BEGIN (implicit)
+2025-05-09 13:11:53,152 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:11:53,154 [INFO] [generated in 0.00894s] ()
+2025-05-09 13:11:53,156 [INFO] ROLLBACK
+2025-05-09 13:11:53,221 [INFO] 127.0.0.1 - - [09/May/2025 13:11:53] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:11:53,386 [INFO] 127.0.0.1 - - [09/May/2025 13:11:53] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:11:53,397 [INFO] 127.0.0.1 - - [09/May/2025 13:11:53] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:11:53,438 [INFO] 127.0.0.1 - - [09/May/2025 13:11:53] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=SE4OUNDzkvjfrsFd55a1 HTTP/1.1" 200 -
+2025-05-09 13:11:53,511 [INFO] 127.0.0.1 - - [09/May/2025 13:11:53] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 13:12:00,199 [INFO] BEGIN (implicit)
+2025-05-09 13:12:00,200 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:12:00,201 [INFO] [cached since 7.055s ago] ()
+2025-05-09 13:12:00,202 [INFO] ROLLBACK
+2025-05-09 13:12:00,236 [INFO] 127.0.0.1 - - [09/May/2025 13:12:00] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:12:00,263 [INFO] 127.0.0.1 - - [09/May/2025 13:12:00] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:12:00,280 [INFO] 127.0.0.1 - - [09/May/2025 13:12:00] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:12:00,298 [INFO] 127.0.0.1 - - [09/May/2025 13:12:00] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=SE4OUNDzkvjfrsFd55a1 HTTP/1.1[0m" 304 -
+2025-05-09 13:12:00,350 [INFO] 127.0.0.1 - - [09/May/2025 13:12:00] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 13:12:00,996 [INFO] BEGIN (implicit)
+2025-05-09 13:12:00,997 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:12:00,998 [INFO] [cached since 7.853s ago] ()
+2025-05-09 13:12:01,001 [INFO] ROLLBACK
+2025-05-09 13:12:01,024 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:12:01,061 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,074 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,090 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=SE4OUNDzkvjfrsFd55a1 HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,159 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,176 [INFO] BEGIN (implicit)
+2025-05-09 13:12:01,176 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:12:01,177 [INFO] [cached since 8.032s ago] ()
+2025-05-09 13:12:01,179 [INFO] ROLLBACK
+2025-05-09 13:12:01,206 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:12:01,233 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,245 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,261 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=SE4OUNDzkvjfrsFd55a1 HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,299 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,335 [INFO] BEGIN (implicit)
+2025-05-09 13:12:01,336 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:12:01,336 [INFO] [cached since 8.19s ago] ()
+2025-05-09 13:12:01,337 [INFO] ROLLBACK
+2025-05-09 13:12:01,357 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:12:01,381 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,391 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,407 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=SE4OUNDzkvjfrsFd55a1 HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,437 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,472 [INFO] BEGIN (implicit)
+2025-05-09 13:12:01,473 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:12:01,473 [INFO] [cached since 8.327s ago] ()
+2025-05-09 13:12:01,475 [INFO] ROLLBACK
+2025-05-09 13:12:01,503 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:12:01,533 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,534 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,554 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=SE4OUNDzkvjfrsFd55a1 HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,623 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,640 [INFO] BEGIN (implicit)
+2025-05-09 13:12:01,641 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:12:01,641 [INFO] [cached since 8.496s ago] ()
+2025-05-09 13:12:01,643 [INFO] ROLLBACK
+2025-05-09 13:12:01,670 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:12:01,701 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,705 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,730 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=SE4OUNDzkvjfrsFd55a1 HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,768 [INFO] BEGIN (implicit)
+2025-05-09 13:12:01,769 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:12:01,771 [INFO] [cached since 8.625s ago] ()
+2025-05-09 13:12:01,773 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,773 [INFO] ROLLBACK
+2025-05-09 13:12:01,803 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:12:01,824 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,824 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,847 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=SE4OUNDzkvjfrsFd55a1 HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,911 [INFO] BEGIN (implicit)
+2025-05-09 13:12:01,919 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:12:01,919 [INFO] [cached since 8.774s ago] ()
+2025-05-09 13:12:01,921 [INFO] ROLLBACK
+2025-05-09 13:12:01,940 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:12:01,967 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,975 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:12:01,989 [INFO] 127.0.0.1 - - [09/May/2025 13:12:01] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=SE4OUNDzkvjfrsFd55a1 HTTP/1.1[0m" 304 -
+2025-05-09 13:12:02,061 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 13:12:02,090 [INFO] BEGIN (implicit)
+2025-05-09 13:12:02,090 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:12:02,091 [INFO] [cached since 8.946s ago] ()
+2025-05-09 13:12:02,092 [INFO] ROLLBACK
+2025-05-09 13:12:02,110 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:12:02,146 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:12:02,147 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:12:02,164 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=SE4OUNDzkvjfrsFd55a1 HTTP/1.1[0m" 304 -
+2025-05-09 13:12:02,197 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 13:12:02,220 [INFO] BEGIN (implicit)
+2025-05-09 13:12:02,221 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:12:02,222 [INFO] [cached since 9.076s ago] ()
+2025-05-09 13:12:02,223 [INFO] ROLLBACK
+2025-05-09 13:12:02,247 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:12:02,272 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:12:02,273 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:12:02,293 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=SE4OUNDzkvjfrsFd55a1 HTTP/1.1[0m" 304 -
+2025-05-09 13:12:02,374 [INFO] BEGIN (implicit)
+2025-05-09 13:12:02,374 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:12:02,375 [INFO] [cached since 9.23s ago] ()
+2025-05-09 13:12:02,376 [INFO] ROLLBACK
+2025-05-09 13:12:02,401 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:12:02,421 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:12:02,422 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:12:02,446 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=SE4OUNDzkvjfrsFd55a1 HTTP/1.1[0m" 304 -
+2025-05-09 13:12:02,480 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 13:12:02,523 [INFO] BEGIN (implicit)
+2025-05-09 13:12:02,524 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:12:02,524 [INFO] [cached since 9.378s ago] ()
+2025-05-09 13:12:02,525 [INFO] ROLLBACK
+2025-05-09 13:12:02,552 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-09 13:12:02,579 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:12:02,583 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:12:02,608 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=SE4OUNDzkvjfrsFd55a1 HTTP/1.1[0m" 304 -
+2025-05-09 13:12:02,671 [INFO] 127.0.0.1 - - [09/May/2025 13:12:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 13:12:21,867 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 13:12:22,009 [INFO]  * Restarting with stat
+2025-05-09 13:12:23,467 [INFO] BEGIN (implicit)
+2025-05-09 13:12:23,468 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 13:12:23,468 [INFO] [raw sql] ()
+2025-05-09 13:12:23,470 [INFO] COMMIT
+2025-05-09 13:12:23,791 [WARNING]  * Debugger is active!
+2025-05-09 13:12:23,801 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 13:12:23,879 [INFO] BEGIN (implicit)
+2025-05-09 13:12:23,881 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:12:23,882 [INFO] [generated in 0.00299s] ()
+2025-05-09 13:12:23,883 [INFO] ROLLBACK
+2025-05-09 13:12:23,892 [INFO] 127.0.0.1 - - [09/May/2025 13:12:23] "GET / HTTP/1.1" 200 -
+2025-05-09 13:12:24,006 [INFO] 127.0.0.1 - - [09/May/2025 13:12:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:12:26,007 [INFO] 127.0.0.1 - - [09/May/2025 13:12:26] "[35m[1mGET /get_ticket HTTP/1.1[0m" 500 -
+2025-05-09 13:12:26,049 [INFO] 127.0.0.1 - - [09/May/2025 13:12:26] "[36mGET /get_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 13:12:26,063 [INFO] 127.0.0.1 - - [09/May/2025 13:12:26] "[36mGET /get_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 13:12:26,087 [INFO] 127.0.0.1 - - [09/May/2025 13:12:26] "GET /get_ticket?__debugger__=yes&cmd=resource&f=console.png&s=FEw5kepKwP0wVcz8OZHI HTTP/1.1" 200 -
+2025-05-09 13:12:28,797 [INFO] BEGIN (implicit)
+2025-05-09 13:12:28,798 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 13:12:28,798 [INFO] [cached since 4.92s ago] ()
+2025-05-09 13:12:28,799 [INFO] ROLLBACK
+2025-05-09 13:12:28,836 [INFO] 127.0.0.1 - - [09/May/2025 13:12:28] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 13:12:28,905 [INFO] 127.0.0.1 - - [09/May/2025 13:12:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 14:36:59,878 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 14:37:00,343 [INFO]  * Restarting with stat
+2025-05-09 14:37:02,115 [INFO] BEGIN (implicit)
+2025-05-09 14:37:02,117 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 14:37:02,119 [INFO] [raw sql] ()
+2025-05-09 14:37:02,124 [INFO] COMMIT
+2025-05-09 14:37:02,591 [WARNING]  * Debugger is active!
+2025-05-09 14:37:02,603 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 14:37:06,512 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 14:37:06,787 [INFO]  * Restarting with stat
+2025-05-09 14:37:07,887 [WARNING]  * Debugger is active!
+2025-05-09 14:37:07,898 [INFO]  * Debugger PIN: 464-659-859
+2025-05-09 14:37:47,033 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 14:37:47,985 [INFO]  * Restarting with stat
+2025-05-09 14:37:49,121 [WARNING]  * Debugger is active!
+2025-05-09 14:37:49,142 [INFO]  * Debugger PIN: 464-659-859
+2025-05-09 14:39:51,736 [INFO] 127.0.0.1 - - [09/May/2025 14:39:51] "[35m[1mGET /delete_ticket HTTP/1.1[0m" 500 -
+2025-05-09 14:39:51,889 [INFO] 127.0.0.1 - - [09/May/2025 14:39:51] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 14:39:51,891 [INFO] 127.0.0.1 - - [09/May/2025 14:39:51] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 14:39:51,929 [INFO] 127.0.0.1 - - [09/May/2025 14:39:51] "GET /delete_ticket?__debugger__=yes&cmd=resource&f=console.png&s=Ix3ydz4ikcKhqPBFZjSx HTTP/1.1" 200 -
+2025-05-09 14:39:52,024 [INFO] 127.0.0.1 - - [09/May/2025 14:39:52] "GET /delete_ticket?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-09 15:00:44,337 [INFO] BEGIN (implicit)
+2025-05-09 15:00:44,340 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 15:00:44,342 [INFO] [raw sql] ()
+2025-05-09 15:00:44,351 [INFO] COMMIT
+2025-05-09 15:00:45,549 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-09 15:00:45,549 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-09 15:00:45,567 [INFO]  * Restarting with stat
+2025-05-09 15:00:47,192 [INFO] BEGIN (implicit)
+2025-05-09 15:00:47,194 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 15:00:47,194 [INFO] [raw sql] ()
+2025-05-09 15:00:47,197 [INFO] COMMIT
+2025-05-09 15:00:47,807 [WARNING]  * Debugger is active!
+2025-05-09 15:00:47,818 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 15:00:48,113 [INFO] BEGIN (implicit)
+2025-05-09 15:00:48,113 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:00:48,115 [INFO] [generated in 0.00176s] ()
+2025-05-09 15:00:48,117 [INFO] ROLLBACK
+2025-05-09 15:00:48,130 [INFO] 127.0.0.1 - - [09/May/2025 15:00:48] "GET / HTTP/1.1" 200 -
+2025-05-09 15:00:48,295 [INFO] 127.0.0.1 - - [09/May/2025 15:00:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:00:50,766 [INFO] BEGIN (implicit)
+2025-05-09 15:00:50,767 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:00:50,768 [INFO] [cached since 2.655s ago] ()
+2025-05-09 15:00:50,769 [INFO] ROLLBACK
+2025-05-09 15:00:50,778 [INFO] 127.0.0.1 - - [09/May/2025 15:00:50] "[35m[1mGET /delete_ticket HTTP/1.1[0m" 500 -
+2025-05-09 15:00:50,813 [INFO] 127.0.0.1 - - [09/May/2025 15:00:50] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:00:50,813 [INFO] 127.0.0.1 - - [09/May/2025 15:00:50] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 15:00:50,840 [INFO] 127.0.0.1 - - [09/May/2025 15:00:50] "GET /delete_ticket?__debugger__=yes&cmd=resource&f=console.png&s=ZxL7e15UKVOgKDpEo0Sz HTTP/1.1" 200 -
+2025-05-09 15:05:11,258 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 15:05:11,557 [INFO]  * Restarting with stat
+2025-05-09 15:05:13,815 [INFO] BEGIN (implicit)
+2025-05-09 15:05:13,816 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 15:05:13,816 [INFO] [raw sql] ()
+2025-05-09 15:05:13,819 [INFO] COMMIT
+2025-05-09 15:05:14,458 [WARNING]  * Debugger is active!
+2025-05-09 15:05:14,467 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 15:06:03,118 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 15:06:03,386 [INFO]  * Restarting with stat
+2025-05-09 15:06:05,695 [INFO] BEGIN (implicit)
+2025-05-09 15:06:05,696 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 15:06:05,697 [INFO] [raw sql] ()
+2025-05-09 15:06:05,699 [INFO] COMMIT
+2025-05-09 15:06:06,469 [WARNING]  * Debugger is active!
+2025-05-09 15:06:06,498 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 15:06:06,739 [INFO] BEGIN (implicit)
+2025-05-09 15:06:06,741 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:06:06,743 [INFO] [generated in 0.00433s] ()
+2025-05-09 15:06:06,746 [INFO] ROLLBACK
+2025-05-09 15:06:06,782 [INFO] 127.0.0.1 - - [09/May/2025 15:06:06] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:06:07,048 [INFO] 127.0.0.1 - - [09/May/2025 15:06:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:07:04,327 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 15:07:04,527 [INFO]  * Restarting with stat
+2025-05-09 15:07:07,063 [INFO] BEGIN (implicit)
+2025-05-09 15:07:07,064 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 15:07:07,065 [INFO] [raw sql] ()
+2025-05-09 15:07:07,067 [INFO] COMMIT
+2025-05-09 15:07:07,789 [WARNING]  * Debugger is active!
+2025-05-09 15:07:07,818 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 15:07:08,091 [INFO] BEGIN (implicit)
+2025-05-09 15:07:08,093 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:07:08,095 [INFO] [generated in 0.00405s] ()
+2025-05-09 15:07:08,099 [INFO] ROLLBACK
+2025-05-09 15:07:08,145 [INFO] 127.0.0.1 - - [09/May/2025 15:07:08] "[35m[1mGET /delete_ticket HTTP/1.1[0m" 500 -
+2025-05-09 15:07:08,544 [INFO] 127.0.0.1 - - [09/May/2025 15:07:08] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:07:08,552 [INFO] 127.0.0.1 - - [09/May/2025 15:07:08] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 15:07:08,601 [INFO] 127.0.0.1 - - [09/May/2025 15:07:08] "GET /delete_ticket?__debugger__=yes&cmd=resource&f=console.png&s=XLjNAOqfigWevqq62q4k HTTP/1.1" 200 -
+2025-05-09 15:07:08,742 [INFO] 127.0.0.1 - - [09/May/2025 15:07:08] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 15:07:34,021 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 15:07:34,306 [INFO]  * Restarting with stat
+2025-05-09 15:07:36,897 [INFO] BEGIN (implicit)
+2025-05-09 15:07:36,898 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 15:07:36,899 [INFO] [raw sql] ()
+2025-05-09 15:07:36,903 [INFO] COMMIT
+2025-05-09 15:07:37,746 [WARNING]  * Debugger is active!
+2025-05-09 15:07:37,769 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 15:07:38,011 [INFO] BEGIN (implicit)
+2025-05-09 15:07:38,013 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:07:38,015 [INFO] [generated in 0.00420s] ()
+2025-05-09 15:07:38,017 [INFO] ROLLBACK
+2025-05-09 15:07:38,132 [INFO] 127.0.0.1 - - [09/May/2025 15:07:38] "[35m[1mGET /delete_ticket HTTP/1.1[0m" 500 -
+2025-05-09 15:07:38,427 [INFO] 127.0.0.1 - - [09/May/2025 15:07:38] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:07:38,440 [INFO] 127.0.0.1 - - [09/May/2025 15:07:38] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 15:07:38,482 [INFO] 127.0.0.1 - - [09/May/2025 15:07:38] "GET /delete_ticket?__debugger__=yes&cmd=resource&f=console.png&s=vq1FXmcCU0HeP8KxbK6m HTTP/1.1" 200 -
+2025-05-09 15:07:38,586 [INFO] 127.0.0.1 - - [09/May/2025 15:07:38] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 15:07:48,467 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 15:07:48,642 [INFO]  * Restarting with stat
+2025-05-09 15:07:50,449 [INFO] BEGIN (implicit)
+2025-05-09 15:07:50,600 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 15:07:50,611 [INFO] [raw sql] ()
+2025-05-09 15:07:50,613 [INFO] COMMIT
+2025-05-09 15:07:50,979 [WARNING]  * Debugger is active!
+2025-05-09 15:07:50,986 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 15:08:34,712 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 15:08:34,941 [INFO]  * Restarting with stat
+2025-05-09 15:08:37,307 [INFO] BEGIN (implicit)
+2025-05-09 15:08:37,309 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 15:08:37,310 [INFO] [raw sql] ()
+2025-05-09 15:08:37,312 [INFO] COMMIT
+2025-05-09 15:08:37,726 [WARNING]  * Debugger is active!
+2025-05-09 15:08:37,739 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 15:08:37,871 [INFO] BEGIN (implicit)
+2025-05-09 15:08:37,872 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:08:37,873 [INFO] [generated in 0.00231s] ()
+2025-05-09 15:08:37,875 [INFO] ROLLBACK
+2025-05-09 15:08:37,928 [INFO] 127.0.0.1 - - [09/May/2025 15:08:37] "[35m[1mGET /delete_ticket HTTP/1.1[0m" 500 -
+2025-05-09 15:08:38,140 [INFO] 127.0.0.1 - - [09/May/2025 15:08:38] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:08:38,156 [INFO] 127.0.0.1 - - [09/May/2025 15:08:38] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 15:08:38,183 [INFO] 127.0.0.1 - - [09/May/2025 15:08:38] "GET /delete_ticket?__debugger__=yes&cmd=resource&f=console.png&s=aC1wZuhMaIscvZaDKMCj HTTP/1.1" 200 -
+2025-05-09 15:08:38,278 [INFO] 127.0.0.1 - - [09/May/2025 15:08:38] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 15:08:57,670 [INFO] BEGIN (implicit)
+2025-05-09 15:08:57,671 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:08:57,673 [INFO] [cached since 19.8s ago] ()
+2025-05-09 15:08:57,675 [INFO] ROLLBACK
+2025-05-09 15:08:57,711 [INFO] 127.0.0.1 - - [09/May/2025 15:08:57] "[35m[1mGET /delete_ticket HTTP/1.1[0m" 500 -
+2025-05-09 15:08:57,768 [INFO] 127.0.0.1 - - [09/May/2025 15:08:57] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:08:57,770 [INFO] 127.0.0.1 - - [09/May/2025 15:08:57] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 15:08:57,799 [INFO] 127.0.0.1 - - [09/May/2025 15:08:57] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=console.png&s=aC1wZuhMaIscvZaDKMCj HTTP/1.1[0m" 304 -
+2025-05-09 15:08:57,878 [INFO] 127.0.0.1 - - [09/May/2025 15:08:57] "[36mGET /delete_ticket?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 15:09:44,116 [INFO] BEGIN (implicit)
+2025-05-09 15:09:44,117 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:09:44,118 [INFO] [cached since 66.25s ago] ()
+2025-05-09 15:09:44,120 [INFO] ROLLBACK
+2025-05-09 15:09:44,129 [INFO] 127.0.0.1 - - [09/May/2025 15:09:44] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:09:44,158 [INFO] 127.0.0.1 - - [09/May/2025 15:09:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:09:47,920 [INFO] BEGIN (implicit)
+2025-05-09 15:09:47,921 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:09:47,922 [INFO] [cached since 70.05s ago] ()
+2025-05-09 15:09:47,923 [INFO] ROLLBACK
+2025-05-09 15:09:47,929 [INFO] BEGIN (implicit)
+2025-05-09 15:09:47,929 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries 
+WHERE entries.id = ?
+2025-05-09 15:09:47,930 [INFO] [generated in 0.00171s] (5,)
+2025-05-09 15:09:47,934 [INFO] ROLLBACK
+2025-05-09 15:09:47,936 [INFO] BEGIN (implicit)
+2025-05-09 15:09:47,937 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-05-09 15:09:47,939 [INFO] [generated in 0.00267s] (5,)
+2025-05-09 15:09:47,946 [INFO] COMMIT
+2025-05-09 15:09:47,956 [INFO] 127.0.0.1 - - [09/May/2025 15:09:47] "[32mPOST /delete_ticket HTTP/1.1[0m" 302 -
+2025-05-09 15:09:47,966 [INFO] BEGIN (implicit)
+2025-05-09 15:09:47,967 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:09:47,969 [INFO] [cached since 70.1s ago] ()
+2025-05-09 15:09:47,970 [INFO] ROLLBACK
+2025-05-09 15:09:47,974 [INFO] 127.0.0.1 - - [09/May/2025 15:09:47] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:09:48,009 [INFO] 127.0.0.1 - - [09/May/2025 15:09:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:09:50,442 [INFO] BEGIN (implicit)
+2025-05-09 15:09:50,442 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:09:50,443 [INFO] [cached since 72.57s ago] ()
+2025-05-09 15:09:50,444 [INFO] ROLLBACK
+2025-05-09 15:09:50,445 [INFO] BEGIN (implicit)
+2025-05-09 15:09:50,446 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries 
+WHERE entries.id = ?
+2025-05-09 15:09:50,447 [INFO] [cached since 2.519s ago] (4,)
+2025-05-09 15:09:50,448 [INFO] ROLLBACK
+2025-05-09 15:09:50,450 [INFO] BEGIN (implicit)
+2025-05-09 15:09:50,451 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-05-09 15:09:50,452 [INFO] [cached since 2.516s ago] (4,)
+2025-05-09 15:09:50,455 [INFO] COMMIT
+2025-05-09 15:09:50,461 [INFO] 127.0.0.1 - - [09/May/2025 15:09:50] "[32mPOST /delete_ticket HTTP/1.1[0m" 302 -
+2025-05-09 15:09:50,467 [INFO] BEGIN (implicit)
+2025-05-09 15:09:50,468 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:09:50,468 [INFO] [cached since 72.6s ago] ()
+2025-05-09 15:09:50,470 [INFO] ROLLBACK
+2025-05-09 15:09:50,474 [INFO] 127.0.0.1 - - [09/May/2025 15:09:50] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:09:50,504 [INFO] 127.0.0.1 - - [09/May/2025 15:09:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:04,601 [INFO] BEGIN (implicit)
+2025-05-09 15:12:04,601 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:12:04,602 [INFO] [cached since 206.7s ago] ()
+2025-05-09 15:12:04,603 [INFO] ROLLBACK
+2025-05-09 15:12:04,613 [INFO] 127.0.0.1 - - [09/May/2025 15:12:04] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:12:04,643 [INFO] 127.0.0.1 - - [09/May/2025 15:12:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:07,170 [INFO] BEGIN (implicit)
+2025-05-09 15:12:07,170 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:12:07,172 [INFO] [cached since 209.3s ago] ()
+2025-05-09 15:12:07,173 [INFO] ROLLBACK
+2025-05-09 15:12:07,175 [INFO] 127.0.0.1 - - [09/May/2025 15:12:07] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:12:07,201 [INFO] 127.0.0.1 - - [09/May/2025 15:12:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:07,359 [INFO] BEGIN (implicit)
+2025-05-09 15:12:07,360 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:12:07,360 [INFO] [cached since 209.5s ago] ()
+2025-05-09 15:12:07,363 [INFO] ROLLBACK
+2025-05-09 15:12:07,366 [INFO] 127.0.0.1 - - [09/May/2025 15:12:07] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:12:07,389 [INFO] 127.0.0.1 - - [09/May/2025 15:12:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:07,523 [INFO] BEGIN (implicit)
+2025-05-09 15:12:07,523 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:12:07,524 [INFO] [cached since 209.7s ago] ()
+2025-05-09 15:12:07,525 [INFO] ROLLBACK
+2025-05-09 15:12:07,527 [INFO] 127.0.0.1 - - [09/May/2025 15:12:07] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:12:07,558 [INFO] 127.0.0.1 - - [09/May/2025 15:12:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:07,752 [INFO] BEGIN (implicit)
+2025-05-09 15:12:07,753 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:12:07,753 [INFO] [cached since 209.9s ago] ()
+2025-05-09 15:12:07,755 [INFO] ROLLBACK
+2025-05-09 15:12:07,757 [INFO] 127.0.0.1 - - [09/May/2025 15:12:07] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:12:07,783 [INFO] 127.0.0.1 - - [09/May/2025 15:12:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:07,942 [INFO] BEGIN (implicit)
+2025-05-09 15:12:07,943 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:12:07,944 [INFO] [cached since 210.1s ago] ()
+2025-05-09 15:12:07,945 [INFO] ROLLBACK
+2025-05-09 15:12:07,947 [INFO] 127.0.0.1 - - [09/May/2025 15:12:07] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:12:07,973 [INFO] 127.0.0.1 - - [09/May/2025 15:12:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:08,120 [INFO] BEGIN (implicit)
+2025-05-09 15:12:08,120 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:12:08,121 [INFO] [cached since 210.3s ago] ()
+2025-05-09 15:12:08,123 [INFO] ROLLBACK
+2025-05-09 15:12:08,125 [INFO] 127.0.0.1 - - [09/May/2025 15:12:08] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:12:08,155 [INFO] 127.0.0.1 - - [09/May/2025 15:12:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:08,299 [INFO] BEGIN (implicit)
+2025-05-09 15:12:08,300 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:12:08,301 [INFO] [cached since 210.4s ago] ()
+2025-05-09 15:12:08,303 [INFO] ROLLBACK
+2025-05-09 15:12:08,304 [INFO] 127.0.0.1 - - [09/May/2025 15:12:08] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:12:08,333 [INFO] 127.0.0.1 - - [09/May/2025 15:12:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:08,783 [INFO] BEGIN (implicit)
+2025-05-09 15:12:08,784 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:12:08,785 [INFO] [cached since 210.9s ago] ()
+2025-05-09 15:12:08,787 [INFO] ROLLBACK
+2025-05-09 15:12:08,789 [INFO] 127.0.0.1 - - [09/May/2025 15:12:08] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:12:08,964 [INFO] 127.0.0.1 - - [09/May/2025 15:12:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:17,464 [INFO] BEGIN (implicit)
+2025-05-09 15:12:17,466 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:12:17,468 [INFO] [cached since 219.6s ago] ()
+2025-05-09 15:12:17,470 [INFO] ROLLBACK
+2025-05-09 15:12:17,483 [INFO] 127.0.0.1 - - [09/May/2025 15:12:17] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:12:17,520 [INFO] 127.0.0.1 - - [09/May/2025 15:12:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:27,782 [INFO] BEGIN (implicit)
+2025-05-09 15:12:27,784 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:12:27,785 [INFO] [cached since 229.9s ago] ()
+2025-05-09 15:12:27,787 [INFO] ROLLBACK
+2025-05-09 15:12:27,801 [INFO] 127.0.0.1 - - [09/May/2025 15:12:27] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:12:27,840 [INFO] 127.0.0.1 - - [09/May/2025 15:12:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:36,752 [INFO] BEGIN (implicit)
+2025-05-09 15:12:36,753 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:12:36,754 [INFO] [cached since 238.9s ago] ()
+2025-05-09 15:12:36,755 [INFO] ROLLBACK
+2025-05-09 15:12:36,769 [INFO] 127.0.0.1 - - [09/May/2025 15:12:36] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:12:36,808 [INFO] 127.0.0.1 - - [09/May/2025 15:12:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:45,003 [INFO] BEGIN (implicit)
+2025-05-09 15:12:45,003 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:12:45,004 [INFO] [cached since 247.1s ago] ()
+2025-05-09 15:12:45,005 [INFO] ROLLBACK
+2025-05-09 15:12:45,010 [INFO] 127.0.0.1 - - [09/May/2025 15:12:45] "GET / HTTP/1.1" 200 -
+2025-05-09 15:12:45,040 [INFO] 127.0.0.1 - - [09/May/2025 15:12:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:46,135 [INFO] BEGIN (implicit)
+2025-05-09 15:12:46,136 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:12:46,136 [INFO] [cached since 248.3s ago] ()
+2025-05-09 15:12:46,137 [INFO] ROLLBACK
+2025-05-09 15:12:46,139 [INFO] 127.0.0.1 - - [09/May/2025 15:12:46] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:12:46,172 [INFO] 127.0.0.1 - - [09/May/2025 15:12:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:47,247 [INFO] BEGIN (implicit)
+2025-05-09 15:12:47,247 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:12:47,248 [INFO] [cached since 249.4s ago] ()
+2025-05-09 15:12:47,249 [INFO] ROLLBACK
+2025-05-09 15:12:47,250 [INFO] 127.0.0.1 - - [09/May/2025 15:12:47] "GET / HTTP/1.1" 200 -
+2025-05-09 15:12:47,291 [INFO] 127.0.0.1 - - [09/May/2025 15:12:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:48,189 [INFO] 127.0.0.1 - - [09/May/2025 15:12:48] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-09 15:12:48,270 [INFO] 127.0.0.1 - - [09/May/2025 15:12:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:52,459 [INFO] BEGIN (implicit)
+2025-05-09 15:12:52,459 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:12:52,460 [INFO] [cached since 254.6s ago] ()
+2025-05-09 15:12:52,461 [INFO] ROLLBACK
+2025-05-09 15:12:52,462 [INFO] 127.0.0.1 - - [09/May/2025 15:12:52] "GET / HTTP/1.1" 200 -
+2025-05-09 15:12:52,490 [INFO] 127.0.0.1 - - [09/May/2025 15:12:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:12:53,284 [INFO] BEGIN (implicit)
+2025-05-09 15:12:53,284 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:12:53,285 [INFO] [cached since 255.4s ago] ()
+2025-05-09 15:12:53,285 [INFO] ROLLBACK
+2025-05-09 15:12:53,294 [INFO] 127.0.0.1 - - [09/May/2025 15:12:53] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 15:12:53,322 [INFO] 127.0.0.1 - - [09/May/2025 15:12:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:13:07,687 [INFO] BEGIN (implicit)
+2025-05-09 15:13:07,688 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:13:07,688 [INFO] [cached since 269.8s ago] ()
+2025-05-09 15:13:07,690 [INFO] ROLLBACK
+2025-05-09 15:13:07,703 [INFO] 127.0.0.1 - - [09/May/2025 15:13:07] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 15:13:07,739 [INFO] 127.0.0.1 - - [09/May/2025 15:13:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:13:19,250 [INFO] BEGIN (implicit)
+2025-05-09 15:13:19,253 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:13:19,254 [INFO] [cached since 281.4s ago] ()
+2025-05-09 15:13:19,256 [INFO] ROLLBACK
+2025-05-09 15:13:19,267 [INFO] 127.0.0.1 - - [09/May/2025 15:13:19] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 15:13:19,306 [INFO] 127.0.0.1 - - [09/May/2025 15:13:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:13:21,273 [INFO] BEGIN (implicit)
+2025-05-09 15:13:21,274 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:13:21,275 [INFO] [cached since 283.4s ago] ()
+2025-05-09 15:13:21,276 [INFO] ROLLBACK
+2025-05-09 15:13:21,277 [INFO] 127.0.0.1 - - [09/May/2025 15:13:21] "GET / HTTP/1.1" 200 -
+2025-05-09 15:13:21,308 [INFO] 127.0.0.1 - - [09/May/2025 15:13:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:13:22,931 [INFO] 127.0.0.1 - - [09/May/2025 15:13:22] "[35m[1mGET /get_ticket HTTP/1.1[0m" 500 -
+2025-05-09 15:13:22,964 [INFO] 127.0.0.1 - - [09/May/2025 15:13:22] "[36mGET /get_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:13:22,976 [INFO] 127.0.0.1 - - [09/May/2025 15:13:22] "[36mGET /get_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 15:13:22,996 [INFO] 127.0.0.1 - - [09/May/2025 15:13:22] "GET /get_ticket?__debugger__=yes&cmd=resource&f=console.png&s=aC1wZuhMaIscvZaDKMCj HTTP/1.1" 200 -
+2025-05-09 15:13:26,035 [INFO] BEGIN (implicit)
+2025-05-09 15:13:26,035 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:13:26,036 [INFO] [cached since 288.2s ago] ()
+2025-05-09 15:13:26,037 [INFO] ROLLBACK
+2025-05-09 15:13:26,039 [INFO] 127.0.0.1 - - [09/May/2025 15:13:26] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 15:13:26,070 [INFO] 127.0.0.1 - - [09/May/2025 15:13:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:13:27,491 [INFO] BEGIN (implicit)
+2025-05-09 15:13:27,491 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:13:27,492 [INFO] [cached since 289.6s ago] ()
+2025-05-09 15:13:27,493 [INFO] ROLLBACK
+2025-05-09 15:13:27,494 [INFO] 127.0.0.1 - - [09/May/2025 15:13:27] "GET / HTTP/1.1" 200 -
+2025-05-09 15:13:27,524 [INFO] 127.0.0.1 - - [09/May/2025 15:13:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:31:09,104 [INFO] BEGIN (implicit)
+2025-05-09 15:31:09,108 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:31:09,109 [INFO] [cached since 1351s ago] ()
+2025-05-09 15:31:09,114 [INFO] ROLLBACK
+2025-05-09 15:31:09,122 [INFO] 127.0.0.1 - - [09/May/2025 15:31:09] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:31:09,180 [INFO] 127.0.0.1 - - [09/May/2025 15:31:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:31:10,620 [INFO] 127.0.0.1 - - [09/May/2025 15:31:10] "[35m[1mGET /get_ticket HTTP/1.1[0m" 500 -
+2025-05-09 15:31:10,664 [INFO] 127.0.0.1 - - [09/May/2025 15:31:10] "[36mGET /get_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:31:10,686 [INFO] 127.0.0.1 - - [09/May/2025 15:31:10] "[36mGET /get_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 15:31:10,720 [INFO] 127.0.0.1 - - [09/May/2025 15:31:10] "GET /get_ticket?__debugger__=yes&cmd=resource&f=console.png&s=aC1wZuhMaIscvZaDKMCj HTTP/1.1" 200 -
+2025-05-09 15:43:37,177 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 15:43:38,141 [INFO]  * Restarting with stat
+2025-05-09 15:43:40,271 [INFO] BEGIN (implicit)
+2025-05-09 15:43:40,273 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 15:43:40,274 [INFO] [raw sql] ()
+2025-05-09 15:43:40,277 [INFO] COMMIT
+2025-05-09 15:43:41,094 [WARNING]  * Debugger is active!
+2025-05-09 15:43:41,101 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 15:43:42,297 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 15:43:42,507 [INFO]  * Restarting with stat
+2025-05-09 15:43:45,418 [INFO] BEGIN (implicit)
+2025-05-09 15:43:45,420 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 15:43:45,422 [INFO] [raw sql] ()
+2025-05-09 15:43:45,426 [INFO] COMMIT
+2025-05-09 15:43:46,302 [WARNING]  * Debugger is active!
+2025-05-09 15:43:46,335 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 15:43:46,920 [INFO] BEGIN (implicit)
+2025-05-09 15:43:46,922 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:43:46,923 [INFO] [generated in 0.00208s] ()
+2025-05-09 15:43:46,925 [INFO] ROLLBACK
+2025-05-09 15:43:46,937 [INFO] 127.0.0.1 - - [09/May/2025 15:43:46] "GET / HTTP/1.1" 200 -
+2025-05-09 15:43:47,064 [INFO] 127.0.0.1 - - [09/May/2025 15:43:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:43:48,896 [INFO] 127.0.0.1 - - [09/May/2025 15:43:48] "GET /get_ticket HTTP/1.1" 200 -
+2025-05-09 15:43:48,922 [INFO] 127.0.0.1 - - [09/May/2025 15:43:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:43:50,987 [INFO] BEGIN (implicit)
+2025-05-09 15:43:50,988 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:43:50,988 [INFO] [cached since 4.067s ago] ()
+2025-05-09 15:43:50,988 [INFO] ROLLBACK
+2025-05-09 15:43:50,990 [INFO] 127.0.0.1 - - [09/May/2025 15:43:50] "GET / HTTP/1.1" 200 -
+2025-05-09 15:43:51,019 [INFO] 127.0.0.1 - - [09/May/2025 15:43:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:43:53,546 [INFO] BEGIN (implicit)
+2025-05-09 15:43:53,547 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:43:53,548 [INFO] [cached since 6.627s ago] ()
+2025-05-09 15:43:53,549 [INFO] ROLLBACK
+2025-05-09 15:43:53,557 [INFO] 127.0.0.1 - - [09/May/2025 15:43:53] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 15:43:53,586 [INFO] 127.0.0.1 - - [09/May/2025 15:43:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:44:33,289 [INFO] BEGIN (implicit)
+2025-05-09 15:44:33,291 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:44:33,292 [INFO] [cached since 46.37s ago] ()
+2025-05-09 15:44:33,294 [INFO] ROLLBACK
+2025-05-09 15:44:33,305 [INFO] 127.0.0.1 - - [09/May/2025 15:44:33] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 15:44:33,341 [INFO] 127.0.0.1 - - [09/May/2025 15:44:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:44:35,615 [INFO] BEGIN (implicit)
+2025-05-09 15:44:35,615 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:44:35,616 [INFO] [cached since 48.7s ago] ()
+2025-05-09 15:44:35,617 [INFO] ROLLBACK
+2025-05-09 15:44:35,618 [INFO] 127.0.0.1 - - [09/May/2025 15:44:35] "GET / HTTP/1.1" 200 -
+2025-05-09 15:44:35,646 [INFO] 127.0.0.1 - - [09/May/2025 15:44:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:44:36,719 [INFO] 127.0.0.1 - - [09/May/2025 15:44:36] "GET /get_ticket HTTP/1.1" 200 -
+2025-05-09 15:44:36,745 [INFO] 127.0.0.1 - - [09/May/2025 15:44:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:44:39,590 [INFO] BEGIN (implicit)
+2025-05-09 15:44:39,592 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries 
+WHERE entries.id = ?
+2025-05-09 15:44:39,592 [INFO] [generated in 0.00176s] (3,)
+2025-05-09 15:44:39,594 [INFO] ROLLBACK
+2025-05-09 15:44:39,596 [INFO] 127.0.0.1 - - [09/May/2025 15:44:39] "POST /get_ticket HTTP/1.1" 200 -
+2025-05-09 15:44:39,637 [INFO] 127.0.0.1 - - [09/May/2025 15:44:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:44:42,925 [INFO] BEGIN (implicit)
+2025-05-09 15:44:42,927 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries 
+WHERE entries.id = ?
+2025-05-09 15:44:42,927 [INFO] [cached since 3.337s ago] (3,)
+2025-05-09 15:44:42,928 [INFO] ROLLBACK
+2025-05-09 15:44:42,929 [INFO] 127.0.0.1 - - [09/May/2025 15:44:42] "POST /get_ticket HTTP/1.1" 200 -
+2025-05-09 15:44:42,953 [INFO] 127.0.0.1 - - [09/May/2025 15:44:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:46:26,332 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 15:46:26,498 [INFO]  * Restarting with stat
+2025-05-09 15:46:29,462 [INFO] BEGIN (implicit)
+2025-05-09 15:46:29,464 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 15:46:29,464 [INFO] [raw sql] ()
+2025-05-09 15:46:29,466 [INFO] COMMIT
+2025-05-09 15:46:30,226 [WARNING]  * Debugger is active!
+2025-05-09 15:46:30,243 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 15:46:32,119 [INFO] BEGIN (implicit)
+2025-05-09 15:46:32,120 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries 
+WHERE entries.id = ?
+2025-05-09 15:46:32,120 [INFO] [generated in 0.00149s] (3,)
+2025-05-09 15:46:32,122 [INFO] ROLLBACK
+2025-05-09 15:46:32,134 [INFO] 127.0.0.1 - - [09/May/2025 15:46:32] "POST /get_ticket HTTP/1.1" 200 -
+2025-05-09 15:46:32,246 [INFO] 127.0.0.1 - - [09/May/2025 15:46:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:46:34,341 [INFO] BEGIN (implicit)
+2025-05-09 15:46:34,342 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries 
+WHERE entries.id = ?
+2025-05-09 15:46:34,343 [INFO] [cached since 2.223s ago] (2,)
+2025-05-09 15:46:34,344 [INFO] ROLLBACK
+2025-05-09 15:46:34,346 [INFO] 127.0.0.1 - - [09/May/2025 15:46:34] "POST /get_ticket HTTP/1.1" 200 -
+2025-05-09 15:46:34,373 [INFO] 127.0.0.1 - - [09/May/2025 15:46:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:46:36,743 [INFO] BEGIN (implicit)
+2025-05-09 15:46:36,743 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries 
+WHERE entries.id = ?
+2025-05-09 15:46:36,743 [INFO] [cached since 4.625s ago] (1,)
+2025-05-09 15:46:36,745 [INFO] ROLLBACK
+2025-05-09 15:46:36,746 [INFO] 127.0.0.1 - - [09/May/2025 15:46:36] "POST /get_ticket HTTP/1.1" 200 -
+2025-05-09 15:46:36,772 [INFO] 127.0.0.1 - - [09/May/2025 15:46:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:49:56,240 [INFO] BEGIN (implicit)
+2025-05-09 15:49:56,244 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:49:56,245 [INFO] [generated in 0.00750s] ()
+2025-05-09 15:49:56,248 [INFO] ROLLBACK
+2025-05-09 15:49:56,272 [INFO] 127.0.0.1 - - [09/May/2025 15:49:56] "GET / HTTP/1.1" 200 -
+2025-05-09 15:49:56,319 [INFO] 127.0.0.1 - - [09/May/2025 15:49:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:49:57,928 [INFO] 127.0.0.1 - - [09/May/2025 15:49:57] "GET /get_ticket HTTP/1.1" 200 -
+2025-05-09 15:49:57,970 [INFO] 127.0.0.1 - - [09/May/2025 15:49:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:50:00,664 [INFO] BEGIN (implicit)
+2025-05-09 15:50:00,665 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries 
+WHERE entries.id = ?
+2025-05-09 15:50:00,665 [INFO] [cached since 208.5s ago] (2,)
+2025-05-09 15:50:00,666 [INFO] ROLLBACK
+2025-05-09 15:50:00,668 [INFO] 127.0.0.1 - - [09/May/2025 15:50:00] "POST /get_ticket HTTP/1.1" 200 -
+2025-05-09 15:50:00,690 [INFO] 127.0.0.1 - - [09/May/2025 15:50:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:50:17,632 [INFO] BEGIN (implicit)
+2025-05-09 15:50:17,633 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries 
+WHERE entries.id = ?
+2025-05-09 15:50:17,633 [INFO] [cached since 225.5s ago] (2,)
+2025-05-09 15:50:17,634 [INFO] ROLLBACK
+2025-05-09 15:50:17,647 [INFO] 127.0.0.1 - - [09/May/2025 15:50:17] "POST /get_ticket HTTP/1.1" 200 -
+2025-05-09 15:50:17,676 [INFO] 127.0.0.1 - - [09/May/2025 15:50:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:50:20,391 [INFO] BEGIN (implicit)
+2025-05-09 15:50:20,392 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries 
+WHERE entries.id = ?
+2025-05-09 15:50:20,392 [INFO] [cached since 228.3s ago] (1,)
+2025-05-09 15:50:20,393 [INFO] ROLLBACK
+2025-05-09 15:50:20,395 [INFO] 127.0.0.1 - - [09/May/2025 15:50:20] "POST /get_ticket HTTP/1.1" 200 -
+2025-05-09 15:50:20,426 [INFO] 127.0.0.1 - - [09/May/2025 15:50:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:57:10,017 [INFO] BEGIN (implicit)
+2025-05-09 15:57:10,026 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:57:10,028 [INFO] [cached since 433.8s ago] ()
+2025-05-09 15:57:10,031 [INFO] ROLLBACK
+2025-05-09 15:57:10,037 [INFO] 127.0.0.1 - - [09/May/2025 15:57:10] "GET / HTTP/1.1" 200 -
+2025-05-09 15:57:10,078 [INFO] 127.0.0.1 - - [09/May/2025 15:57:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:57:11,407 [INFO] 127.0.0.1 - - [09/May/2025 15:57:11] "GET /get_ticket HTTP/1.1" 200 -
+2025-05-09 15:57:11,445 [INFO] 127.0.0.1 - - [09/May/2025 15:57:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:57:12,256 [INFO] BEGIN (implicit)
+2025-05-09 15:57:12,257 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:57:12,257 [INFO] [cached since 436s ago] ()
+2025-05-09 15:57:12,258 [INFO] ROLLBACK
+2025-05-09 15:57:12,260 [INFO] 127.0.0.1 - - [09/May/2025 15:57:12] "GET / HTTP/1.1" 200 -
+2025-05-09 15:57:12,291 [INFO] 127.0.0.1 - - [09/May/2025 15:57:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:57:14,250 [INFO] BEGIN (implicit)
+2025-05-09 15:57:14,250 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:57:14,251 [INFO] [cached since 438s ago] ()
+2025-05-09 15:57:14,252 [INFO] ROLLBACK
+2025-05-09 15:57:14,273 [INFO] 127.0.0.1 - - [09/May/2025 15:57:14] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 15:57:14,310 [INFO] 127.0.0.1 - - [09/May/2025 15:57:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:57:15,698 [INFO] BEGIN (implicit)
+2025-05-09 15:57:15,699 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:57:15,699 [INFO] [cached since 439.5s ago] ()
+2025-05-09 15:57:15,701 [INFO] ROLLBACK
+2025-05-09 15:57:15,702 [INFO] 127.0.0.1 - - [09/May/2025 15:57:15] "GET / HTTP/1.1" 200 -
+2025-05-09 15:57:15,742 [INFO] 127.0.0.1 - - [09/May/2025 15:57:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:57:16,573 [INFO] BEGIN (implicit)
+2025-05-09 15:57:16,575 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:57:16,575 [INFO] [cached since 440.3s ago] ()
+2025-05-09 15:57:16,577 [INFO] ROLLBACK
+2025-05-09 15:57:16,593 [INFO] 127.0.0.1 - - [09/May/2025 15:57:16] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 15:57:16,638 [INFO] 127.0.0.1 - - [09/May/2025 15:57:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:57:19,284 [INFO] BEGIN (implicit)
+2025-05-09 15:57:19,285 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:57:19,286 [INFO] [cached since 443s ago] ()
+2025-05-09 15:57:19,287 [INFO] ROLLBACK
+2025-05-09 15:57:19,288 [INFO] 127.0.0.1 - - [09/May/2025 15:57:19] "GET / HTTP/1.1" 200 -
+2025-05-09 15:57:19,341 [INFO] 127.0.0.1 - - [09/May/2025 15:57:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:57:19,931 [INFO] 127.0.0.1 - - [09/May/2025 15:57:19] "GET /get_ticket HTTP/1.1" 200 -
+2025-05-09 15:57:19,964 [INFO] 127.0.0.1 - - [09/May/2025 15:57:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 15:57:21,640 [INFO] BEGIN (implicit)
+2025-05-09 15:57:21,641 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 15:57:21,641 [INFO] [cached since 445.4s ago] ()
+2025-05-09 15:57:21,642 [INFO] ROLLBACK
+2025-05-09 15:57:21,643 [INFO] 127.0.0.1 - - [09/May/2025 15:57:21] "GET / HTTP/1.1" 200 -
+2025-05-09 15:57:21,676 [INFO] 127.0.0.1 - - [09/May/2025 15:57:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:14:33,877 [INFO] BEGIN (implicit)
+2025-05-09 16:14:33,879 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:14:33,879 [INFO] [cached since 1478s ago] ()
+2025-05-09 16:14:33,881 [INFO] ROLLBACK
+2025-05-09 16:14:33,883 [INFO] 127.0.0.1 - - [09/May/2025 16:14:33] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 16:14:33,938 [INFO] 127.0.0.1 - - [09/May/2025 16:14:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:14:34,506 [INFO] BEGIN (implicit)
+2025-05-09 16:14:34,507 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:14:34,507 [INFO] [cached since 1478s ago] ()
+2025-05-09 16:14:34,508 [INFO] ROLLBACK
+2025-05-09 16:14:34,510 [INFO] 127.0.0.1 - - [09/May/2025 16:14:34] "GET / HTTP/1.1" 200 -
+2025-05-09 16:14:34,541 [INFO] 127.0.0.1 - - [09/May/2025 16:14:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:14:35,425 [INFO] BEGIN (implicit)
+2025-05-09 16:14:35,426 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:14:35,426 [INFO] [cached since 1479s ago] ()
+2025-05-09 16:14:35,428 [INFO] ROLLBACK
+2025-05-09 16:14:35,430 [INFO] 127.0.0.1 - - [09/May/2025 16:14:35] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-09 16:14:35,465 [INFO] 127.0.0.1 - - [09/May/2025 16:14:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:14:38,288 [INFO] BEGIN (implicit)
+2025-05-09 16:14:38,288 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:14:38,290 [INFO] [cached since 1482s ago] ()
+2025-05-09 16:14:38,290 [INFO] ROLLBACK
+2025-05-09 16:14:38,291 [INFO] 127.0.0.1 - - [09/May/2025 16:14:38] "GET / HTTP/1.1" 200 -
+2025-05-09 16:14:38,321 [INFO] 127.0.0.1 - - [09/May/2025 16:14:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:14:39,043 [INFO] BEGIN (implicit)
+2025-05-09 16:14:39,044 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:14:39,044 [INFO] [cached since 1483s ago] ()
+2025-05-09 16:14:39,045 [INFO] ROLLBACK
+2025-05-09 16:14:39,047 [INFO] 127.0.0.1 - - [09/May/2025 16:14:39] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 16:14:39,078 [INFO] 127.0.0.1 - - [09/May/2025 16:14:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:14:39,789 [INFO] BEGIN (implicit)
+2025-05-09 16:14:39,789 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:14:39,790 [INFO] [cached since 1484s ago] ()
+2025-05-09 16:14:39,791 [INFO] ROLLBACK
+2025-05-09 16:14:39,793 [INFO] 127.0.0.1 - - [09/May/2025 16:14:39] "GET / HTTP/1.1" 200 -
+2025-05-09 16:14:39,824 [INFO] 127.0.0.1 - - [09/May/2025 16:14:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:16:59,489 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 16:17:00,271 [INFO]  * Restarting with stat
+2025-05-09 16:17:02,644 [INFO] BEGIN (implicit)
+2025-05-09 16:17:02,645 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 16:17:02,646 [INFO] [raw sql] ()
+2025-05-09 16:17:02,649 [INFO] COMMIT
+2025-05-09 16:17:03,465 [WARNING]  * Debugger is active!
+2025-05-09 16:17:03,491 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 16:17:31,411 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 16:17:31,614 [INFO]  * Restarting with stat
+2025-05-09 16:17:34,341 [INFO] BEGIN (implicit)
+2025-05-09 16:17:34,342 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 16:17:34,343 [INFO] [raw sql] ()
+2025-05-09 16:17:34,345 [INFO] COMMIT
+2025-05-09 16:17:34,804 [WARNING]  * Debugger is active!
+2025-05-09 16:17:34,815 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 16:17:58,067 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 16:17:58,281 [INFO]  * Restarting with stat
+2025-05-09 16:18:01,117 [INFO] BEGIN (implicit)
+2025-05-09 16:18:01,118 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 16:18:01,118 [INFO] [raw sql] ()
+2025-05-09 16:18:01,120 [INFO] COMMIT
+2025-05-09 16:18:01,517 [WARNING]  * Debugger is active!
+2025-05-09 16:18:01,524 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 16:18:04,062 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 16:18:04,254 [INFO]  * Restarting with stat
+2025-05-09 16:18:05,938 [INFO] BEGIN (implicit)
+2025-05-09 16:18:05,939 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 16:18:05,939 [INFO] [raw sql] ()
+2025-05-09 16:18:05,941 [INFO] COMMIT
+2025-05-09 16:18:06,374 [WARNING]  * Debugger is active!
+2025-05-09 16:18:06,385 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 16:18:26,317 [INFO] BEGIN (implicit)
+2025-05-09 16:18:26,318 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:18:26,319 [INFO] [generated in 0.00214s] ()
+2025-05-09 16:18:26,323 [INFO] ROLLBACK
+2025-05-09 16:18:26,337 [INFO] 127.0.0.1 - - [09/May/2025 16:18:26] "GET / HTTP/1.1" 200 -
+2025-05-09 16:18:26,519 [INFO] 127.0.0.1 - - [09/May/2025 16:18:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:18:27,553 [INFO] 127.0.0.1 - - [09/May/2025 16:18:27] "GET /update_ticket HTTP/1.1" 200 -
+2025-05-09 16:18:27,607 [INFO] 127.0.0.1 - - [09/May/2025 16:18:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:19:00,813 [INFO] 127.0.0.1 - - [09/May/2025 16:19:00] "GET /update_ticket HTTP/1.1" 200 -
+2025-05-09 16:19:00,888 [INFO] 127.0.0.1 - - [09/May/2025 16:19:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:19:06,835 [INFO] BEGIN (implicit)
+2025-05-09 16:19:06,835 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:19:06,836 [INFO] [cached since 40.52s ago] ()
+2025-05-09 16:19:06,837 [INFO] ROLLBACK
+2025-05-09 16:19:06,846 [INFO] 127.0.0.1 - - [09/May/2025 16:19:06] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 16:19:06,902 [INFO] 127.0.0.1 - - [09/May/2025 16:19:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:19:09,632 [INFO] BEGIN (implicit)
+2025-05-09 16:19:09,633 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:19:09,633 [INFO] [cached since 43.32s ago] ()
+2025-05-09 16:19:09,634 [INFO] ROLLBACK
+2025-05-09 16:19:09,636 [INFO] 127.0.0.1 - - [09/May/2025 16:19:09] "GET / HTTP/1.1" 200 -
+2025-05-09 16:19:09,665 [INFO] 127.0.0.1 - - [09/May/2025 16:19:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:19:11,110 [INFO] 127.0.0.1 - - [09/May/2025 16:19:11] "GET /update_ticket HTTP/1.1" 200 -
+2025-05-09 16:19:11,143 [INFO] 127.0.0.1 - - [09/May/2025 16:19:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:21:16,400 [INFO] 127.0.0.1 - - [09/May/2025 16:21:16] "GET /update_ticket HTTP/1.1" 200 -
+2025-05-09 16:21:16,430 [INFO] 127.0.0.1 - - [09/May/2025 16:21:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:21:17,032 [INFO] 127.0.0.1 - - [09/May/2025 16:21:17] "GET /update_ticket HTTP/1.1" 200 -
+2025-05-09 16:21:17,056 [INFO] 127.0.0.1 - - [09/May/2025 16:21:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:21:17,174 [INFO] 127.0.0.1 - - [09/May/2025 16:21:17] "GET /update_ticket HTTP/1.1" 200 -
+2025-05-09 16:21:17,204 [INFO] 127.0.0.1 - - [09/May/2025 16:21:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:21:17,354 [INFO] 127.0.0.1 - - [09/May/2025 16:21:17] "GET /update_ticket HTTP/1.1" 200 -
+2025-05-09 16:21:17,376 [INFO] 127.0.0.1 - - [09/May/2025 16:21:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:33:24,873 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 16:33:25,115 [INFO]  * Restarting with stat
+2025-05-09 16:33:26,100 [WARNING]  * Debugger is active!
+2025-05-09 16:33:26,105 [INFO]  * Debugger PIN: 464-659-859
+2025-05-09 16:33:31,405 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 16:33:31,507 [INFO]  * Restarting with stat
+2025-05-09 16:33:32,469 [INFO] BEGIN (implicit)
+2025-05-09 16:33:32,470 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 16:33:32,470 [INFO] [raw sql] ()
+2025-05-09 16:33:32,471 [INFO] COMMIT
+2025-05-09 16:33:32,715 [WARNING]  * Debugger is active!
+2025-05-09 16:33:32,722 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 16:33:35,560 [INFO] 127.0.0.1 - - [09/May/2025 16:33:35] "[35m[1mGET /update_ticket HTTP/1.1[0m" 500 -
+2025-05-09 16:33:35,650 [INFO] 127.0.0.1 - - [09/May/2025 16:33:35] "GET /update_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-09 16:33:35,655 [INFO] 127.0.0.1 - - [09/May/2025 16:33:35] "GET /update_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-09 16:33:35,682 [INFO] 127.0.0.1 - - [09/May/2025 16:33:35] "GET /update_ticket?__debugger__=yes&cmd=resource&f=console.png&s=rXv7nWe8nuYFy6aM3cps HTTP/1.1" 200 -
+2025-05-09 16:33:35,750 [INFO] 127.0.0.1 - - [09/May/2025 16:33:35] "GET /update_ticket?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-09 16:34:15,467 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 16:34:15,615 [INFO]  * Restarting with stat
+2025-05-09 16:34:16,351 [INFO] BEGIN (implicit)
+2025-05-09 16:34:16,352 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 16:34:16,352 [INFO] [raw sql] ()
+2025-05-09 16:34:16,353 [INFO] COMMIT
+2025-05-09 16:34:16,522 [WARNING]  * Debugger is active!
+2025-05-09 16:34:16,527 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 16:34:19,559 [INFO] BEGIN (implicit)
+2025-05-09 16:34:19,560 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:34:19,560 [INFO] [generated in 0.00133s] ()
+2025-05-09 16:34:19,561 [INFO] ROLLBACK
+2025-05-09 16:34:19,577 [INFO] 127.0.0.1 - - [09/May/2025 16:34:19] "GET / HTTP/1.1" 200 -
+2025-05-09 16:34:19,641 [INFO] 127.0.0.1 - - [09/May/2025 16:34:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:34:20,747 [INFO] 127.0.0.1 - - [09/May/2025 16:34:20] "GET /update_ticket HTTP/1.1" 200 -
+2025-05-09 16:34:20,779 [INFO] 127.0.0.1 - - [09/May/2025 16:34:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:34:37,400 [INFO] BEGIN (implicit)
+2025-05-09 16:34:37,401 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries 
+WHERE entries.id = ?
+2025-05-09 16:34:37,401 [INFO] [generated in 0.00110s] (3,)
+2025-05-09 16:34:37,403 [INFO] ROLLBACK
+2025-05-09 16:34:37,410 [INFO] 127.0.0.1 - - [09/May/2025 16:34:37] "[35m[1mPOST /update_ticket HTTP/1.1[0m" 500 -
+2025-05-09 16:34:37,426 [INFO] 127.0.0.1 - - [09/May/2025 16:34:37] "[36mGET /update_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:34:37,427 [INFO] 127.0.0.1 - - [09/May/2025 16:34:37] "[36mGET /update_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 16:34:37,494 [INFO] 127.0.0.1 - - [09/May/2025 16:34:37] "GET /update_ticket?__debugger__=yes&cmd=resource&f=console.png&s=yuijLUSQ2k4PmTP07QjU HTTP/1.1" 200 -
+2025-05-09 16:34:37,549 [INFO] 127.0.0.1 - - [09/May/2025 16:34:37] "[36mGET /update_ticket?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 16:47:28,318 [INFO] BEGIN (implicit)
+2025-05-09 16:47:28,323 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries 
+WHERE entries.id = ?
+2025-05-09 16:47:28,324 [INFO] [cached since 770.9s ago] (3,)
+2025-05-09 16:47:28,326 [INFO] ROLLBACK
+2025-05-09 16:47:28,338 [INFO] 127.0.0.1 - - [09/May/2025 16:47:28] "[35m[1mPOST /update_ticket HTTP/1.1[0m" 500 -
+2025-05-09 16:47:28,362 [INFO] 127.0.0.1 - - [09/May/2025 16:47:28] "[36mGET /update_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:47:28,368 [INFO] 127.0.0.1 - - [09/May/2025 16:47:28] "[36mGET /update_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-09 16:47:28,380 [INFO] 127.0.0.1 - - [09/May/2025 16:47:28] "[36mGET /update_ticket?__debugger__=yes&cmd=resource&f=console.png&s=yuijLUSQ2k4PmTP07QjU HTTP/1.1[0m" 304 -
+2025-05-09 16:47:28,429 [INFO] 127.0.0.1 - - [09/May/2025 16:47:28] "[36mGET /update_ticket?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-09 16:50:03,580 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-09 16:50:04,146 [INFO]  * Restarting with stat
+2025-05-09 16:50:05,260 [INFO] BEGIN (implicit)
+2025-05-09 16:50:05,261 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 16:50:05,261 [INFO] [raw sql] ()
+2025-05-09 16:50:05,262 [INFO] COMMIT
+2025-05-09 16:50:05,464 [WARNING]  * Debugger is active!
+2025-05-09 16:50:05,470 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 16:51:11,132 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\models.py', reloading
+2025-05-09 16:51:11,429 [INFO]  * Restarting with stat
+2025-05-09 16:51:12,408 [INFO] BEGIN (implicit)
+2025-05-09 16:51:12,409 [INFO] PRAGMA main.table_info("entries")
+2025-05-09 16:51:12,409 [INFO] [raw sql] ()
+2025-05-09 16:51:12,410 [INFO] COMMIT
+2025-05-09 16:51:12,640 [WARNING]  * Debugger is active!
+2025-05-09 16:51:12,644 [INFO]  * Debugger PIN: 117-906-151
+2025-05-09 16:51:14,967 [INFO] BEGIN (implicit)
+2025-05-09 16:51:14,968 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries 
+WHERE entries.id = ?
+2025-05-09 16:51:14,969 [INFO] [generated in 0.00147s] (3,)
+2025-05-09 16:51:14,970 [INFO] ROLLBACK
+2025-05-09 16:51:14,971 [INFO] BEGIN (implicit)
+2025-05-09 16:51:14,971 [INFO] UPDATE entries SET title=?, description=?, name=?, status=?, priority=? WHERE entries.id = ?
+2025-05-09 16:51:14,971 [INFO] [generated in 0.00077s] ('kinder', "j'ai pas de kinder", 'younes', 'open', 'high', 3)
+2025-05-09 16:51:14,979 [INFO] COMMIT
+2025-05-09 16:51:14,986 [INFO] 127.0.0.1 - - [09/May/2025 16:51:14] "[32mPOST /update_ticket HTTP/1.1[0m" 302 -
+2025-05-09 16:51:14,994 [INFO] BEGIN (implicit)
+2025-05-09 16:51:14,994 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:51:14,994 [INFO] [generated in 0.00083s] ()
+2025-05-09 16:51:14,995 [INFO] ROLLBACK
+2025-05-09 16:51:15,008 [INFO] 127.0.0.1 - - [09/May/2025 16:51:15] "GET / HTTP/1.1" 200 -
+2025-05-09 16:51:15,083 [INFO] 127.0.0.1 - - [09/May/2025 16:51:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:51:16,118 [INFO] BEGIN (implicit)
+2025-05-09 16:51:16,118 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:51:16,119 [INFO] [cached since 1.125s ago] ()
+2025-05-09 16:51:16,119 [INFO] ROLLBACK
+2025-05-09 16:51:16,124 [INFO] 127.0.0.1 - - [09/May/2025 16:51:16] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 16:51:16,146 [INFO] 127.0.0.1 - - [09/May/2025 16:51:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:51:16,882 [INFO] BEGIN (implicit)
+2025-05-09 16:51:16,882 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:51:16,883 [INFO] [cached since 1.889s ago] ()
+2025-05-09 16:51:16,884 [INFO] ROLLBACK
+2025-05-09 16:51:16,884 [INFO] 127.0.0.1 - - [09/May/2025 16:51:16] "GET / HTTP/1.1" 200 -
+2025-05-09 16:51:16,912 [INFO] 127.0.0.1 - - [09/May/2025 16:51:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:51:17,490 [INFO] 127.0.0.1 - - [09/May/2025 16:51:17] "GET /update_ticket HTTP/1.1" 200 -
+2025-05-09 16:51:17,504 [INFO] 127.0.0.1 - - [09/May/2025 16:51:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:51:25,659 [INFO] BEGIN (implicit)
+2025-05-09 16:51:25,659 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:51:25,659 [INFO] [cached since 10.67s ago] ()
+2025-05-09 16:51:25,660 [INFO] ROLLBACK
+2025-05-09 16:51:25,661 [INFO] 127.0.0.1 - - [09/May/2025 16:51:25] "GET / HTTP/1.1" 200 -
+2025-05-09 16:51:25,680 [INFO] 127.0.0.1 - - [09/May/2025 16:51:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:51:26,404 [INFO] BEGIN (implicit)
+2025-05-09 16:51:26,405 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:51:26,405 [INFO] [cached since 11.41s ago] ()
+2025-05-09 16:51:26,406 [INFO] ROLLBACK
+2025-05-09 16:51:26,407 [INFO] 127.0.0.1 - - [09/May/2025 16:51:26] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 16:51:26,428 [INFO] 127.0.0.1 - - [09/May/2025 16:51:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:51:27,227 [INFO] BEGIN (implicit)
+2025-05-09 16:51:27,227 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:51:27,227 [INFO] [cached since 12.23s ago] ()
+2025-05-09 16:51:27,228 [INFO] ROLLBACK
+2025-05-09 16:51:27,229 [INFO] 127.0.0.1 - - [09/May/2025 16:51:27] "GET / HTTP/1.1" 200 -
+2025-05-09 16:51:27,248 [INFO] 127.0.0.1 - - [09/May/2025 16:51:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:51:27,923 [INFO] 127.0.0.1 - - [09/May/2025 16:51:27] "GET /update_ticket HTTP/1.1" 200 -
+2025-05-09 16:51:27,940 [INFO] 127.0.0.1 - - [09/May/2025 16:51:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:51:49,989 [INFO] BEGIN (implicit)
+2025-05-09 16:51:49,989 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries 
+WHERE entries.id = ?
+2025-05-09 16:51:49,990 [INFO] [cached since 35.02s ago] (3,)
+2025-05-09 16:51:49,990 [INFO] ROLLBACK
+2025-05-09 16:51:49,992 [INFO] BEGIN (implicit)
+2025-05-09 16:51:49,992 [INFO] UPDATE entries SET title=?, description=?, name=?, status=?, priority=? WHERE entries.id = ?
+2025-05-09 16:51:49,992 [INFO] [cached since 35.02s ago] ('Kinder', "j'ai pas de kinder", 'Younss', 'in progress', 'medium', 3)
+2025-05-09 16:51:49,993 [INFO] COMMIT
+2025-05-09 16:51:49,998 [INFO] 127.0.0.1 - - [09/May/2025 16:51:49] "[32mPOST /update_ticket HTTP/1.1[0m" 302 -
+2025-05-09 16:51:50,003 [INFO] BEGIN (implicit)
+2025-05-09 16:51:50,004 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:51:50,004 [INFO] [cached since 35.01s ago] ()
+2025-05-09 16:51:50,005 [INFO] ROLLBACK
+2025-05-09 16:51:50,006 [INFO] 127.0.0.1 - - [09/May/2025 16:51:50] "GET / HTTP/1.1" 200 -
+2025-05-09 16:51:50,039 [INFO] 127.0.0.1 - - [09/May/2025 16:51:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:51:51,096 [INFO] BEGIN (implicit)
+2025-05-09 16:51:51,097 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:51:51,097 [INFO] [cached since 36.1s ago] ()
+2025-05-09 16:51:51,098 [INFO] ROLLBACK
+2025-05-09 16:51:51,098 [INFO] 127.0.0.1 - - [09/May/2025 16:51:51] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-09 16:51:51,118 [INFO] 127.0.0.1 - - [09/May/2025 16:51:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 16:51:51,967 [INFO] BEGIN (implicit)
+2025-05-09 16:51:51,968 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority 
+FROM entries
+2025-05-09 16:51:51,968 [INFO] [cached since 36.97s ago] ()
+2025-05-09 16:51:51,969 [INFO] ROLLBACK
+2025-05-09 16:51:51,969 [INFO] 127.0.0.1 - - [09/May/2025 16:51:51] "GET / HTTP/1.1" 200 -
+2025-05-09 16:51:51,991 [INFO] 127.0.0.1 - - [09/May/2025 16:51:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

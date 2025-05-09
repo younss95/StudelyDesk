@@ -82,12 +82,11 @@ def get_all_entries():
         return [Entry.from_db(*row) for row in results]
 
 # Fonction pour mettre à jour une entrée
-def update_entry(_id: int, title: str, description: str, name: str, date: datetime, status: str, priority: str):
+def update_entry(_id: int, title: str, description: str, name: str, status: str, priority: str):
     stmt = update(entries_table).where(entries_table.c.id == _id).values(
         title=title,
         description=description,
         name=name,
-        date=date,
         status=status,
         priority=priority
     )

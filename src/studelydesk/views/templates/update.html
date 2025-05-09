@@ -1,0 +1,46 @@
+<!--  AUTEUR : Younes AZIRGUI -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Modifier un ticket</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<section class="form-container-parent">
+    <div class="form-container">
+        <h1 class="text-center">Modifier un ticket</h1>
+
+        <form method="post">
+    {{ form.hidden_tag() }}
+
+    {{ form.ticket_id.label }}
+    {{ form.ticket_id(class="form-input") }}
+
+    {{ form.title.label }}
+    {{ form.title(class="form-input") }}
+
+    {{ form.description.label }}
+    {{ form.description(class="form-input") }}
+
+    {{ form.name.label }}
+    {{ form.name(class="form-input") }}
+
+    {{ form.status.label }}
+    {{ form.status(class="form-input") }}
+
+    {{ form.priority.label }}
+    {{ form.priority(class="form-input") }}
+
+    {{ form.submit(class="form-button") }}
+</form>
+
+
+        <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour à l'accueil</a>
+    </div>
+</section>
+
+</body>
+</html>

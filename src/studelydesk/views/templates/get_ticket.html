@@ -1,0 +1,35 @@
+<!-- AUTEUR : Younes AZIRGUI -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulter un ticket</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Consulter un ticket</h1>
+
+    <form method="post" action="{{ url_for('web_ui.get_ticket') }}">
+        <label for="id">ID du ticket :</label>
+        <input type="number" id="id" name="id" required>
+        <button type="submit">Rechercher</button>
+    </form>
+
+    {% if ticket %}
+        <h2>Détails du ticket</h2>
+        <p><strong>ID :</strong> {{ ticket.id }}</p>
+        <p><strong>Titre :</strong> {{ ticket.title }}</p>
+        <p><strong>Description :</strong> {{ ticket.description }}</p>
+        <p><strong>Status :</strong> {{ ticket.status }}</p>
+        <p><strong>Utilisateur :</strong> {{ ticket.name }}</p>
+        <!-- Ajoute d'autres champs si besoin -->
+    {% elif ticket is none and request.method == "POST" %}
+        <p>Aucun ticket trouvé avec cet ID</p>
+    {% endif %}
+
+    <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour à l'accueil</a>
+
+</body>
+</html>

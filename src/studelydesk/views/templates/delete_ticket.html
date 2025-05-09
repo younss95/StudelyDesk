@@ -1,0 +1,40 @@
+<!-- AUTEUR : Younes AZIRGUI -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Gestionnaire de tickets</title>
+</head>
+<body>
+
+<section class="form-container-parent">
+    <div class="form-container">
+        <h1 class="text-center">Supprimer un ticket</h1>
+        <!-- Formulaire de suppression -->
+        <form method="POST">
+            {{ form.hidden_tag() }}  <!-- Pour les tokens de sécurité CSRF -->
+
+            <!-- Sélecteur pour choisir un ticket -->
+            <div class="form-group">
+                {{ form.tickets_id.label(class="form-label") }}
+                {{ form.tickets_id(class="form-control") }}
+            </div>
+
+            <!-- Bouton de soumission -->
+            <div class="form-group">
+                {{ form.submit(class="form-button") }}
+            </div>
+        </form>
+        <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour</a>
+
+
+    </div>
+
+</section>
+
+
+
+</body>
+</html>
