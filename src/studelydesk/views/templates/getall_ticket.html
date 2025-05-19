@@ -1,54 +1,131 @@
-<!-- AUTEUR : Younes AZIRGUI -->
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Gestionnaire de tickets</title>
 </head>
 <body>
+{% include 'navbar.html' %}
 
 <section class="form-container-parent">
     <div class="form-container">
         <h1 class="text-center">Consulter tous les tickets</h1>
 
         {% if entries %}
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Titre</th>
-                        <th>Description</th>
-                        <th>Nom</th>
-                        <th>Date</th>
-                        <th>Statut</th>
-                        <th>Priorité</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for entry in entries %}
-                    <tr>
-                        <td>{{entry.id}}</td>
-                        <td>{{ entry.title }}</td>
-                        <td>{{ entry.description }}</td>
-                        <td>{{ entry.name }}</td>
-                        <td>{{ entry.date.strftime('%Y-%m-%d %H:%M') }}</td>
-                        <td>{{ entry.status }}</td>
-                        <td>{{ entry.priority }}</td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
+        <div class="filters">
+            <label for="statusFilter">Statut :</label>
+            <select id="statusFilter" onchange="filterTickets()">
+                <option value="">Tous</option>
+                <option value="ouvert">Ouvert</option>
+                <option value="en cours">En cours</option>
+                <option value="résolu">Résolu</option>
+            </select>
+
+            <label for="priorityFilter">Priorité :</label>
+            <select id="priorityFilter" onchange="filterTickets()">
+                <option value="">Toutes</option>
+                <option value="basse"><i class="fa-solid fa-circle" style="color: #FFD43B;"></i>Basse</option>
+                <option value="moyenne"><i class="fa-solid fa-circle" style="color: #f99639;"></i>Moyenne</option>
+                <option value="haute"><i class="fa-solid fa-circle" style="color: #f42a2a;"></i>Haute</option>
+            </select>
+
+            <label for="departement">Département :</label>
+            <select id="departement" onchange="filterTickets()">
+                <option value="">Tous</option>
+                <option value="customer">Customer Service</option>
+                <option value="treso">Treso Etudiant</option>
+                <option value="product">Product</option>
+                <option value="support">Support IT</option>
+            </select>
+
+            {% set demandeurs = entries | map(attribute='name') | unique | list %}
+
+            <label for="myFilter">Filtrer les tickets :</label>
+            <select id="myFilter" onchange="filterTickets()">
+                <option value="">Tous</option>
+                {% for demandeur in demandeurs %}
+                <option value="{{ demandeur|lower }}">{{ demandeur }}</option>
+                {% endfor %}
+            </select>
+
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Titre</th>
+                    <th>Description</th>
+                    <th>Demandeur</th>
+                    <th>Assigné à</th>
+                    <th>Département</th>
+                    <th>Catégorie</th>
+                    <th>Statut</th>
+                    <th>Priorité</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entry in entries %}
+                <tr>
+                    <td><a href="{{ url_for('web_ui.get_ticket_id', ticket_id=entry.id) }}">{{ entry.id }}</a></td>
+                    <td>{{ entry.title }}</td>
+                    <td>{{ entry.description }}</td>
+                    <td>{{ entry.name }}</td>
+                    <td>{{ entry.assigne_a }}</td>
+                    <td>{{ entry.departement }}</td>
+                    <td>{{ entry.categorie}}</td>
+                    <td>{{ entry.status }}</td>
+                    <td>
+                    {% if entry.priority.lower() == 'basse' %}
+                        <i class="fa-solid fa-circle" style="color: #FFD43B;"></i> Basse
+                    {% elif entry.priority.lower() == 'moyenne' %}
+                        <i class="fa-solid fa-circle" style="color: #f99639;"></i> Moyenne
+                    {% elif entry.priority.lower() == 'haute' %}
+                        <i class="fa-solid fa-circle" style="color: #f42a2a;"></i> Haute
+                    {% else %}
+                        {{ entry.priority }}
+                    {% endif %}
+                    </td>
+
+                    <td>{{ entry.date.strftime('%Y-%m-%d %H:%M') }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
         {% else %}
             <p>Aucun ticket pour le moment.</p>
         {% endif %}
 
         <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour</a>
     </div>
-
 </section>
+
+<script>
+function filterTickets() {
+    const status = document.getElementById("statusFilter").value.toLowerCase();
+    const priority = document.getElementById("priorityFilter").value.toLowerCase();
+    const myFilter = document.getElementById("myFilter").value.toLowerCase();
+    const departement = document.getElementById("departement").value.toLowerCase();
+
+    const rows = document.querySelectorAll("tbody tr");
+    rows.forEach(row => {
+        const rowStatus = row.children[7].textContent.toLowerCase();
+        const rowPriority = row.children[8].textContent.toLowerCase();
+        const rowDemandeur = row.children[3].textContent.toLowerCase();
+        const rowDepartement = row.children[5].textContent.toLowerCase();
+
+        const showStatus = !status || rowStatus.includes(status);
+        const showPriority = !priority || rowPriority.includes(priority);
+        const showAssignee = !myFilter || rowDemandeur.includes(myFilter);
+        const showDepartement = !departement || rowDepartement.includes(departement)
+
+        row.style.display = (showStatus && showPriority && showAssignee && showDepartement) ? "" : "none";
+    });
+}
+</script>
 
 </body>
 </html>
-

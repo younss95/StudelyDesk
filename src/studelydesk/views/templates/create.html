@@ -6,41 +6,166 @@
     <title>Créer un ticket</title>
 </head>
 <body>
-
+{% include 'navbar.html' %}
 <section class="form-container-parent">
     <div class="form-container">
         <h1 class="text-center">Ajouter un ticket</h1>
 
         <form method="post" action="{{ url_for('web_ui.create_ticket') }}">
+
+
+    <div class="form-row">
+        <div class="form-group">
             <label for="title">Titre :</label>
             <input type="text" id="title" name="title" required>
-
+        </div>
+        <div class="form-group">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" value="{{ session['user']['name'] }}">
+        </div>
+        <div class="form-group">
             <label for="description">Description :</label>
             <textarea id="description" name="description" required></textarea>
+        </div>
+    </div>
 
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required>
+    <div class="form-row">
+        <div class="form-group">
+            <label for="departement">Département concerné :</label>
+            <select id="departement" name="departement">
+                <option value="customer" {% if session['user']['departement'] == 'customer' %}selected{% endif %}>Customer Service</option>
+                <option value="treso" {% if session['user']['departement'] == 'treso' %}selected{% endif %}>Treso Etudiant</option>
+                <option value="product" {% if session['user']['departement'] == 'product' %}selected{% endif %}>Product</option>
+                <option value="support" {% if session['user']['departement'] == 'support' %}selected{% endif %}>Support IT</option>
+                <option value="test" {% if session['user']['departement'] == 'test' %}selected{% endif %}>Test</option>
+                <option value="conformite" {% if session['user']['departement'] == 'conformite' %}selected{% endif %}>Conformité</option>
+                <option value="engagement" {% if session['user']['departement'] == 'engagement' %}selected{% endif %}>Engagement</option>
+            </select>
+        </div>
 
+        <div class="form-group">
+            <label for="assigne_a">Assigné à :</label>
+            <select id="assigne_a" name="assigne_a">
+                <option value="kassandra">Kassandra CHEUNET</option>
+                <option value="marc">Marc TIOMA</option>
+                <option value="sarah">Sarah BENNAI</option>
+                <option value="jerdy">Jerdy NINABEKA</option>
+                <option value="brice">Brice ALLAGBE</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="categorie">Catégorie :</label>
+            <select id="categorie" name="categorie">
+                <option value="avi">AVI</option>
+                <option value="beneficiaire">Beneficiaire</option>
+                <option value="bourse">Bourse</option>
+                <option value="carte">Carte</option>
+                <option value="comptepaiement">Compte de paiement</option>
+                <option value="connexion">Connexion</option>
+                <option value="logement">Logement</option>
+                <option value="Menu">Menu</option>
+                <option value="profil">Profil</option>
+                <option value="postvisa">Post Visa</option>
+                <option value="remboursement">Remboursement</option>
+                <option value="treso">Treso</option>
+                <option value="virement">Virement</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
             <label for="status">Statut :</label>
             <select id="status" name="status">
-                <option value="open">Ouvert</option>
-                <option value="in progress">En cours</option>
-                <option value="closed">Fermé</option>
+                <option value="ouvert">Ouvert</option>
+                <option value="en cours">En cours</option>
+                <option value="résolu">Fermé</option>
             </select>
+        </div>
 
+        <div class="form-group">
             <label for="priority">Priorité :</label>
             <select id="priority" name="priority">
-                <option value="low">Basse</option>
-                <option value="medium">Moyenne</option>
-                <option value="high">Haute</option>
+                <option value="basse">Basse</option>
+                <option value="moyenne">Moyenne</option>
+                <option value="haute">Haute</option>
             </select>
-
-            <button type="submit" class="form-button">Ajouter</button>
-        </form>
-
-        <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour</a>
+        </div>
     </div>
-</section>
+
+
+            <div class="additional-fields-toggle">
+        <button type="button" onclick="toggleAdditionalFields()" class="toggle-button">
+            ➤ Informations obligatoires
+        </button>
+        <div id="additional-fields" style="display: none; margin-top: 10px;">
+            <div class="form-row" >
+                <div class="form-group">
+                    <label for="email">Adresse e-mail de l'étudiant :</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="pays">Pays de destination :</label>
+                    <select id="pays" name="pays">
+                        <option value="france">France</option>
+                        <option value="allemagne">Allemagne</option>
+                        <option value="belgique">Belgique</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</form>
+<button type="submit" class="form-button">Ajouter</button>
+<a href="{{ url_for('web_ui.home') }}" class="form-button">Retour</a>
+
+
+<script>
+function toggleAdditionalFields() {
+    const fields = document.getElementById("additional-fields");
+    const btn = document.querySelector(".toggle-button");
+    if (fields.style.display === "none") {
+        fields.style.display = "block";
+        btn.innerHTML = "▼ Informations obligatoires";
+    } else {
+        fields.style.display = "none";
+        btn.innerHTML = "➤ Informations obligatoires";
+    }
+}
+
+
+
+
+// associer chaque departement à une personne
+const departementAssigneMap = {
+    "customer": "kassandra",
+    "treso": "marc",
+    "product": "sarah",
+    "test": "jerdy",
+    "support": "brice",
+    "conformite": "marc",
+    "engagement": "marc"
+};
+
+
+document.getElementById("departement").addEventListener("change", function() {
+    const selectedDep = this.value;
+    const assigneSelect = document.getElementById("assigne_a");
+    const assignedPerson = departementAssigneMap[selectedDep];
+
+    if (assignedPerson) {
+        assigneSelect.value = assignedPerson;
+    } else {
+        assigneSelect.selectedIndex = 0; // valeur par défaut si non trouvée
+    }
+});
+
+</script>
 
 </body>
 </html>

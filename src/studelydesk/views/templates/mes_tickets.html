@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mes tickets</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<section class="form-container-parent">
+    <div class="form-container">
+        <h1 class="text-center">Mes tickets</h1>
+
+        {% for ticket in tickets %}
+  <div class="ticket">
+    <h3>{{ ticket.title }}</h3>
+    <p>Status : {{ ticket.status }} | Priorité : {{ ticket.priority }}</p>
+    <a href="{{ url_for('web_ui.update_ticket', ticket_id=ticket.id) }}">Modifier</a>
+  </div>
+{% endfor %}
+
+
+        <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour à l'accueil</a>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Santa Studely</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar">
+  <a href="{{ url_for('web_ui.home') }}">Accueil</a>
+  <a href="{{ url_for('web_ui.create_ticket') }}">Créer</a>
+  <a href="{{ url_for('web_ui.delete_ticket') }}">Supprimer</a>
+  <a href="{{ url_for('web_ui.getall_ticket') }}">Consulter</a>
+  <a href="{{ url_for('web_ui.getstats') }}">Statistiques</a>
+  <a href="{{ url_for('web_ui.logout') }}">Déconnexion</a>
+</nav>
+
+</header>

@@ -9,27 +9,47 @@
 </head>
 <body>
 
-    <h1>Consulter un ticket</h1>
-
-    <form method="post" action="{{ url_for('web_ui.get_ticket') }}">
-        <label for="id">ID du ticket :</label>
-        <input type="number" id="id" name="id" required>
-        <button type="submit">Rechercher</button>
-    </form>
+    <!--<h1>Consulter un ticket</h1>  -->
 
     {% if ticket %}
-        <h2>Détails du ticket</h2>
-        <p><strong>ID :</strong> {{ ticket.id }}</p>
-        <p><strong>Titre :</strong> {{ ticket.title }}</p>
-        <p><strong>Description :</strong> {{ ticket.description }}</p>
-        <p><strong>Status :</strong> {{ ticket.status }}</p>
-        <p><strong>Utilisateur :</strong> {{ ticket.name }}</p>
-        <!-- Ajoute d'autres champs si besoin -->
-    {% elif ticket is none and request.method == "POST" %}
-        <p>Aucun ticket trouvé avec cet ID</p>
-    {% endif %}
+    <h2>Détails du ticket</h2>
+    <p><strong>ID :</strong> {{ ticket.id }}</p>
+    <p><strong>Titre :</strong> {{ ticket.title }}</p>
+    <p><strong>Date :</strong> {{ ticket.date }}</p>
+    <p><strong>Description :</strong> {{ ticket.description }}</p>
+    <p><strong>Nom :</strong> {{ ticket.name }}</p>
+    <p><strong>Département :</strong> {{ ticket.departement }}</p>
+    <p><strong>Catégorie :</strong> {{ ticket.categorie }}</p>
+    <p><strong>Assigné à :</strong> {{ ticket.assigne_a }}</p>
+    <p><strong>Statut :</strong> {{ ticket.status }}</p>
+    <p><strong>Priorité :</strong> {{ ticket.priority }}</p>
+    <button type="button" onclick="toggleAdditionalFields()" class="toggle-button">
+             ➤ Informations supplémentaires
+    </button>
+    <div id="additional-fields" style="display: none; margin-top: 10px;">
+        <p><strong>Adresse e-mail de l'étudiant :</strong> {{ ticket.email }}</p>
+        <p><strong>Pays de destination :</strong> {{ ticket.pays }}</p>
+    </div>
+
+{% else %}
+    <p>Aucun ticket trouvé.</p>
+{% endif %}
+
 
     <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour à l'accueil</a>
+<script>
+function toggleAdditionalFields() {
+    const fields = document.getElementById("additional-fields");
+    const btn = document.querySelector(".toggle-button");
+    if (fields.style.display === "none") {
+        fields.style.display = "block";
+        btn.innerHTML = "▼ Informations supplémentaires";
+    } else {
+        fields.style.display = "none";
+        btn.innerHTML = "➤ Informations supplémentaires";
+    }
+}
+</script>
 
 </body>
 </html>

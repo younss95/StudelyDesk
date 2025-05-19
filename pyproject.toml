@@ -12,6 +12,7 @@ dependencies = [
     "python-dotenv>=1.1.0",
     "spectree>=1.4.7",
     "flask-wtf>=1.2.2",
+    "flask-httpauth>=4.8.0",
 ]
 authors = [
     {name = "younes", email = "younesazirgui@gmail.com"},

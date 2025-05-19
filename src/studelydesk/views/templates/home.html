@@ -7,20 +7,38 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Gestionnaire de ticket</title>
 </head>
 <body>
 
+{% include 'navbar.html' %}
+
+
+
+
 <section class="form-container-parent">
     <div class="form-container">
-        <h1 class="text-center">Bienvenue sur le gestionnaire de ticket StudelyDesk</h1>
+        <h1 class="text-center">Bienvenue sur le gestionnaire de ticket <span>StudelyDesk</span></h1>
+<!--
+        <a href="{{ url_for('web_ui.create_ticket') }}" class="form-button">
+            <i class="fa-solid fa-plus"></i> Créer un Ticket
+        </a>
+        <a href="{{ url_for('web_ui.delete_ticket') }}" class="form-button">
+            <i class="fa-solid fa-trash"></i> Supprimer un ticket
+        </a>
+        <a href="{{ url_for('web_ui.getall_ticket') }}" class="form-button">
+            <i class="fa-solid fa-eye"></i> Consulter tous les tickets
+        </a>
+        {% for ticket in tickets %}
+{% endfor %}
 
-        <a href="{{ url_for('web_ui.create_ticket') }}" class="form-button">Créer un Ticket</a>
-        <a href="{{ url_for('web_ui.delete_ticket') }}" class="form-button">Supprimer un ticket</a>
-        <a href="{{ url_for('web_ui.get_ticket') }}" class="form-button">Consulter un ticket</a>
-        <a href="{{ url_for('web_ui.getall_ticket') }}" class="form-button">Consulter tout les tickets</a>
-        <a href="{{ url_for('web_ui.update_ticket') }}" class="form-button">Modifier un Ticket</a>
+        <a href="{{ url_for('web_ui.getstats') }}" class="form-button">
+            <i class="fa-solid fa-chart-simple"></i> Statistiques
+        </a>
 
+        <a href="{{ url_for('web_ui.index') }}" class="form-button"><i class="fa-solid fa-arrow-left"></i>   Retour</a>
+    -->
 </div>
 </section>
 
