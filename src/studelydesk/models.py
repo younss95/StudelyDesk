@@ -152,5 +152,18 @@ def get_tickets_by_user_id(user_id):
         return [dict(row._mapping) for row in results]
 
 
+def ajouter_reponse(ticket_id, contenu):
+    conn = get_db_connection()
+    try:
+        conn.execute(
+            "INSERT INTO reponses (ticket_id, contenu, date) VALUES (?, ?, ?)",
+            (ticket_id, contenu, datetime.now())
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+
+
 
 
