@@ -112,6 +112,15 @@
   padding: 5rem 15%;
 }
 
+.form-section a {
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 5%;
+    text-decoration: underline;
+
+}
+
 .form-section h2 {
   font-size: 3.5rem;
   color: var(--text-color);

@@ -94,7 +94,7 @@ body {
         flex-wrap: wrap;
         gap: 20px;
         justify-content: space-between;
-        margin-bottom: 10%;
+        margin-bottom: 8%;
     }
 
     .form-group {
@@ -162,5 +162,32 @@ body {
     }
 }
 
+
+
+/* PARTIE POUR LA DESCRIPTION DU TICKET
+
+ */
+.form-reponse textarea {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.historique-reponses {
+    margin-top: 40px;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.reponse-item {
+    margin-bottom: 20px;
+}
+
+.reponse-item p {
+    margin: 5px 0;
+}
 
 
