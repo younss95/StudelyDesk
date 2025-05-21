@@ -7,6 +7,8 @@
 </head>
 <body>
 {% include 'navbar.html' %}
+
+
 <section class="form-container-parent">
     <div class="form-container">
         <h1 class="text-center">Ajouter un ticket</h1>
@@ -46,11 +48,11 @@
         <div class="form-group">
             <label for="assigne_a">Assigné à :</label>
             <select id="assigne_a" name="assigne_a">
-                <option value="kassandra">Kassandra CHEUNET</option>
-                <option value="marc">Marc TIOMA</option>
-                <option value="sarah">Sarah BENNAI</option>
-                <option value="jerdy">Jerdy NINABEKA</option>
-                <option value="brice">Brice ALLAGBE</option>
+                <option value="Kassandra">Kassandra CHEUNET</option>
+                <option value="Marc">Marc TIOMA</option>
+                <option value="Sarah">Sarah BENNAI</option>
+                <option value="Jerdy">Jerdy NINABEKA</option>
+                <option value="Brice">Brice ALLAGBE</option>
             </select>
         </div>
 
@@ -143,13 +145,13 @@ function toggleAdditionalFields() {
 
 // associer chaque departement à une personne
 const departementAssigneMap = {
-    "customer": "kassandra",
-    "treso": "marc",
-    "product": "sarah",
+    "customer": "Kassandra",
+    "treso": "Marc",
+    "product": "Sarah",
     "test": "jerdy",
-    "support": "brice",
-    "conformite": "marc",
-    "engagement": "marc"
+    "support": "Brice",
+    "conformite": "Marc",
+    "engagement": "Marc"
 };
 
 

@@ -236,7 +236,32 @@ def get_ticket_id(ticket_id):
         flash("Ticket introuvable.", "error")
         return redirect(url_for("web_ui.mes_tickets"))
 
-    return render_template('get_ticket.html', ticket=ticket)
+    # Récupérer les réponses liées
+    conn = get_db_connection()
+    reponses = conn.execute(
+        "SELECT * FROM reponses WHERE ticket_id = ? ORDER BY date ASC",
+        (ticket_id,)
+    ).fetchall()
+    conn.close()
+
+    return render_template('get_ticket.html', ticket=ticket, reponses=reponses)
+
+
+
+@web_ui.route('/ticket/<int:ticket_id>/repondre', methods=['POST'])
+def repondre_ticket(ticket_id):
+    reponse = request.form.get('reponse')
+
+    if not reponse or reponse.strip() == "":
+        flash("La réponse ne peut pas être vide.", "error")
+        return redirect(url_for('web_ui.get_ticket_id', ticket_id=ticket_id))
+
+    # Appel à ta fonction pour ajouter la réponse
+    models.ajouter_reponse(ticket_id, reponse.strip())
+
+    flash("Réponse envoyée avec succès !", "success")
+    return redirect(url_for('web_ui.get_ticket_id', ticket_id=ticket_id))
+
 
 
 

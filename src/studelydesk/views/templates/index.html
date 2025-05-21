@@ -16,8 +16,8 @@
 <header class="header">
     <nav class="navbar">
       <a href="#home">Accueil</a>
-      <a href="#inscription">Inscription</a>
       <a href="#connexion">Connexion</a>
+        <a href="#inscription">Inscription</a>
     </nav>
 </header>
 
@@ -35,6 +35,24 @@
 </section>
 
 
+<section class="form-section" id="connexion">
+  <h2>Connexion</h2>
+  <form action="{{ url_for('web_ui.login') }}" method="POST" class="form-container" enctype="application/x-www-form-urlencoded">
+
+    <label for="email">Adresse e-mail :</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Mot de passe :</label>
+    <input type="password" id="password" name="password" required>
+
+    <a href="#inscription" style="color: #0cabea">Créer un compte</a>
+
+    <button type="submit">Se connecter</button>
+  </form>
+</section>
+
+
+
 
 <!-- SECTION INSCRIPTION -->
 <section class="form-section" id="inscription">
@@ -50,7 +68,7 @@
       <label for="password">Mot de passe :</label>
     <input type="password" id="password" name="password" required>
 
-      <label for="departement">Département :</label>
+      <label for="departement">Département assigné :</label>
     <select id="departement" name="departement">
                 <option value="customer">Customer Service</option>
                 <option value="treso">Treso Etudiant</option>
@@ -67,19 +85,6 @@
 </section>
 
 <!-- SECTION CONNEXION -->
-<section class="form-section" id="connexion">
-  <h2>Connexion</h2>
-  <form action="{{ url_for('web_ui.login') }}" method="POST" class="form-container" enctype="application/x-www-form-urlencoded">
-
-    <label for="email">Adresse e-mail :</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="password">Mot de passe :</label>
-    <input type="password" id="password" name="password" required>
-
-    <button type="submit">Se connecter</button>
-  </form>
-</section>
 
 
 

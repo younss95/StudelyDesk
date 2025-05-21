@@ -12639,3 +12639,1100 @@ FROM entries
 2025-05-19 16:50:35,617 [INFO] ROLLBACK
 2025-05-19 16:50:35,617 [INFO] 127.0.0.1 - - [19/May/2025 16:50:35] "GET /getall_ticket HTTP/1.1" 200 -
 2025-05-19 16:50:35,635 [INFO] 127.0.0.1 - - [19/May/2025 16:50:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:42:16,997 [INFO] BEGIN (implicit)
+2025-05-21 12:42:17,000 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 12:42:17,000 [INFO] [raw sql] ()
+2025-05-21 12:42:17,006 [INFO] COMMIT
+2025-05-21 12:42:18,027 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-21 12:42:18,028 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-21 12:42:18,032 [INFO]  * Restarting with stat
+2025-05-21 12:42:21,632 [INFO] BEGIN (implicit)
+2025-05-21 12:42:21,639 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 12:42:21,640 [INFO] [raw sql] ()
+2025-05-21 12:42:21,643 [INFO] COMMIT
+2025-05-21 12:42:22,263 [WARNING]  * Debugger is active!
+2025-05-21 12:42:22,288 [INFO]  * Debugger PIN: 117-906-151
+2025-05-21 12:43:55,960 [INFO] 127.0.0.1 - - [21/May/2025 12:43:55] "GET / HTTP/1.1" 200 -
+2025-05-21 12:43:56,045 [INFO] 127.0.0.1 - - [21/May/2025 12:43:56] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 12:43:56,323 [INFO] 127.0.0.1 - - [21/May/2025 12:43:56] "GET /static/studely%20(1).png HTTP/1.1" 200 -
+2025-05-21 12:43:56,367 [INFO] 127.0.0.1 - - [21/May/2025 12:43:56] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 12:43:56,459 [INFO] 127.0.0.1 - - [21/May/2025 12:43:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-21 12:44:05,738 [INFO] 127.0.0.1 - - [21/May/2025 12:44:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-21 12:44:05,856 [INFO] 127.0.0.1 - - [21/May/2025 12:44:05] "GET /home HTTP/1.1" 200 -
+2025-05-21 12:44:05,911 [INFO] 127.0.0.1 - - [21/May/2025 12:44:05] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-21 12:44:08,421 [INFO] 127.0.0.1 - - [21/May/2025 12:44:08] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-21 12:44:08,478 [INFO] 127.0.0.1 - - [21/May/2025 12:44:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:44:10,481 [INFO] 127.0.0.1 - - [21/May/2025 12:44:10] "[31m[1mGET /delete_ticket HTTP/1.1[0m" 401 -
+2025-05-21 12:44:30,787 [INFO] BEGIN (implicit)
+2025-05-21 12:44:30,787 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 12:44:30,791 [INFO] [generated in 0.00446s] ()
+2025-05-21 12:44:30,794 [INFO] ROLLBACK
+2025-05-21 12:44:30,866 [INFO] 127.0.0.1 - - [21/May/2025 12:44:30] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-21 12:44:30,941 [INFO] 127.0.0.1 - - [21/May/2025 12:44:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:44:33,913 [INFO] 127.0.0.1 - - [21/May/2025 12:44:33] "GET /home HTTP/1.1" 200 -
+2025-05-21 12:44:33,945 [INFO] 127.0.0.1 - - [21/May/2025 12:44:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:44:59,651 [INFO] 127.0.0.1 - - [21/May/2025 12:44:59] "GET /home HTTP/1.1" 200 -
+2025-05-21 12:44:59,725 [INFO] 127.0.0.1 - - [21/May/2025 12:44:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:45:01,689 [INFO] BEGIN (implicit)
+2025-05-21 12:45:01,690 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 12:45:01,691 [INFO] [cached since 30.9s ago] ()
+2025-05-21 12:45:01,694 [INFO] ROLLBACK
+2025-05-21 12:45:01,714 [INFO] 127.0.0.1 - - [21/May/2025 12:45:01] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-21 12:45:01,760 [INFO] 127.0.0.1 - - [21/May/2025 12:45:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:45:30,825 [INFO] 127.0.0.1 - - [21/May/2025 12:45:30] "GET /home HTTP/1.1" 200 -
+2025-05-21 12:45:30,872 [INFO] 127.0.0.1 - - [21/May/2025 12:45:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:45:31,975 [INFO] BEGIN (implicit)
+2025-05-21 12:45:31,977 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 12:45:31,977 [INFO] [cached since 61.19s ago] ()
+2025-05-21 12:45:31,979 [INFO] ROLLBACK
+2025-05-21 12:45:32,537 [INFO] 127.0.0.1 - - [21/May/2025 12:45:32] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 12:45:32,615 [INFO] 127.0.0.1 - - [21/May/2025 12:45:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:45:34,936 [INFO] 127.0.0.1 - - [21/May/2025 12:45:34] "GET /home HTTP/1.1" 200 -
+2025-05-21 12:45:34,963 [INFO] 127.0.0.1 - - [21/May/2025 12:45:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:45:36,446 [INFO] BEGIN (implicit)
+2025-05-21 12:45:36,447 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 12:45:36,448 [INFO] [cached since 65.66s ago] ()
+2025-05-21 12:45:36,450 [INFO] ROLLBACK
+2025-05-21 12:45:36,458 [INFO] BEGIN (implicit)
+2025-05-21 12:45:36,463 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 12:45:36,466 [INFO] [cached since 65.68s ago] ()
+2025-05-21 12:45:36,467 [INFO] ROLLBACK
+2025-05-21 12:45:36,510 [INFO] 127.0.0.1 - - [21/May/2025 12:45:36] "GET /getstats HTTP/1.1" 200 -
+2025-05-21 12:45:36,546 [INFO] 127.0.0.1 - - [21/May/2025 12:45:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:45:37,632 [INFO] 127.0.0.1 - - [21/May/2025 12:45:37] "GET /home HTTP/1.1" 200 -
+2025-05-21 12:45:37,668 [INFO] 127.0.0.1 - - [21/May/2025 12:45:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:45:38,882 [INFO] BEGIN (implicit)
+2025-05-21 12:45:38,883 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 12:45:38,884 [INFO] [cached since 68.1s ago] ()
+2025-05-21 12:45:38,886 [INFO] ROLLBACK
+2025-05-21 12:45:38,890 [INFO] 127.0.0.1 - - [21/May/2025 12:45:38] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 12:45:38,932 [INFO] 127.0.0.1 - - [21/May/2025 12:45:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:45:55,822 [INFO] 127.0.0.1 - - [21/May/2025 12:45:55] "GET /home HTTP/1.1" 200 -
+2025-05-21 12:45:55,852 [INFO] 127.0.0.1 - - [21/May/2025 12:45:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:45:57,783 [INFO] 127.0.0.1 - - [21/May/2025 12:45:57] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-21 12:45:57,818 [INFO] 127.0.0.1 - - [21/May/2025 12:45:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:46:44,321 [INFO] 127.0.0.1 - - [21/May/2025 12:46:44] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-21 12:46:44,391 [INFO] 127.0.0.1 - - [21/May/2025 12:46:44] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-21 12:47:01,448 [INFO] 127.0.0.1 - - [21/May/2025 12:47:01] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-21 12:47:01,495 [INFO] 127.0.0.1 - - [21/May/2025 12:47:01] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-21 12:47:24,344 [INFO] 127.0.0.1 - - [21/May/2025 12:47:24] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-21 12:47:24,381 [INFO] 127.0.0.1 - - [21/May/2025 12:47:24] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-21 12:47:30,902 [INFO] 127.0.0.1 - - [21/May/2025 12:47:30] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-21 12:47:30,963 [INFO] 127.0.0.1 - - [21/May/2025 12:47:30] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-21 12:47:38,986 [INFO] 127.0.0.1 - - [21/May/2025 12:47:38] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-21 12:47:39,026 [INFO] 127.0.0.1 - - [21/May/2025 12:47:39] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-21 12:47:43,703 [INFO] 127.0.0.1 - - [21/May/2025 12:47:43] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-21 12:47:43,760 [INFO] 127.0.0.1 - - [21/May/2025 12:47:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:47:44,323 [INFO] 127.0.0.1 - - [21/May/2025 12:47:44] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-21 12:47:44,367 [INFO] 127.0.0.1 - - [21/May/2025 12:47:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:47:49,022 [INFO] 127.0.0.1 - - [21/May/2025 12:47:49] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-21 12:47:49,081 [INFO] 127.0.0.1 - - [21/May/2025 12:47:49] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-21 12:47:54,889 [INFO] 127.0.0.1 - - [21/May/2025 12:47:54] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-21 12:47:54,920 [INFO] 127.0.0.1 - - [21/May/2025 12:47:54] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-21 12:47:58,079 [INFO] 127.0.0.1 - - [21/May/2025 12:47:58] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-21 12:47:58,106 [INFO] 127.0.0.1 - - [21/May/2025 12:47:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:47:59,832 [INFO] 127.0.0.1 - - [21/May/2025 12:47:59] "GET /home HTTP/1.1" 200 -
+2025-05-21 12:47:59,865 [INFO] 127.0.0.1 - - [21/May/2025 12:47:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:48:00,485 [INFO] 127.0.0.1 - - [21/May/2025 12:48:00] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-21 12:48:00,534 [INFO] 127.0.0.1 - - [21/May/2025 12:48:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:48:06,440 [INFO] 127.0.0.1 - - [21/May/2025 12:48:06] "GET /home HTTP/1.1" 200 -
+2025-05-21 12:48:06,478 [INFO] 127.0.0.1 - - [21/May/2025 12:48:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 12:48:07,751 [INFO] BEGIN (implicit)
+2025-05-21 12:48:07,753 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 12:48:07,753 [INFO] [cached since 217s ago] ()
+2025-05-21 12:48:07,754 [INFO] ROLLBACK
+2025-05-21 12:48:07,756 [INFO] 127.0.0.1 - - [21/May/2025 12:48:07] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 12:48:07,796 [INFO] 127.0.0.1 - - [21/May/2025 12:48:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 13:01:13,832 [INFO] 127.0.0.1 - - [21/May/2025 13:01:13] "GET /home HTTP/1.1" 200 -
+2025-05-21 13:01:13,884 [INFO] 127.0.0.1 - - [21/May/2025 13:01:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 13:01:15,153 [INFO] 127.0.0.1 - - [21/May/2025 13:01:15] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-21 13:01:15,170 [INFO] 127.0.0.1 - - [21/May/2025 13:01:15] "GET / HTTP/1.1" 200 -
+2025-05-21 13:01:15,225 [INFO] 127.0.0.1 - - [21/May/2025 13:01:15] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 13:01:15,233 [INFO] 127.0.0.1 - - [21/May/2025 13:01:15] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:01:15,237 [INFO] 127.0.0.1 - - [21/May/2025 13:01:15] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:03:14,922 [INFO] 127.0.0.1 - - [21/May/2025 13:03:14] "GET / HTTP/1.1" 200 -
+2025-05-21 13:03:14,969 [INFO] 127.0.0.1 - - [21/May/2025 13:03:14] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 13:03:14,978 [INFO] 127.0.0.1 - - [21/May/2025 13:03:14] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:03:14,983 [INFO] 127.0.0.1 - - [21/May/2025 13:03:14] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:03:31,183 [INFO] 127.0.0.1 - - [21/May/2025 13:03:31] "GET / HTTP/1.1" 200 -
+2025-05-21 13:03:31,223 [INFO] 127.0.0.1 - - [21/May/2025 13:03:31] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 13:03:31,226 [INFO] 127.0.0.1 - - [21/May/2025 13:03:31] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:03:31,234 [INFO] 127.0.0.1 - - [21/May/2025 13:03:31] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:07:12,724 [INFO] 127.0.0.1 - - [21/May/2025 13:07:12] "GET / HTTP/1.1" 200 -
+2025-05-21 13:07:12,796 [INFO] 127.0.0.1 - - [21/May/2025 13:07:12] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:07:12,801 [INFO] 127.0.0.1 - - [21/May/2025 13:07:12] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 13:07:12,801 [INFO] 127.0.0.1 - - [21/May/2025 13:07:12] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:07:35,163 [INFO] 127.0.0.1 - - [21/May/2025 13:07:35] "GET / HTTP/1.1" 200 -
+2025-05-21 13:07:35,213 [INFO] 127.0.0.1 - - [21/May/2025 13:07:35] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:07:35,213 [INFO] 127.0.0.1 - - [21/May/2025 13:07:35] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 13:07:35,217 [INFO] 127.0.0.1 - - [21/May/2025 13:07:35] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:08:13,700 [INFO] 127.0.0.1 - - [21/May/2025 13:08:13] "GET / HTTP/1.1" 200 -
+2025-05-21 13:08:13,773 [INFO] 127.0.0.1 - - [21/May/2025 13:08:13] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:08:13,775 [INFO] 127.0.0.1 - - [21/May/2025 13:08:13] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:08:13,781 [INFO] 127.0.0.1 - - [21/May/2025 13:08:13] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:08:19,445 [INFO] 127.0.0.1 - - [21/May/2025 13:08:19] "GET / HTTP/1.1" 200 -
+2025-05-21 13:08:19,528 [INFO] 127.0.0.1 - - [21/May/2025 13:08:19] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:08:19,531 [INFO] 127.0.0.1 - - [21/May/2025 13:08:19] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:08:19,536 [INFO] 127.0.0.1 - - [21/May/2025 13:08:19] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:08:51,134 [INFO] 127.0.0.1 - - [21/May/2025 13:08:51] "GET / HTTP/1.1" 200 -
+2025-05-21 13:08:51,200 [INFO] 127.0.0.1 - - [21/May/2025 13:08:51] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:08:51,210 [INFO] 127.0.0.1 - - [21/May/2025 13:08:51] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:08:51,220 [INFO] 127.0.0.1 - - [21/May/2025 13:08:51] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:08:57,410 [INFO] 127.0.0.1 - - [21/May/2025 13:08:57] "GET / HTTP/1.1" 200 -
+2025-05-21 13:08:57,457 [INFO] 127.0.0.1 - - [21/May/2025 13:08:57] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:08:57,458 [INFO] 127.0.0.1 - - [21/May/2025 13:08:57] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:08:57,459 [INFO] 127.0.0.1 - - [21/May/2025 13:08:57] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:09:06,337 [INFO] 127.0.0.1 - - [21/May/2025 13:09:06] "GET / HTTP/1.1" 200 -
+2025-05-21 13:09:06,411 [INFO] 127.0.0.1 - - [21/May/2025 13:09:06] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:09:06,412 [INFO] 127.0.0.1 - - [21/May/2025 13:09:06] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:09:06,412 [INFO] 127.0.0.1 - - [21/May/2025 13:09:06] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:09:10,848 [INFO] 127.0.0.1 - - [21/May/2025 13:09:10] "GET / HTTP/1.1" 200 -
+2025-05-21 13:09:10,896 [INFO] 127.0.0.1 - - [21/May/2025 13:09:10] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:09:10,912 [INFO] 127.0.0.1 - - [21/May/2025 13:09:10] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:09:10,918 [INFO] 127.0.0.1 - - [21/May/2025 13:09:10] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:11:12,311 [INFO] 127.0.0.1 - - [21/May/2025 13:11:12] "GET / HTTP/1.1" 200 -
+2025-05-21 13:11:12,365 [INFO] 127.0.0.1 - - [21/May/2025 13:11:12] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:11:12,367 [INFO] 127.0.0.1 - - [21/May/2025 13:11:12] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 13:11:12,369 [INFO] 127.0.0.1 - - [21/May/2025 13:11:12] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:11:13,486 [INFO] 127.0.0.1 - - [21/May/2025 13:11:13] "GET / HTTP/1.1" 200 -
+2025-05-21 13:11:13,520 [INFO] 127.0.0.1 - - [21/May/2025 13:11:13] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 13:11:13,535 [INFO] 127.0.0.1 - - [21/May/2025 13:11:13] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:11:13,545 [INFO] 127.0.0.1 - - [21/May/2025 13:11:13] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:11:13,639 [INFO] 127.0.0.1 - - [21/May/2025 13:11:13] "GET / HTTP/1.1" 200 -
+2025-05-21 13:11:13,670 [INFO] 127.0.0.1 - - [21/May/2025 13:11:13] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 13:11:13,671 [INFO] 127.0.0.1 - - [21/May/2025 13:11:13] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:11:13,683 [INFO] 127.0.0.1 - - [21/May/2025 13:11:13] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:12:20,605 [INFO] 127.0.0.1 - - [21/May/2025 13:12:20] "GET / HTTP/1.1" 200 -
+2025-05-21 13:12:20,655 [INFO] 127.0.0.1 - - [21/May/2025 13:12:20] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 13:12:20,666 [INFO] 127.0.0.1 - - [21/May/2025 13:12:20] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:12:20,687 [INFO] 127.0.0.1 - - [21/May/2025 13:12:20] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:13:23,193 [INFO] 127.0.0.1 - - [21/May/2025 13:13:23] "GET / HTTP/1.1" 200 -
+2025-05-21 13:13:23,248 [INFO] 127.0.0.1 - - [21/May/2025 13:13:23] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:13:23,249 [INFO] 127.0.0.1 - - [21/May/2025 13:13:23] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:13:23,250 [INFO] 127.0.0.1 - - [21/May/2025 13:13:23] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:13:23,997 [INFO] 127.0.0.1 - - [21/May/2025 13:13:23] "GET / HTTP/1.1" 200 -
+2025-05-21 13:13:24,025 [INFO] 127.0.0.1 - - [21/May/2025 13:13:24] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 13:13:24,036 [INFO] 127.0.0.1 - - [21/May/2025 13:13:24] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:13:24,041 [INFO] 127.0.0.1 - - [21/May/2025 13:13:24] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:13:24,150 [INFO] 127.0.0.1 - - [21/May/2025 13:13:24] "GET / HTTP/1.1" 200 -
+2025-05-21 13:13:24,182 [INFO] 127.0.0.1 - - [21/May/2025 13:13:24] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:13:24,186 [INFO] 127.0.0.1 - - [21/May/2025 13:13:24] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 13:13:24,188 [INFO] 127.0.0.1 - - [21/May/2025 13:13:24] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:13:24,299 [INFO] 127.0.0.1 - - [21/May/2025 13:13:24] "GET / HTTP/1.1" 200 -
+2025-05-21 13:13:24,334 [INFO] 127.0.0.1 - - [21/May/2025 13:13:24] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 13:13:24,343 [INFO] 127.0.0.1 - - [21/May/2025 13:13:24] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:13:24,350 [INFO] 127.0.0.1 - - [21/May/2025 13:13:24] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:13:24,444 [INFO] 127.0.0.1 - - [21/May/2025 13:13:24] "GET / HTTP/1.1" 200 -
+2025-05-21 13:13:24,473 [INFO] 127.0.0.1 - - [21/May/2025 13:13:24] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 13:13:24,480 [INFO] 127.0.0.1 - - [21/May/2025 13:13:24] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:13:24,491 [INFO] 127.0.0.1 - - [21/May/2025 13:13:24] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:13:30,655 [INFO] 127.0.0.1 - - [21/May/2025 13:13:30] "GET / HTTP/1.1" 200 -
+2025-05-21 13:13:30,703 [INFO] 127.0.0.1 - - [21/May/2025 13:13:30] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:13:30,704 [INFO] 127.0.0.1 - - [21/May/2025 13:13:30] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:13:30,738 [INFO] 127.0.0.1 - - [21/May/2025 13:13:30] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:13:39,668 [INFO] 127.0.0.1 - - [21/May/2025 13:13:39] "GET / HTTP/1.1" 200 -
+2025-05-21 13:13:39,721 [INFO] 127.0.0.1 - - [21/May/2025 13:13:39] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:13:39,738 [INFO] 127.0.0.1 - - [21/May/2025 13:13:39] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:13:39,744 [INFO] 127.0.0.1 - - [21/May/2025 13:13:39] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:13:49,998 [INFO] 127.0.0.1 - - [21/May/2025 13:13:49] "GET / HTTP/1.1" 200 -
+2025-05-21 13:13:50,058 [INFO] 127.0.0.1 - - [21/May/2025 13:13:50] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:13:50,064 [INFO] 127.0.0.1 - - [21/May/2025 13:13:50] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:13:50,066 [INFO] 127.0.0.1 - - [21/May/2025 13:13:50] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:13:51,062 [INFO] 127.0.0.1 - - [21/May/2025 13:13:51] "GET / HTTP/1.1" 200 -
+2025-05-21 13:13:51,093 [INFO] 127.0.0.1 - - [21/May/2025 13:13:51] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 13:13:51,096 [INFO] 127.0.0.1 - - [21/May/2025 13:13:51] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:13:51,107 [INFO] 127.0.0.1 - - [21/May/2025 13:13:51] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:13:51,235 [INFO] 127.0.0.1 - - [21/May/2025 13:13:51] "GET / HTTP/1.1" 200 -
+2025-05-21 13:13:51,263 [INFO] 127.0.0.1 - - [21/May/2025 13:13:51] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 13:13:51,266 [INFO] 127.0.0.1 - - [21/May/2025 13:13:51] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:13:51,290 [INFO] 127.0.0.1 - - [21/May/2025 13:13:51] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:14:06,801 [INFO] 127.0.0.1 - - [21/May/2025 13:14:06] "GET / HTTP/1.1" 200 -
+2025-05-21 13:14:06,883 [INFO] 127.0.0.1 - - [21/May/2025 13:14:06] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:14:06,885 [INFO] 127.0.0.1 - - [21/May/2025 13:14:06] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:14:06,896 [INFO] 127.0.0.1 - - [21/May/2025 13:14:06] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:14:23,293 [INFO] 127.0.0.1 - - [21/May/2025 13:14:23] "GET / HTTP/1.1" 200 -
+2025-05-21 13:14:23,352 [INFO] 127.0.0.1 - - [21/May/2025 13:14:23] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:14:23,361 [INFO] 127.0.0.1 - - [21/May/2025 13:14:23] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:14:23,366 [INFO] 127.0.0.1 - - [21/May/2025 13:14:23] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:14:30,020 [INFO] 127.0.0.1 - - [21/May/2025 13:14:30] "GET / HTTP/1.1" 200 -
+2025-05-21 13:14:30,103 [INFO] 127.0.0.1 - - [21/May/2025 13:14:30] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:14:30,104 [INFO] 127.0.0.1 - - [21/May/2025 13:14:30] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:14:30,108 [INFO] 127.0.0.1 - - [21/May/2025 13:14:30] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:14:40,662 [INFO] 127.0.0.1 - - [21/May/2025 13:14:40] "GET / HTTP/1.1" 200 -
+2025-05-21 13:14:40,746 [INFO] 127.0.0.1 - - [21/May/2025 13:14:40] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:14:40,748 [INFO] 127.0.0.1 - - [21/May/2025 13:14:40] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:14:40,749 [INFO] 127.0.0.1 - - [21/May/2025 13:14:40] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:14:49,492 [INFO] 127.0.0.1 - - [21/May/2025 13:14:49] "GET / HTTP/1.1" 200 -
+2025-05-21 13:14:49,551 [INFO] 127.0.0.1 - - [21/May/2025 13:14:49] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:14:49,552 [INFO] 127.0.0.1 - - [21/May/2025 13:14:49] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:14:49,583 [INFO] 127.0.0.1 - - [21/May/2025 13:14:49] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:15:36,286 [INFO] 127.0.0.1 - - [21/May/2025 13:15:36] "GET / HTTP/1.1" 200 -
+2025-05-21 13:15:36,326 [INFO] 127.0.0.1 - - [21/May/2025 13:15:36] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:15:36,328 [INFO] 127.0.0.1 - - [21/May/2025 13:15:36] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:15:36,332 [INFO] 127.0.0.1 - - [21/May/2025 13:15:36] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:15:47,866 [INFO] 127.0.0.1 - - [21/May/2025 13:15:47] "GET / HTTP/1.1" 200 -
+2025-05-21 13:15:47,919 [INFO] 127.0.0.1 - - [21/May/2025 13:15:47] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:15:47,930 [INFO] 127.0.0.1 - - [21/May/2025 13:15:47] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:15:47,940 [INFO] 127.0.0.1 - - [21/May/2025 13:15:47] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:16:09,125 [INFO] 127.0.0.1 - - [21/May/2025 13:16:09] "GET / HTTP/1.1" 200 -
+2025-05-21 13:16:09,158 [INFO] 127.0.0.1 - - [21/May/2025 13:16:09] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:16:09,160 [INFO] 127.0.0.1 - - [21/May/2025 13:16:09] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:16:09,162 [INFO] 127.0.0.1 - - [21/May/2025 13:16:09] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:16:47,253 [INFO] 127.0.0.1 - - [21/May/2025 13:16:47] "GET / HTTP/1.1" 200 -
+2025-05-21 13:16:47,320 [INFO] 127.0.0.1 - - [21/May/2025 13:16:47] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:16:47,332 [INFO] 127.0.0.1 - - [21/May/2025 13:16:47] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:16:47,336 [INFO] 127.0.0.1 - - [21/May/2025 13:16:47] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:17:01,119 [INFO] 127.0.0.1 - - [21/May/2025 13:17:01] "GET / HTTP/1.1" 200 -
+2025-05-21 13:17:01,179 [INFO] 127.0.0.1 - - [21/May/2025 13:17:01] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:17:01,183 [INFO] 127.0.0.1 - - [21/May/2025 13:17:01] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:17:01,183 [INFO] 127.0.0.1 - - [21/May/2025 13:17:01] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:17:09,661 [INFO] 127.0.0.1 - - [21/May/2025 13:17:09] "GET / HTTP/1.1" 200 -
+2025-05-21 13:17:09,765 [INFO] 127.0.0.1 - - [21/May/2025 13:17:09] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:17:09,775 [INFO] 127.0.0.1 - - [21/May/2025 13:17:09] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:17:09,786 [INFO] 127.0.0.1 - - [21/May/2025 13:17:09] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:17:16,890 [INFO] 127.0.0.1 - - [21/May/2025 13:17:16] "GET / HTTP/1.1" 200 -
+2025-05-21 13:17:16,934 [INFO] 127.0.0.1 - - [21/May/2025 13:17:16] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:17:16,940 [INFO] 127.0.0.1 - - [21/May/2025 13:17:16] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:17:16,940 [INFO] 127.0.0.1 - - [21/May/2025 13:17:16] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:19:54,095 [INFO] 127.0.0.1 - - [21/May/2025 13:19:54] "GET / HTTP/1.1" 200 -
+2025-05-21 13:19:54,128 [INFO] 127.0.0.1 - - [21/May/2025 13:19:54] "GET /static/sheet.css HTTP/1.1" 200 -
+2025-05-21 13:19:54,131 [INFO] 127.0.0.1 - - [21/May/2025 13:19:54] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:19:54,133 [INFO] 127.0.0.1 - - [21/May/2025 13:19:54] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:20:13,083 [INFO] 127.0.0.1 - - [21/May/2025 13:20:13] "GET / HTTP/1.1" 200 -
+2025-05-21 13:20:13,137 [INFO] 127.0.0.1 - - [21/May/2025 13:20:13] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:20:13,139 [INFO] 127.0.0.1 - - [21/May/2025 13:20:13] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 13:20:13,146 [INFO] 127.0.0.1 - - [21/May/2025 13:20:13] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:21:45,738 [INFO] 127.0.0.1 - - [21/May/2025 13:21:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-21 13:21:45,750 [INFO] 127.0.0.1 - - [21/May/2025 13:21:45] "GET /home HTTP/1.1" 200 -
+2025-05-21 13:21:45,820 [INFO] 127.0.0.1 - - [21/May/2025 13:21:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 13:21:48,285 [INFO] BEGIN (implicit)
+2025-05-21 13:21:48,291 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 13:21:48,292 [INFO] [cached since 2238s ago] ()
+2025-05-21 13:21:48,304 [INFO] ROLLBACK
+2025-05-21 13:21:48,310 [INFO] 127.0.0.1 - - [21/May/2025 13:21:48] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 13:21:48,354 [INFO] 127.0.0.1 - - [21/May/2025 13:21:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 13:21:55,276 [INFO] 127.0.0.1 - - [21/May/2025 13:21:55] "GET /home HTTP/1.1" 200 -
+2025-05-21 13:21:55,334 [INFO] 127.0.0.1 - - [21/May/2025 13:21:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 13:21:57,518 [INFO] 127.0.0.1 - - [21/May/2025 13:21:57] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-21 13:21:57,527 [INFO] 127.0.0.1 - - [21/May/2025 13:21:57] "GET / HTTP/1.1" 200 -
+2025-05-21 13:21:57,565 [INFO] 127.0.0.1 - - [21/May/2025 13:21:57] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 13:21:57,583 [INFO] 127.0.0.1 - - [21/May/2025 13:21:57] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 13:21:57,586 [INFO] 127.0.0.1 - - [21/May/2025 13:21:57] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 13:22:10,616 [INFO] 127.0.0.1 - - [21/May/2025 13:22:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-21 13:22:10,627 [INFO] 127.0.0.1 - - [21/May/2025 13:22:10] "GET /home HTTP/1.1" 200 -
+2025-05-21 13:22:10,695 [INFO] 127.0.0.1 - - [21/May/2025 13:22:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 13:31:01,818 [INFO] BEGIN (implicit)
+2025-05-21 13:31:01,820 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 13:31:01,821 [INFO] [cached since 2791s ago] ()
+2025-05-21 13:31:01,822 [INFO] ROLLBACK
+2025-05-21 13:31:01,825 [INFO] 127.0.0.1 - - [21/May/2025 13:31:01] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 13:31:01,888 [INFO] 127.0.0.1 - - [21/May/2025 13:31:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 13:31:07,271 [INFO] 127.0.0.1 - - [21/May/2025 13:31:07] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-21 13:31:07,321 [INFO] 127.0.0.1 - - [21/May/2025 13:31:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 13:31:08,568 [INFO] BEGIN (implicit)
+2025-05-21 13:31:08,568 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 13:31:08,568 [INFO] [cached since 2798s ago] ()
+2025-05-21 13:31:08,569 [INFO] ROLLBACK
+2025-05-21 13:31:08,572 [INFO] 127.0.0.1 - - [21/May/2025 13:31:08] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 13:31:08,600 [INFO] 127.0.0.1 - - [21/May/2025 13:31:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 13:35:02,752 [INFO] 127.0.0.1 - - [21/May/2025 13:35:02] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-21 13:35:02,789 [INFO] 127.0.0.1 - - [21/May/2025 13:35:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 13:35:06,663 [INFO] BEGIN (implicit)
+2025-05-21 13:35:06,670 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 13:35:06,682 [INFO] [cached since 3036s ago] ()
+2025-05-21 13:35:06,686 [INFO] ROLLBACK
+2025-05-21 13:35:06,703 [INFO] 127.0.0.1 - - [21/May/2025 13:35:06] "GET /delete_ticket HTTP/1.1" 200 -
+2025-05-21 13:35:06,783 [INFO] 127.0.0.1 - - [21/May/2025 13:35:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 13:35:07,312 [INFO] BEGIN (implicit)
+2025-05-21 13:35:07,312 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 13:35:07,314 [INFO] [cached since 3037s ago] ()
+2025-05-21 13:35:07,314 [INFO] ROLLBACK
+2025-05-21 13:35:07,318 [INFO] 127.0.0.1 - - [21/May/2025 13:35:07] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 13:35:07,351 [INFO] 127.0.0.1 - - [21/May/2025 13:35:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 13:35:10,022 [INFO] BEGIN (implicit)
+2025-05-21 13:35:10,023 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 13:35:10,024 [INFO] [generated in 0.00594s] (4,)
+2025-05-21 13:35:10,034 [INFO] ROLLBACK
+2025-05-21 13:35:10,594 [INFO] 127.0.0.1 - - [21/May/2025 13:35:10] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 13:35:10,667 [INFO] 127.0.0.1 - - [21/May/2025 13:35:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 13:35:53,150 [INFO] BEGIN (implicit)
+2025-05-21 13:35:53,151 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 13:35:53,151 [INFO] [cached since 43.13s ago] (4,)
+2025-05-21 13:35:53,153 [INFO] ROLLBACK
+2025-05-21 13:35:53,173 [INFO] 127.0.0.1 - - [21/May/2025 13:35:53] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 13:35:53,220 [INFO] 127.0.0.1 - - [21/May/2025 13:35:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 13:36:05,646 [INFO] BEGIN (implicit)
+2025-05-21 13:36:05,648 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 13:36:05,650 [INFO] [cached since 55.63s ago] (4,)
+2025-05-21 13:36:05,651 [INFO] ROLLBACK
+2025-05-21 13:36:05,669 [INFO] 127.0.0.1 - - [21/May/2025 13:36:05] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 13:36:05,702 [INFO] 127.0.0.1 - - [21/May/2025 13:36:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 14:58:38,906 [INFO] BEGIN (implicit)
+2025-05-21 14:58:38,906 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 14:58:38,906 [INFO] [raw sql] ()
+2025-05-21 14:58:38,906 [INFO] COMMIT
+2025-05-21 14:58:39,324 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-21 14:58:39,324 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-21 14:58:39,331 [INFO]  * Restarting with stat
+2025-05-21 14:58:41,691 [INFO] BEGIN (implicit)
+2025-05-21 14:58:41,691 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 14:58:41,691 [INFO] [raw sql] ()
+2025-05-21 14:58:41,691 [INFO] COMMIT
+2025-05-21 14:58:41,976 [WARNING]  * Debugger is active!
+2025-05-21 14:58:41,985 [INFO]  * Debugger PIN: 117-906-151
+2025-05-21 14:58:59,084 [INFO] 127.0.0.1 - - [21/May/2025 14:58:59] "GET / HTTP/1.1" 200 -
+2025-05-21 14:58:59,177 [INFO] 127.0.0.1 - - [21/May/2025 14:58:59] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 14:58:59,286 [INFO] 127.0.0.1 - - [21/May/2025 14:58:59] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 14:58:59,294 [INFO] 127.0.0.1 - - [21/May/2025 14:58:59] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 14:59:09,903 [INFO] 127.0.0.1 - - [21/May/2025 14:59:09] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-21 14:59:09,956 [INFO] 127.0.0.1 - - [21/May/2025 14:59:09] "GET /home HTTP/1.1" 200 -
+2025-05-21 14:59:10,025 [INFO] 127.0.0.1 - - [21/May/2025 14:59:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 14:59:13,488 [INFO] BEGIN (implicit)
+2025-05-21 14:59:13,489 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 14:59:13,492 [INFO] [generated in 0.00397s] ()
+2025-05-21 14:59:13,494 [INFO] ROLLBACK
+2025-05-21 14:59:13,522 [INFO] 127.0.0.1 - - [21/May/2025 14:59:13] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 14:59:13,561 [INFO] 127.0.0.1 - - [21/May/2025 14:59:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 14:59:16,365 [INFO] BEGIN (implicit)
+2025-05-21 14:59:16,365 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 14:59:16,366 [INFO] [generated in 0.00150s] (4,)
+2025-05-21 14:59:16,368 [INFO] ROLLBACK
+2025-05-21 14:59:16,379 [INFO] 127.0.0.1 - - [21/May/2025 14:59:16] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 14:59:16,415 [INFO] 127.0.0.1 - - [21/May/2025 14:59:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:00:32,480 [INFO] BEGIN (implicit)
+2025-05-21 15:00:32,483 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:00:32,483 [INFO] [cached since 76.12s ago] (4,)
+2025-05-21 15:00:32,484 [INFO] ROLLBACK
+2025-05-21 15:00:32,730 [INFO] 127.0.0.1 - - [21/May/2025 15:00:32] "[35m[1mGET /ticket/4 HTTP/1.1[0m" 500 -
+2025-05-21 15:00:32,803 [INFO] 127.0.0.1 - - [21/May/2025 15:00:32] "GET /ticket/4?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-21 15:00:32,829 [INFO] 127.0.0.1 - - [21/May/2025 15:00:32] "GET /ticket/4?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-21 15:00:32,892 [INFO] 127.0.0.1 - - [21/May/2025 15:00:32] "GET /ticket/4?__debugger__=yes&cmd=resource&f=console.png&s=rtCn5RRuCz9UA5Y2axcb HTTP/1.1" 200 -
+2025-05-21 15:00:32,984 [INFO] 127.0.0.1 - - [21/May/2025 15:00:32] "GET /ticket/4?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-21 15:00:33,012 [INFO] BEGIN (implicit)
+2025-05-21 15:00:33,015 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:00:33,016 [INFO] [cached since 76.65s ago] (4,)
+2025-05-21 15:00:33,020 [INFO] ROLLBACK
+2025-05-21 15:00:33,063 [INFO] 127.0.0.1 - - [21/May/2025 15:00:33] "[35m[1mGET /ticket/4 HTTP/1.1[0m" 500 -
+2025-05-21 15:00:33,118 [INFO] 127.0.0.1 - - [21/May/2025 15:00:33] "[36mGET /ticket/4?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:00:33,120 [INFO] 127.0.0.1 - - [21/May/2025 15:00:33] "[36mGET /ticket/4?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-21 15:00:33,153 [INFO] 127.0.0.1 - - [21/May/2025 15:00:33] "[36mGET /ticket/4?__debugger__=yes&cmd=resource&f=console.png&s=rtCn5RRuCz9UA5Y2axcb HTTP/1.1[0m" 304 -
+2025-05-21 15:00:33,195 [INFO] 127.0.0.1 - - [21/May/2025 15:00:33] "[36mGET /ticket/4?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-21 15:00:51,702 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-21 15:00:53,924 [INFO]  * Restarting with stat
+2025-05-21 15:01:00,252 [INFO] BEGIN (implicit)
+2025-05-21 15:01:00,259 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 15:01:00,260 [INFO] [raw sql] ()
+2025-05-21 15:01:00,261 [INFO] COMMIT
+2025-05-21 15:01:00,883 [WARNING]  * Debugger is active!
+2025-05-21 15:01:00,902 [INFO]  * Debugger PIN: 117-906-151
+2025-05-21 15:01:01,050 [INFO] BEGIN (implicit)
+2025-05-21 15:01:01,050 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:01:01,050 [INFO] [generated in 0.00247s] (4,)
+2025-05-21 15:01:01,050 [INFO] ROLLBACK
+2025-05-21 15:01:01,081 [INFO] 127.0.0.1 - - [21/May/2025 15:01:01] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:01:01,233 [INFO] 127.0.0.1 - - [21/May/2025 15:01:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:01:53,109 [INFO] BEGIN (implicit)
+2025-05-21 15:01:53,111 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:01:53,113 [INFO] [cached since 52.06s ago] (4,)
+2025-05-21 15:01:53,115 [INFO] ROLLBACK
+2025-05-21 15:01:53,143 [INFO] 127.0.0.1 - - [21/May/2025 15:01:53] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:01:53,192 [INFO] 127.0.0.1 - - [21/May/2025 15:01:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:02:47,786 [INFO] BEGIN (implicit)
+2025-05-21 15:02:47,787 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:02:47,787 [INFO] [cached since 106.7s ago] (4,)
+2025-05-21 15:02:47,788 [INFO] ROLLBACK
+2025-05-21 15:02:47,791 [INFO] 127.0.0.1 - - [21/May/2025 15:02:47] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:02:47,814 [INFO] 127.0.0.1 - - [21/May/2025 15:02:47] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-21 15:03:03,834 [INFO] BEGIN (implicit)
+2025-05-21 15:03:03,835 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:03:03,837 [INFO] [cached since 122.8s ago] (4,)
+2025-05-21 15:03:03,837 [INFO] ROLLBACK
+2025-05-21 15:03:03,843 [INFO] 127.0.0.1 - - [21/May/2025 15:03:03] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:03:03,879 [INFO] 127.0.0.1 - - [21/May/2025 15:03:03] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-21 15:03:10,431 [INFO] BEGIN (implicit)
+2025-05-21 15:03:10,431 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:03:10,433 [INFO] [cached since 129.4s ago] (4,)
+2025-05-21 15:03:10,436 [INFO] ROLLBACK
+2025-05-21 15:03:10,438 [INFO] 127.0.0.1 - - [21/May/2025 15:03:10] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:03:10,479 [INFO] 127.0.0.1 - - [21/May/2025 15:03:10] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-21 15:04:20,864 [INFO] 127.0.0.1 - - [21/May/2025 15:04:20] "[35m[1mPOST /ticket/4/repondre HTTP/1.1[0m" 500 -
+2025-05-21 15:04:20,950 [INFO] 127.0.0.1 - - [21/May/2025 15:04:20] "GET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-21 15:04:20,952 [INFO] 127.0.0.1 - - [21/May/2025 15:04:20] "GET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-21 15:04:21,010 [INFO] 127.0.0.1 - - [21/May/2025 15:04:21] "GET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png&s=FmJFpJIuO0jftWjlK1XI HTTP/1.1" 200 -
+2025-05-21 15:04:21,213 [INFO] 127.0.0.1 - - [21/May/2025 15:04:21] "GET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-21 15:05:14,208 [INFO] BEGIN (implicit)
+2025-05-21 15:05:14,209 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:05:14,209 [INFO] [cached since 253.2s ago] (4,)
+2025-05-21 15:05:14,209 [INFO] ROLLBACK
+2025-05-21 15:05:14,225 [INFO] 127.0.0.1 - - [21/May/2025 15:05:14] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:05:14,256 [INFO] 127.0.0.1 - - [21/May/2025 15:05:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:05:21,643 [INFO] 127.0.0.1 - - [21/May/2025 15:05:21] "[35m[1mPOST /ticket/4/repondre HTTP/1.1[0m" 500 -
+2025-05-21 15:05:21,703 [INFO] 127.0.0.1 - - [21/May/2025 15:05:21] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:05:21,704 [INFO] 127.0.0.1 - - [21/May/2025 15:05:21] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-21 15:05:21,725 [INFO] 127.0.0.1 - - [21/May/2025 15:05:21] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png&s=FmJFpJIuO0jftWjlK1XI HTTP/1.1[0m" 304 -
+2025-05-21 15:06:11,647 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-21 15:06:12,621 [INFO]  * Restarting with stat
+2025-05-21 15:06:19,635 [INFO] BEGIN (implicit)
+2025-05-21 15:06:19,637 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 15:06:19,638 [INFO] [raw sql] ()
+2025-05-21 15:06:19,638 [INFO] COMMIT
+2025-05-21 15:06:20,239 [WARNING]  * Debugger is active!
+2025-05-21 15:06:20,245 [INFO]  * Debugger PIN: 117-906-151
+2025-05-21 15:06:20,447 [INFO] 127.0.0.1 - - [21/May/2025 15:06:20] "[35m[1mPOST /ticket/4/repondre HTTP/1.1[0m" 500 -
+2025-05-21 15:06:20,632 [INFO] 127.0.0.1 - - [21/May/2025 15:06:20] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:06:20,636 [INFO] 127.0.0.1 - - [21/May/2025 15:06:20] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-21 15:06:20,663 [INFO] 127.0.0.1 - - [21/May/2025 15:06:20] "GET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png&s=enR9jJVUq8sNfR6eBmjl HTTP/1.1" 200 -
+2025-05-21 15:06:20,769 [INFO] 127.0.0.1 - - [21/May/2025 15:06:20] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-21 15:06:26,271 [INFO] 127.0.0.1 - - [21/May/2025 15:06:26] "[35m[1mPOST /ticket/4/repondre HTTP/1.1[0m" 500 -
+2025-05-21 15:06:26,316 [INFO] 127.0.0.1 - - [21/May/2025 15:06:26] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:06:26,329 [INFO] 127.0.0.1 - - [21/May/2025 15:06:26] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-21 15:06:26,339 [INFO] 127.0.0.1 - - [21/May/2025 15:06:26] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png&s=enR9jJVUq8sNfR6eBmjl HTTP/1.1[0m" 304 -
+2025-05-21 15:06:39,146 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-21 15:06:39,400 [INFO]  * Restarting with stat
+2025-05-21 15:06:42,801 [INFO] BEGIN (implicit)
+2025-05-21 15:06:42,805 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 15:06:42,805 [INFO] [raw sql] ()
+2025-05-21 15:06:42,806 [INFO] COMMIT
+2025-05-21 15:06:43,204 [WARNING]  * Debugger is active!
+2025-05-21 15:06:43,206 [INFO]  * Debugger PIN: 117-906-151
+2025-05-21 15:08:13,104 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-21 15:08:14,156 [INFO]  * Restarting with stat
+2025-05-21 15:08:20,402 [INFO] BEGIN (implicit)
+2025-05-21 15:08:20,404 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 15:08:20,406 [INFO] [raw sql] ()
+2025-05-21 15:08:20,406 [INFO] COMMIT
+2025-05-21 15:08:21,293 [WARNING]  * Debugger is active!
+2025-05-21 15:08:21,303 [INFO]  * Debugger PIN: 117-906-151
+2025-05-21 15:08:21,507 [INFO] 127.0.0.1 - - [21/May/2025 15:08:21] "[35m[1mPOST /ticket/4/repondre HTTP/1.1[0m" 500 -
+2025-05-21 15:08:21,768 [INFO] 127.0.0.1 - - [21/May/2025 15:08:21] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:08:21,756 [INFO] 127.0.0.1 - - [21/May/2025 15:08:21] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-21 15:08:21,809 [INFO] 127.0.0.1 - - [21/May/2025 15:08:21] "GET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png&s=LVR2OHPOmgtD5WXGFfz0 HTTP/1.1" 200 -
+2025-05-21 15:08:30,808 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-21 15:08:31,151 [INFO]  * Restarting with stat
+2025-05-21 15:08:37,088 [INFO] BEGIN (implicit)
+2025-05-21 15:08:37,089 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 15:08:37,089 [INFO] [raw sql] ()
+2025-05-21 15:08:37,089 [INFO] COMMIT
+2025-05-21 15:08:38,079 [WARNING]  * Debugger is active!
+2025-05-21 15:08:38,090 [INFO]  * Debugger PIN: 117-906-151
+2025-05-21 15:08:38,281 [INFO] 127.0.0.1 - - [21/May/2025 15:08:38] "[35m[1mPOST /ticket/4/repondre HTTP/1.1[0m" 500 -
+2025-05-21 15:08:38,505 [INFO] 127.0.0.1 - - [21/May/2025 15:08:38] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:08:38,526 [INFO] 127.0.0.1 - - [21/May/2025 15:08:38] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-21 15:08:38,566 [INFO] 127.0.0.1 - - [21/May/2025 15:08:38] "GET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png&s=jTbLjrdvgWJVe3k4eSvS HTTP/1.1" 200 -
+2025-05-21 15:08:38,664 [INFO] 127.0.0.1 - - [21/May/2025 15:08:38] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-21 15:08:48,796 [INFO] 127.0.0.1 - - [21/May/2025 15:08:48] "[35m[1mPOST /ticket/4/repondre HTTP/1.1[0m" 500 -
+2025-05-21 15:08:48,837 [INFO] 127.0.0.1 - - [21/May/2025 15:08:48] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:08:48,844 [INFO] 127.0.0.1 - - [21/May/2025 15:08:48] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-21 15:08:48,870 [INFO] 127.0.0.1 - - [21/May/2025 15:08:48] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png&s=jTbLjrdvgWJVe3k4eSvS HTTP/1.1[0m" 304 -
+2025-05-21 15:08:48,949 [INFO] 127.0.0.1 - - [21/May/2025 15:08:48] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-21 15:09:00,366 [INFO] 127.0.0.1 - - [21/May/2025 15:09:00] "[35m[1mPOST /ticket/4/repondre HTTP/1.1[0m" 500 -
+2025-05-21 15:09:00,421 [INFO] 127.0.0.1 - - [21/May/2025 15:09:00] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:09:00,423 [INFO] 127.0.0.1 - - [21/May/2025 15:09:00] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-21 15:09:00,440 [INFO] 127.0.0.1 - - [21/May/2025 15:09:00] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png&s=jTbLjrdvgWJVe3k4eSvS HTTP/1.1[0m" 304 -
+2025-05-21 15:09:09,516 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-21 15:09:09,693 [INFO]  * Restarting with stat
+2025-05-21 15:09:16,430 [INFO] BEGIN (implicit)
+2025-05-21 15:09:16,430 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 15:09:16,430 [INFO] [raw sql] ()
+2025-05-21 15:09:16,438 [INFO] COMMIT
+2025-05-21 15:09:17,250 [WARNING]  * Debugger is active!
+2025-05-21 15:09:17,272 [INFO]  * Debugger PIN: 117-906-151
+2025-05-21 15:09:17,549 [INFO] 127.0.0.1 - - [21/May/2025 15:09:17] "[35m[1mPOST /ticket/4/repondre HTTP/1.1[0m" 500 -
+2025-05-21 15:09:17,935 [INFO] 127.0.0.1 - - [21/May/2025 15:09:17] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:09:17,942 [INFO] 127.0.0.1 - - [21/May/2025 15:09:17] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-21 15:09:17,986 [INFO] 127.0.0.1 - - [21/May/2025 15:09:17] "GET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png&s=PPEtkWOvP7coEKyd89SD HTTP/1.1" 200 -
+2025-05-21 15:09:18,107 [INFO] 127.0.0.1 - - [21/May/2025 15:09:18] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-21 15:09:23,451 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-21 15:09:23,826 [INFO]  * Restarting with stat
+2025-05-21 15:09:29,984 [INFO] BEGIN (implicit)
+2025-05-21 15:09:29,984 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 15:09:29,984 [INFO] [raw sql] ()
+2025-05-21 15:09:29,991 [INFO] COMMIT
+2025-05-21 15:09:31,250 [WARNING]  * Debugger is active!
+2025-05-21 15:09:31,273 [INFO]  * Debugger PIN: 117-906-151
+2025-05-21 15:09:31,492 [INFO] 127.0.0.1 - - [21/May/2025 15:09:31] "[32mPOST /ticket/4/repondre HTTP/1.1[0m" 302 -
+2025-05-21 15:09:31,510 [INFO] BEGIN (implicit)
+2025-05-21 15:09:31,510 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:09:31,510 [INFO] [generated in 0.00309s] (4,)
+2025-05-21 15:09:31,510 [INFO] ROLLBACK
+2025-05-21 15:09:31,551 [INFO] 127.0.0.1 - - [21/May/2025 15:09:31] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:09:31,740 [INFO] 127.0.0.1 - - [21/May/2025 15:09:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:09:42,238 [INFO] 127.0.0.1 - - [21/May/2025 15:09:42] "[32mPOST /ticket/4/repondre HTTP/1.1[0m" 302 -
+2025-05-21 15:09:42,244 [INFO] BEGIN (implicit)
+2025-05-21 15:09:42,245 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:09:42,245 [INFO] [cached since 10.73s ago] (4,)
+2025-05-21 15:09:42,245 [INFO] ROLLBACK
+2025-05-21 15:09:42,248 [INFO] 127.0.0.1 - - [21/May/2025 15:09:42] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:09:42,286 [INFO] 127.0.0.1 - - [21/May/2025 15:09:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:10:06,524 [INFO] BEGIN (implicit)
+2025-05-21 15:10:06,526 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:10:06,526 [INFO] [cached since 35.01s ago] (4,)
+2025-05-21 15:10:06,527 [INFO] ROLLBACK
+2025-05-21 15:10:06,547 [INFO] 127.0.0.1 - - [21/May/2025 15:10:06] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:10:06,585 [INFO] 127.0.0.1 - - [21/May/2025 15:10:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:10:16,536 [INFO] BEGIN (implicit)
+2025-05-21 15:10:16,537 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:10:16,537 [INFO] [cached since 45.03s ago] (4,)
+2025-05-21 15:10:16,540 [INFO] ROLLBACK
+2025-05-21 15:10:16,565 [INFO] 127.0.0.1 - - [21/May/2025 15:10:16] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:10:16,624 [INFO] 127.0.0.1 - - [21/May/2025 15:10:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:10:21,178 [INFO] 127.0.0.1 - - [21/May/2025 15:10:21] "GET /home HTTP/1.1" 200 -
+2025-05-21 15:10:21,203 [INFO] 127.0.0.1 - - [21/May/2025 15:10:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:10:23,520 [INFO] BEGIN (implicit)
+2025-05-21 15:10:23,521 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 15:10:23,521 [INFO] [generated in 0.00135s] ()
+2025-05-21 15:10:23,523 [INFO] ROLLBACK
+2025-05-21 15:10:23,544 [INFO] 127.0.0.1 - - [21/May/2025 15:10:23] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 15:10:23,579 [INFO] 127.0.0.1 - - [21/May/2025 15:10:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:10:24,999 [INFO] 127.0.0.1 - - [21/May/2025 15:10:24] "GET /home HTTP/1.1" 200 -
+2025-05-21 15:10:25,029 [INFO] 127.0.0.1 - - [21/May/2025 15:10:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:10:27,255 [INFO] BEGIN (implicit)
+2025-05-21 15:10:27,255 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 15:10:27,256 [INFO] [cached since 3.736s ago] ()
+2025-05-21 15:10:27,257 [INFO] ROLLBACK
+2025-05-21 15:10:27,261 [INFO] 127.0.0.1 - - [21/May/2025 15:10:27] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 15:10:27,289 [INFO] 127.0.0.1 - - [21/May/2025 15:10:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:10:28,187 [INFO] BEGIN (implicit)
+2025-05-21 15:10:28,187 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:10:28,188 [INFO] [cached since 56.68s ago] (4,)
+2025-05-21 15:10:28,189 [INFO] ROLLBACK
+2025-05-21 15:10:28,191 [INFO] 127.0.0.1 - - [21/May/2025 15:10:28] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:10:28,233 [INFO] 127.0.0.1 - - [21/May/2025 15:10:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:10:30,465 [INFO] 127.0.0.1 - - [21/May/2025 15:10:30] "GET /home HTTP/1.1" 200 -
+2025-05-21 15:10:30,496 [INFO] 127.0.0.1 - - [21/May/2025 15:10:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:10:31,662 [INFO] BEGIN (implicit)
+2025-05-21 15:10:31,663 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 15:10:31,666 [INFO] [cached since 8.146s ago] ()
+2025-05-21 15:10:31,668 [INFO] ROLLBACK
+2025-05-21 15:10:31,673 [INFO] 127.0.0.1 - - [21/May/2025 15:10:31] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 15:10:31,731 [INFO] 127.0.0.1 - - [21/May/2025 15:10:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:10:52,353 [INFO] BEGIN (implicit)
+2025-05-21 15:10:52,354 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 15:10:52,358 [INFO] [cached since 28.84s ago] ()
+2025-05-21 15:10:52,365 [INFO] ROLLBACK
+2025-05-21 15:10:52,370 [INFO] 127.0.0.1 - - [21/May/2025 15:10:52] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 15:10:52,417 [INFO] 127.0.0.1 - - [21/May/2025 15:10:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:10:54,620 [INFO] BEGIN (implicit)
+2025-05-21 15:10:54,620 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:10:54,621 [INFO] [cached since 83.11s ago] (4,)
+2025-05-21 15:10:54,622 [INFO] ROLLBACK
+2025-05-21 15:10:54,636 [INFO] 127.0.0.1 - - [21/May/2025 15:10:54] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:10:54,693 [INFO] 127.0.0.1 - - [21/May/2025 15:10:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:10:55,651 [INFO] BEGIN (implicit)
+2025-05-21 15:10:55,651 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 15:10:55,652 [INFO] [cached since 32.13s ago] ()
+2025-05-21 15:10:55,653 [INFO] ROLLBACK
+2025-05-21 15:10:55,655 [INFO] 127.0.0.1 - - [21/May/2025 15:10:55] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 15:10:55,698 [INFO] 127.0.0.1 - - [21/May/2025 15:10:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:10:58,019 [INFO] BEGIN (implicit)
+2025-05-21 15:10:58,019 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 15:10:58,021 [INFO] [cached since 34.5s ago] ()
+2025-05-21 15:10:58,022 [INFO] ROLLBACK
+2025-05-21 15:10:58,025 [INFO] 127.0.0.1 - - [21/May/2025 15:10:58] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 15:10:58,052 [INFO] 127.0.0.1 - - [21/May/2025 15:10:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:10:59,837 [INFO] BEGIN (implicit)
+2025-05-21 15:10:59,837 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:10:59,838 [INFO] [cached since 88.33s ago] (4,)
+2025-05-21 15:10:59,839 [INFO] ROLLBACK
+2025-05-21 15:10:59,840 [INFO] 127.0.0.1 - - [21/May/2025 15:10:59] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:10:59,876 [INFO] 127.0.0.1 - - [21/May/2025 15:10:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:11:02,938 [INFO] BEGIN (implicit)
+2025-05-21 15:11:02,938 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 15:11:02,938 [INFO] [cached since 39.42s ago] ()
+2025-05-21 15:11:02,940 [INFO] ROLLBACK
+2025-05-21 15:11:02,942 [INFO] 127.0.0.1 - - [21/May/2025 15:11:02] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 15:11:02,980 [INFO] 127.0.0.1 - - [21/May/2025 15:11:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:17:38,230 [INFO] BEGIN (implicit)
+2025-05-21 15:17:38,230 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:17:38,232 [INFO] [cached since 486.7s ago] (4,)
+2025-05-21 15:17:38,233 [INFO] ROLLBACK
+2025-05-21 15:17:38,234 [INFO] 127.0.0.1 - - [21/May/2025 15:17:38] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:17:38,279 [INFO] 127.0.0.1 - - [21/May/2025 15:17:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:22:32,690 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-21 15:22:32,912 [INFO]  * Restarting with stat
+2025-05-21 15:22:37,147 [INFO] BEGIN (implicit)
+2025-05-21 15:22:37,149 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 15:22:37,150 [INFO] [raw sql] ()
+2025-05-21 15:22:37,154 [INFO] COMMIT
+2025-05-21 15:22:38,090 [WARNING]  * Debugger is active!
+2025-05-21 15:22:38,110 [INFO]  * Debugger PIN: 117-906-151
+2025-05-21 15:22:51,125 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-21 15:22:51,329 [INFO]  * Restarting with stat
+2025-05-21 15:22:56,991 [INFO] BEGIN (implicit)
+2025-05-21 15:22:56,991 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 15:22:56,995 [INFO] [raw sql] ()
+2025-05-21 15:22:56,998 [INFO] COMMIT
+2025-05-21 15:22:57,558 [WARNING]  * Debugger is active!
+2025-05-21 15:22:57,574 [INFO]  * Debugger PIN: 117-906-151
+2025-05-21 15:22:57,780 [INFO] BEGIN (implicit)
+2025-05-21 15:22:57,788 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:22:57,791 [INFO] [generated in 0.00737s] (4,)
+2025-05-21 15:22:57,796 [INFO] ROLLBACK
+2025-05-21 15:22:57,842 [INFO] 127.0.0.1 - - [21/May/2025 15:22:57] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:22:58,181 [INFO] 127.0.0.1 - - [21/May/2025 15:22:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:23:01,413 [INFO] 127.0.0.1 - - [21/May/2025 15:23:01] "[35m[1mPOST /ticket/4/repondre HTTP/1.1[0m" 500 -
+2025-05-21 15:23:01,486 [INFO] 127.0.0.1 - - [21/May/2025 15:23:01] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:23:01,488 [INFO] 127.0.0.1 - - [21/May/2025 15:23:01] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-21 15:23:01,511 [INFO] 127.0.0.1 - - [21/May/2025 15:23:01] "GET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png&s=yLaGSfNf0yD4xrbCnd7e HTTP/1.1" 200 -
+2025-05-21 15:23:01,617 [INFO] 127.0.0.1 - - [21/May/2025 15:23:01] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-21 15:36:11,470 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-21 15:36:12,396 [INFO]  * Restarting with stat
+2025-05-21 15:36:17,971 [INFO] BEGIN (implicit)
+2025-05-21 15:36:17,973 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 15:36:17,973 [INFO] [raw sql] ()
+2025-05-21 15:36:17,975 [INFO] COMMIT
+2025-05-21 15:36:18,659 [WARNING]  * Debugger is active!
+2025-05-21 15:36:18,671 [INFO]  * Debugger PIN: 117-906-151
+2025-05-21 15:36:18,810 [INFO] 127.0.0.1 - - [21/May/2025 15:36:18] "[32mPOST /ticket/4/repondre HTTP/1.1[0m" 302 -
+2025-05-21 15:36:18,842 [INFO] BEGIN (implicit)
+2025-05-21 15:36:18,843 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:36:18,845 [INFO] [generated in 0.00242s] (4,)
+2025-05-21 15:36:18,847 [INFO] ROLLBACK
+2025-05-21 15:36:18,870 [INFO] 127.0.0.1 - - [21/May/2025 15:36:18] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:36:19,170 [INFO] 127.0.0.1 - - [21/May/2025 15:36:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:37:36,807 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-21 15:37:37,533 [INFO]  * Restarting with stat
+2025-05-21 15:37:43,423 [INFO] BEGIN (implicit)
+2025-05-21 15:37:43,423 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 15:37:43,423 [INFO] [raw sql] ()
+2025-05-21 15:37:43,423 [INFO] COMMIT
+2025-05-21 15:37:44,087 [WARNING]  * Debugger is active!
+2025-05-21 15:37:44,095 [INFO]  * Debugger PIN: 117-906-151
+2025-05-21 15:37:44,256 [INFO] BEGIN (implicit)
+2025-05-21 15:37:44,259 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:37:44,262 [INFO] [generated in 0.00678s] (4,)
+2025-05-21 15:37:44,265 [INFO] 127.0.0.1 - - [21/May/2025 15:37:44] "[32mPOST /ticket/4/repondre HTTP/1.1[0m" 302 -
+2025-05-21 15:37:44,265 [INFO] ROLLBACK
+2025-05-21 15:37:44,281 [INFO] BEGIN (implicit)
+2025-05-21 15:37:44,282 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:37:44,283 [INFO] [cached since 0.02807s ago] (4,)
+2025-05-21 15:37:44,295 [INFO] 127.0.0.1 - - [21/May/2025 15:37:44] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:37:44,295 [INFO] ROLLBACK
+2025-05-21 15:37:44,295 [INFO] 127.0.0.1 - - [21/May/2025 15:37:44] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:37:44,487 [INFO] 127.0.0.1 - - [21/May/2025 15:37:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 15:59:38,322 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-21 15:59:39,470 [INFO]  * Restarting with stat
+2025-05-21 15:59:43,976 [INFO] BEGIN (implicit)
+2025-05-21 15:59:43,976 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 15:59:43,976 [INFO] [raw sql] ()
+2025-05-21 15:59:43,981 [INFO] COMMIT
+2025-05-21 15:59:44,670 [WARNING]  * Debugger is active!
+2025-05-21 15:59:44,677 [INFO]  * Debugger PIN: 117-906-151
+2025-05-21 15:59:46,110 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-21 15:59:46,367 [INFO]  * Restarting with stat
+2025-05-21 15:59:49,178 [INFO] BEGIN (implicit)
+2025-05-21 15:59:49,179 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 15:59:49,181 [INFO] [raw sql] ()
+2025-05-21 15:59:49,183 [INFO] COMMIT
+2025-05-21 15:59:49,407 [WARNING]  * Debugger is active!
+2025-05-21 15:59:49,412 [INFO]  * Debugger PIN: 117-906-151
+2025-05-21 15:59:59,693 [INFO] BEGIN (implicit)
+2025-05-21 15:59:59,693 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 15:59:59,694 [INFO] [generated in 0.00103s] (4,)
+2025-05-21 15:59:59,695 [INFO] ROLLBACK
+2025-05-21 15:59:59,811 [INFO] 127.0.0.1 - - [21/May/2025 15:59:59] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 15:59:59,903 [INFO] 127.0.0.1 - - [21/May/2025 15:59:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:00:01,237 [INFO] BEGIN (implicit)
+2025-05-21 16:00:01,238 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:00:01,238 [INFO] [cached since 1.545s ago] (4,)
+2025-05-21 16:00:01,239 [INFO] ROLLBACK
+2025-05-21 16:00:01,241 [INFO] 127.0.0.1 - - [21/May/2025 16:00:01] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:00:01,261 [INFO] 127.0.0.1 - - [21/May/2025 16:00:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:00:34,459 [INFO] BEGIN (implicit)
+2025-05-21 16:00:34,460 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:00:34,460 [INFO] [cached since 34.77s ago] (4,)
+2025-05-21 16:00:34,461 [INFO] ROLLBACK
+2025-05-21 16:00:34,469 [INFO] 127.0.0.1 - - [21/May/2025 16:00:34] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:00:34,490 [INFO] 127.0.0.1 - - [21/May/2025 16:00:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:00:34,967 [INFO] BEGIN (implicit)
+2025-05-21 16:00:34,968 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:00:34,969 [INFO] [cached since 35.28s ago] (4,)
+2025-05-21 16:00:34,971 [INFO] ROLLBACK
+2025-05-21 16:00:34,973 [INFO] 127.0.0.1 - - [21/May/2025 16:00:34] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:00:34,996 [INFO] 127.0.0.1 - - [21/May/2025 16:00:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:00:35,124 [INFO] BEGIN (implicit)
+2025-05-21 16:00:35,124 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:00:35,124 [INFO] [cached since 35.43s ago] (4,)
+2025-05-21 16:00:35,125 [INFO] ROLLBACK
+2025-05-21 16:00:35,126 [INFO] 127.0.0.1 - - [21/May/2025 16:00:35] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:00:35,146 [INFO] 127.0.0.1 - - [21/May/2025 16:00:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:00:44,051 [INFO] BEGIN (implicit)
+2025-05-21 16:00:44,052 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:00:44,054 [INFO] [cached since 44.36s ago] (4,)
+2025-05-21 16:00:44,056 [INFO] ROLLBACK
+2025-05-21 16:00:44,064 [INFO] 127.0.0.1 - - [21/May/2025 16:00:44] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:00:44,087 [INFO] 127.0.0.1 - - [21/May/2025 16:00:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:00:47,543 [INFO] 127.0.0.1 - - [21/May/2025 16:00:47] "[35m[1mPOST /ticket/4/repondre HTTP/1.1[0m" 500 -
+2025-05-21 16:00:47,590 [INFO] 127.0.0.1 - - [21/May/2025 16:00:47] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:00:47,654 [INFO] 127.0.0.1 - - [21/May/2025 16:00:47] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-21 16:00:47,676 [INFO] 127.0.0.1 - - [21/May/2025 16:00:47] "GET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png&s=So73sksO0CHkF3uW2eA9 HTTP/1.1" 200 -
+2025-05-21 16:00:47,735 [INFO] 127.0.0.1 - - [21/May/2025 16:00:47] "[36mGET /ticket/4/repondre?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-21 16:01:07,461 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\models.py', reloading
+2025-05-21 16:01:08,408 [INFO]  * Restarting with stat
+2025-05-21 16:01:12,812 [INFO] BEGIN (implicit)
+2025-05-21 16:01:12,813 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 16:01:12,813 [INFO] [raw sql] ()
+2025-05-21 16:01:12,815 [INFO] COMMIT
+2025-05-21 16:01:13,580 [WARNING]  * Debugger is active!
+2025-05-21 16:01:13,596 [INFO]  * Debugger PIN: 117-906-151
+2025-05-21 16:01:16,742 [INFO] 127.0.0.1 - - [21/May/2025 16:01:16] "[32mPOST /ticket/4/repondre HTTP/1.1[0m" 302 -
+2025-05-21 16:01:16,750 [INFO] BEGIN (implicit)
+2025-05-21 16:01:16,755 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:01:16,756 [INFO] [generated in 0.00586s] (4,)
+2025-05-21 16:01:16,758 [INFO] ROLLBACK
+2025-05-21 16:01:16,766 [INFO] 127.0.0.1 - - [21/May/2025 16:01:16] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:01:16,840 [INFO] 127.0.0.1 - - [21/May/2025 16:01:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:01:19,973 [INFO] 127.0.0.1 - - [21/May/2025 16:01:19] "[32mPOST /ticket/4/repondre HTTP/1.1[0m" 302 -
+2025-05-21 16:01:19,977 [INFO] BEGIN (implicit)
+2025-05-21 16:01:19,978 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:01:19,978 [INFO] [cached since 3.229s ago] (4,)
+2025-05-21 16:01:19,979 [INFO] ROLLBACK
+2025-05-21 16:01:19,979 [INFO] 127.0.0.1 - - [21/May/2025 16:01:19] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:01:19,999 [INFO] 127.0.0.1 - - [21/May/2025 16:01:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:01:31,526 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\views\\web.py', reloading
+2025-05-21 16:01:31,671 [INFO]  * Restarting with stat
+2025-05-21 16:01:34,822 [INFO] BEGIN (implicit)
+2025-05-21 16:01:34,823 [INFO] PRAGMA main.table_info("entries")
+2025-05-21 16:01:34,824 [INFO] [raw sql] ()
+2025-05-21 16:01:34,825 [INFO] COMMIT
+2025-05-21 16:01:35,062 [WARNING]  * Debugger is active!
+2025-05-21 16:01:35,066 [INFO]  * Debugger PIN: 117-906-151
+2025-05-21 16:01:35,128 [INFO] BEGIN (implicit)
+2025-05-21 16:01:35,128 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:01:35,129 [INFO] [generated in 0.00116s] (4,)
+2025-05-21 16:01:35,130 [INFO] ROLLBACK
+2025-05-21 16:01:35,144 [INFO] 127.0.0.1 - - [21/May/2025 16:01:35] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:01:35,208 [INFO] 127.0.0.1 - - [21/May/2025 16:01:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:12:22,682 [INFO] BEGIN (implicit)
+2025-05-21 16:12:22,683 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:12:22,683 [INFO] [cached since 647.6s ago] (4,)
+2025-05-21 16:12:22,684 [INFO] ROLLBACK
+2025-05-21 16:12:22,787 [INFO] 127.0.0.1 - - [21/May/2025 16:12:22] "[35m[1mGET /ticket/4 HTTP/1.1[0m" 500 -
+2025-05-21 16:12:22,810 [INFO] 127.0.0.1 - - [21/May/2025 16:12:22] "[36mGET /ticket/4?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:12:22,810 [INFO] 127.0.0.1 - - [21/May/2025 16:12:22] "[36mGET /ticket/4?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-21 16:12:22,829 [INFO] 127.0.0.1 - - [21/May/2025 16:12:22] "GET /ticket/4?__debugger__=yes&cmd=resource&f=console.png&s=KAcPr3TeALKRHT2jEK54 HTTP/1.1" 200 -
+2025-05-21 16:12:22,876 [INFO] 127.0.0.1 - - [21/May/2025 16:12:22] "[36mGET /ticket/4?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-21 16:13:12,625 [INFO] BEGIN (implicit)
+2025-05-21 16:13:12,627 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:13:12,633 [INFO] [cached since 697.5s ago] (4,)
+2025-05-21 16:13:12,635 [INFO] ROLLBACK
+2025-05-21 16:13:12,649 [INFO] 127.0.0.1 - - [21/May/2025 16:13:12] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:13:12,666 [INFO] 127.0.0.1 - - [21/May/2025 16:13:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:16:18,599 [INFO] BEGIN (implicit)
+2025-05-21 16:16:18,600 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:16:18,600 [INFO] [cached since 883.5s ago] (4,)
+2025-05-21 16:16:18,601 [INFO] ROLLBACK
+2025-05-21 16:16:18,604 [INFO] 127.0.0.1 - - [21/May/2025 16:16:18] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:16:18,619 [INFO] 127.0.0.1 - - [21/May/2025 16:16:18] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-21 16:16:20,791 [INFO] BEGIN (implicit)
+2025-05-21 16:16:20,792 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:16:20,792 [INFO] [cached since 885.7s ago] (4,)
+2025-05-21 16:16:20,793 [INFO] ROLLBACK
+2025-05-21 16:16:20,794 [INFO] 127.0.0.1 - - [21/May/2025 16:16:20] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:16:20,809 [INFO] 127.0.0.1 - - [21/May/2025 16:16:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:28:07,816 [INFO] BEGIN (implicit)
+2025-05-21 16:28:07,817 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:28:07,818 [INFO] [cached since 1593s ago] (4,)
+2025-05-21 16:28:07,823 [INFO] ROLLBACK
+2025-05-21 16:28:07,855 [INFO] 127.0.0.1 - - [21/May/2025 16:28:07] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:28:07,879 [INFO] 127.0.0.1 - - [21/May/2025 16:28:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:29:19,703 [INFO] BEGIN (implicit)
+2025-05-21 16:29:19,703 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:29:19,704 [INFO] [generated in 0.00235s] ()
+2025-05-21 16:29:19,709 [INFO] ROLLBACK
+2025-05-21 16:29:19,744 [INFO] 127.0.0.1 - - [21/May/2025 16:29:19] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 16:29:19,766 [INFO] 127.0.0.1 - - [21/May/2025 16:29:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:29:21,488 [INFO] 127.0.0.1 - - [21/May/2025 16:29:21] "GET /home HTTP/1.1" 200 -
+2025-05-21 16:29:21,519 [INFO] 127.0.0.1 - - [21/May/2025 16:29:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:30:01,821 [INFO] 127.0.0.1 - - [21/May/2025 16:30:01] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-21 16:30:01,851 [INFO] 127.0.0.1 - - [21/May/2025 16:30:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:30:09,839 [INFO] 127.0.0.1 - - [21/May/2025 16:30:09] "GET /home HTTP/1.1" 200 -
+2025-05-21 16:30:09,865 [INFO] 127.0.0.1 - - [21/May/2025 16:30:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:30:10,920 [INFO] 127.0.0.1 - - [21/May/2025 16:30:10] "GET /create_ticket HTTP/1.1" 200 -
+2025-05-21 16:30:10,941 [INFO] 127.0.0.1 - - [21/May/2025 16:30:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:30:11,602 [INFO] BEGIN (implicit)
+2025-05-21 16:30:11,602 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:30:11,602 [INFO] [cached since 51.9s ago] ()
+2025-05-21 16:30:11,603 [INFO] ROLLBACK
+2025-05-21 16:30:11,605 [INFO] 127.0.0.1 - - [21/May/2025 16:30:11] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 16:30:11,630 [INFO] 127.0.0.1 - - [21/May/2025 16:30:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:30:15,088 [INFO] BEGIN (implicit)
+2025-05-21 16:30:15,089 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:30:15,089 [INFO] [cached since 1720s ago] (4,)
+2025-05-21 16:30:15,090 [INFO] ROLLBACK
+2025-05-21 16:30:15,093 [INFO] 127.0.0.1 - - [21/May/2025 16:30:15] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:30:15,121 [INFO] 127.0.0.1 - - [21/May/2025 16:30:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:30:31,921 [INFO] 127.0.0.1 - - [21/May/2025 16:30:31] "[32mPOST /ticket/4/repondre HTTP/1.1[0m" 302 -
+2025-05-21 16:30:31,926 [INFO] BEGIN (implicit)
+2025-05-21 16:30:31,927 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:30:31,929 [INFO] [cached since 1737s ago] (4,)
+2025-05-21 16:30:31,931 [INFO] ROLLBACK
+2025-05-21 16:30:31,934 [INFO] 127.0.0.1 - - [21/May/2025 16:30:31] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:30:31,958 [INFO] 127.0.0.1 - - [21/May/2025 16:30:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:31:27,988 [INFO] BEGIN (implicit)
+2025-05-21 16:31:27,990 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:31:27,991 [INFO] [cached since 1793s ago] (4,)
+2025-05-21 16:31:27,993 [INFO] ROLLBACK
+2025-05-21 16:31:28,006 [INFO] 127.0.0.1 - - [21/May/2025 16:31:28] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:31:28,023 [INFO] 127.0.0.1 - - [21/May/2025 16:31:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:31:44,445 [INFO] BEGIN (implicit)
+2025-05-21 16:31:44,445 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:31:44,446 [INFO] [cached since 144.7s ago] ()
+2025-05-21 16:31:44,446 [INFO] ROLLBACK
+2025-05-21 16:31:44,449 [INFO] 127.0.0.1 - - [21/May/2025 16:31:44] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 16:31:44,474 [INFO] 127.0.0.1 - - [21/May/2025 16:31:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:32:13,812 [INFO] BEGIN (implicit)
+2025-05-21 16:32:13,813 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:32:13,814 [INFO] [cached since 174.1s ago] ()
+2025-05-21 16:32:13,817 [INFO] ROLLBACK
+2025-05-21 16:32:13,834 [INFO] 127.0.0.1 - - [21/May/2025 16:32:13] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 16:32:13,851 [INFO] 127.0.0.1 - - [21/May/2025 16:32:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:34:50,855 [INFO] BEGIN (implicit)
+2025-05-21 16:34:50,856 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:34:50,856 [INFO] [cached since 331.2s ago] ()
+2025-05-21 16:34:50,858 [INFO] ROLLBACK
+2025-05-21 16:34:50,933 [INFO] 127.0.0.1 - - [21/May/2025 16:34:50] "[35m[1mGET /getall_ticket HTTP/1.1[0m" 500 -
+2025-05-21 16:34:50,956 [INFO] 127.0.0.1 - - [21/May/2025 16:34:50] "GET /getall_ticket?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-21 16:34:50,965 [INFO] 127.0.0.1 - - [21/May/2025 16:34:50] "GET /getall_ticket?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-21 16:34:50,984 [INFO] 127.0.0.1 - - [21/May/2025 16:34:50] "GET /getall_ticket?__debugger__=yes&cmd=resource&f=console.png&s=KAcPr3TeALKRHT2jEK54 HTTP/1.1" 200 -
+2025-05-21 16:34:51,037 [INFO] 127.0.0.1 - - [21/May/2025 16:34:51] "GET /getall_ticket?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-21 16:35:02,576 [INFO] BEGIN (implicit)
+2025-05-21 16:35:02,577 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:35:02,577 [INFO] [cached since 342.9s ago] ()
+2025-05-21 16:35:02,579 [INFO] ROLLBACK
+2025-05-21 16:35:02,601 [INFO] 127.0.0.1 - - [21/May/2025 16:35:02] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 16:35:02,625 [INFO] 127.0.0.1 - - [21/May/2025 16:35:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:36:04,647 [INFO] BEGIN (implicit)
+2025-05-21 16:36:04,649 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:36:04,650 [INFO] [cached since 404.9s ago] ()
+2025-05-21 16:36:04,652 [INFO] ROLLBACK
+2025-05-21 16:36:04,670 [INFO] 127.0.0.1 - - [21/May/2025 16:36:04] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 16:36:04,691 [INFO] 127.0.0.1 - - [21/May/2025 16:36:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:36:05,195 [INFO] BEGIN (implicit)
+2025-05-21 16:36:05,196 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:36:05,198 [INFO] [cached since 405.5s ago] ()
+2025-05-21 16:36:05,200 [INFO] ROLLBACK
+2025-05-21 16:36:05,209 [INFO] 127.0.0.1 - - [21/May/2025 16:36:05] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 16:36:05,236 [INFO] 127.0.0.1 - - [21/May/2025 16:36:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:36:05,373 [INFO] BEGIN (implicit)
+2025-05-21 16:36:05,374 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:36:05,374 [INFO] [cached since 405.7s ago] ()
+2025-05-21 16:36:05,375 [INFO] ROLLBACK
+2025-05-21 16:36:05,376 [INFO] 127.0.0.1 - - [21/May/2025 16:36:05] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 16:36:05,398 [INFO] 127.0.0.1 - - [21/May/2025 16:36:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:36:20,921 [INFO] BEGIN (implicit)
+2025-05-21 16:36:20,922 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:36:20,924 [INFO] [cached since 421.2s ago] ()
+2025-05-21 16:36:20,925 [INFO] ROLLBACK
+2025-05-21 16:36:20,928 [INFO] 127.0.0.1 - - [21/May/2025 16:36:20] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 16:36:20,948 [INFO] 127.0.0.1 - - [21/May/2025 16:36:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:36:21,398 [INFO] BEGIN (implicit)
+2025-05-21 16:36:21,398 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:36:21,400 [INFO] [cached since 421.7s ago] ()
+2025-05-21 16:36:21,402 [INFO] ROLLBACK
+2025-05-21 16:36:21,404 [INFO] 127.0.0.1 - - [21/May/2025 16:36:21] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 16:36:21,433 [INFO] 127.0.0.1 - - [21/May/2025 16:36:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:36:21,558 [INFO] BEGIN (implicit)
+2025-05-21 16:36:21,558 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:36:21,559 [INFO] [cached since 421.9s ago] ()
+2025-05-21 16:36:21,559 [INFO] ROLLBACK
+2025-05-21 16:36:21,560 [INFO] 127.0.0.1 - - [21/May/2025 16:36:21] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 16:36:21,581 [INFO] 127.0.0.1 - - [21/May/2025 16:36:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:36:21,725 [INFO] BEGIN (implicit)
+2025-05-21 16:36:21,725 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:36:21,725 [INFO] [cached since 422s ago] ()
+2025-05-21 16:36:21,726 [INFO] ROLLBACK
+2025-05-21 16:36:21,727 [INFO] 127.0.0.1 - - [21/May/2025 16:36:21] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 16:36:21,749 [INFO] 127.0.0.1 - - [21/May/2025 16:36:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:36:27,927 [INFO] BEGIN (implicit)
+2025-05-21 16:36:27,928 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:36:27,929 [INFO] [cached since 428.2s ago] ()
+2025-05-21 16:36:27,933 [INFO] ROLLBACK
+2025-05-21 16:36:27,935 [INFO] BEGIN (implicit)
+2025-05-21 16:36:27,935 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:36:27,937 [INFO] [cached since 428.2s ago] ()
+2025-05-21 16:36:27,942 [INFO] ROLLBACK
+2025-05-21 16:36:27,967 [INFO] 127.0.0.1 - - [21/May/2025 16:36:27] "GET /getstats HTTP/1.1" 200 -
+2025-05-21 16:36:28,011 [INFO] 127.0.0.1 - - [21/May/2025 16:36:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:38:35,647 [INFO] BEGIN (implicit)
+2025-05-21 16:38:35,647 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:38:35,648 [INFO] [cached since 555.9s ago] ()
+2025-05-21 16:38:35,650 [INFO] ROLLBACK
+2025-05-21 16:38:35,654 [INFO] 127.0.0.1 - - [21/May/2025 16:38:35] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 16:38:35,681 [INFO] 127.0.0.1 - - [21/May/2025 16:38:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:38:39,352 [INFO] BEGIN (implicit)
+2025-05-21 16:38:39,353 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:38:39,353 [INFO] [cached since 2224s ago] (4,)
+2025-05-21 16:38:39,354 [INFO] ROLLBACK
+2025-05-21 16:38:39,366 [INFO] 127.0.0.1 - - [21/May/2025 16:38:39] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:38:39,400 [INFO] 127.0.0.1 - - [21/May/2025 16:38:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:51:45,390 [INFO] BEGIN (implicit)
+2025-05-21 16:51:45,391 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:51:45,391 [INFO] [cached since 1346s ago] ()
+2025-05-21 16:51:45,393 [INFO] ROLLBACK
+2025-05-21 16:51:45,394 [INFO] 127.0.0.1 - - [21/May/2025 16:51:45] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 16:51:45,418 [INFO] 127.0.0.1 - - [21/May/2025 16:51:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:51:46,470 [INFO] 127.0.0.1 - - [21/May/2025 16:51:46] "GET /home HTTP/1.1" 200 -
+2025-05-21 16:51:46,494 [INFO] 127.0.0.1 - - [21/May/2025 16:51:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:51:47,150 [INFO] 127.0.0.1 - - [21/May/2025 16:51:47] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-21 16:51:47,244 [INFO] 127.0.0.1 - - [21/May/2025 16:51:47] "GET / HTTP/1.1" 200 -
+2025-05-21 16:51:47,279 [INFO] 127.0.0.1 - - [21/May/2025 16:51:47] "[33mGET /js/app.js HTTP/1.1[0m" 404 -
+2025-05-21 16:51:47,280 [INFO] 127.0.0.1 - - [21/May/2025 16:51:47] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-05-21 16:51:47,295 [INFO] 127.0.0.1 - - [21/May/2025 16:51:47] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-05-21 16:52:02,819 [INFO] 127.0.0.1 - - [21/May/2025 16:52:02] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-21 16:52:02,824 [INFO] 127.0.0.1 - - [21/May/2025 16:52:02] "GET /home HTTP/1.1" 200 -
+2025-05-21 16:52:02,863 [INFO] 127.0.0.1 - - [21/May/2025 16:52:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:52:05,713 [INFO] BEGIN (implicit)
+2025-05-21 16:52:05,713 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:52:05,714 [INFO] [cached since 1366s ago] ()
+2025-05-21 16:52:05,715 [INFO] ROLLBACK
+2025-05-21 16:52:05,716 [INFO] 127.0.0.1 - - [21/May/2025 16:52:05] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 16:52:05,747 [INFO] 127.0.0.1 - - [21/May/2025 16:52:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:52:07,648 [INFO] BEGIN (implicit)
+2025-05-21 16:52:07,648 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:52:07,649 [INFO] [cached since 3033s ago] (4,)
+2025-05-21 16:52:07,649 [INFO] ROLLBACK
+2025-05-21 16:52:07,653 [INFO] 127.0.0.1 - - [21/May/2025 16:52:07] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:52:07,675 [INFO] 127.0.0.1 - - [21/May/2025 16:52:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:52:12,936 [INFO] 127.0.0.1 - - [21/May/2025 16:52:12] "[32mPOST /ticket/4/repondre HTTP/1.1[0m" 302 -
+2025-05-21 16:52:12,940 [INFO] BEGIN (implicit)
+2025-05-21 16:52:12,941 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = ?
+2025-05-21 16:52:12,941 [INFO] [cached since 3038s ago] (4,)
+2025-05-21 16:52:12,942 [INFO] ROLLBACK
+2025-05-21 16:52:12,944 [INFO] 127.0.0.1 - - [21/May/2025 16:52:12] "GET /ticket/4 HTTP/1.1" 200 -
+2025-05-21 16:52:12,963 [INFO] 127.0.0.1 - - [21/May/2025 16:52:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-21 16:52:37,084 [INFO] BEGIN (implicit)
+2025-05-21 16:52:37,085 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-05-21 16:52:37,085 [INFO] [cached since 1397s ago] ()
+2025-05-21 16:52:37,088 [INFO] ROLLBACK
+2025-05-21 16:52:37,093 [INFO] 127.0.0.1 - - [21/May/2025 16:52:37] "GET /getall_ticket HTTP/1.1" 200 -
+2025-05-21 16:52:37,117 [INFO] 127.0.0.1 - - [21/May/2025 16:52:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

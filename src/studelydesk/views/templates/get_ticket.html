@@ -23,33 +23,44 @@
     <p><strong>Assigné à :</strong> {{ ticket.assigne_a }}</p>
     <p><strong>Statut :</strong> {{ ticket.status }}</p>
     <p><strong>Priorité :</strong> {{ ticket.priority }}</p>
-    <button type="button" onclick="toggleAdditionalFields()" class="toggle-button">
-             ➤ Informations supplémentaires
-    </button>
-    <div id="additional-fields" style="display: none; margin-top: 10px;">
-        <p><strong>Adresse e-mail de l'étudiant :</strong> {{ ticket.email }}</p>
-        <p><strong>Pays de destination :</strong> {{ ticket.pays }}</p>
-    </div>
+    <p><strong>Adresse e-mail de l'étudiant :</strong> {{ ticket.email }}</p>
+    <p><strong>Pays de destination :</strong> {{ ticket.pays }}</p>
+
+
+    <form action="{{ url_for('web_ui.repondre_ticket', ticket_id=ticket.id) }}" method="POST" class="form-reponse" style="margin-top: 20px;">
+        <label for="reponse"><strong>Réponse :</strong></label><br>
+        <textarea id="reponse" name="reponse" rows="5" cols="60" placeholder="Écrire une réponse ici..." required></textarea><br><br>
+        <button type="submit" class="form-button" style="cursor: pointer">Envoyer la réponse</button>
+    </form>
+
+
+
 
 {% else %}
     <p>Aucun ticket trouvé.</p>
 {% endif %}
 
 
-    <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour à l'accueil</a>
-<script>
-function toggleAdditionalFields() {
-    const fields = document.getElementById("additional-fields");
-    const btn = document.querySelector(".toggle-button");
-    if (fields.style.display === "none") {
-        fields.style.display = "block";
-        btn.innerHTML = "▼ Informations supplémentaires";
-    } else {
-        fields.style.display = "none";
-        btn.innerHTML = "➤ Informations supplémentaires";
-    }
-}
-</script>
+     {% if reponses %}
+  <div class="historique-reponses">
+    <h3>Historique des réponses</h3>
+    {% for reponse in reponses %}
+      <div class="reponse-item">
+        <p><strong>Le {{ reponse.date[:19]  }} par {{ ticket.name}}:</strong></p>
+        <p>{{ reponse.contenu }}</p>
+        <hr>
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <div class="historique-reponses">
+    <p>Aucune réponse pour ce ticket pour le moment.</p>
+  </div>
+{% endif %}
+
+
+    <a href="{{ url_for('web_ui.getall_ticket') }}" class="form-button">Retour</a>
+
 
 </body>
 </html>
