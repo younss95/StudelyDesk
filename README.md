@@ -1,17 +1,30 @@
-# archilog
+# 🧾 StudelyDesk – Helpdesk Ticketing System with Docker & AKS
 
-A simple project for educational purpose.
+**StudelyDesk** is a lightweight helpdesk/ticketing web application built with **Flask**.  
+It allows users to submit support requests and admins to manage tickets efficiently.  
+This app is containerized using **Docker** and deployed on **Azure Kubernetes Service (AKS)** for scalability and cloud-native orchestration.
 
-```bash
-$ uv sync           # install project dependencies
-$ uv run archilog   # run the project
-Usage: archilog [OPTIONS] COMMAND [ARGS]...
+---
 
-Options:
-  --help  Show this message and exit.
+## 🚀 Features
 
-Commands:
-  display
-```
+- Submit and track helpdesk tickets
+- Admin interface to view and resolve issues
+- RESTful architecture
+- Containerized with Docker
+- Scalable deployment with Azure Kubernetes Service (AKS)
 
-Course & examples : [https://kathode.neocities.org](https://kathode.neocities.org)
+---
+
+## 🛠️ Tech Stack
+
+- Python 3 / Flask
+- HTML, CSS (Bootstrap)
+- SQLite (for demo)
+- Docker
+- Kubernetes (AKS)
+- Azure CLI, kubectl
+
+---
+
+## 📁 Project Structure
