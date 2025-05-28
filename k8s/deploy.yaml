@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-flaskdesk
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flaskdesk
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5
+  template:
+    metadata:
+      labels:
+        app: flaskdesk
+    spec:
+      containers:
+      - name: flaskdesk
+        image: acrstudelydesk.azurecr.io/flask-desk:0.0.1.RELEASE
+        ports:
+        - containerPort: 3000
+        env:
+        - name: ARCHILOG_DATABASE_URL
+          value: "sqlite:///data.db"
+        resources:
+          requests:
+            cpu: 250m
+          limits:
+            cpu: 500m
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: lb-flaskdesk
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 3000
+  selector:
+    app: flaskdesk
