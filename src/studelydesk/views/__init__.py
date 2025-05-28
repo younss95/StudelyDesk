@@ -11,7 +11,7 @@ def create_app():
     app.config.from_prefixed_env(prefix="ARCHILOG_FLASK")
 
 
-    # Enregistrer les Blueprints
+    # Enregistrer les Blueprints qui sont un moyen d'organiser un groupes de vues et d'autres codes
     app.register_blueprint(web_ui)
     app.register_blueprint(api_ui)
 

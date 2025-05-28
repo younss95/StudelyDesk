@@ -8,31 +8,34 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+
 {% include 'navbar.html' %}
 
+
+<!--  SECTION POUR AFFICHER LES STATISTIQUES -->
 <div class="text-center">
     <h1>Statistiques sur les tickets</h1>
-    </div>
+</div>
 
 <section class="form-container-parent">
     <div class="form-container">
-    <h2>Tickets par statut</h2>
-    <ul>
-    {% for statut, count in stats_statut.items() %}
-        <li>{{ statut }} : {{ count }}</li>
-    {% endfor %}
-    </ul><br>
+        <h2>Tickets par statut</h2>
+        <ul>
+            {% for statut, count in stats_statut.items() %}
+            <li>{{ statut }} : {{ count }}</li>
+            {% endfor %}
+        </ul><br>
 
-    <h2>Tickets par priorité</h2>
-    <ul>
-    {% for prio, count in stats_priority.items() %}
-        <li>{{ prio }} : {{ count }}</li>
-    {% endfor %}
-    </ul>
+        <h2>Tickets par priorité</h2>
+        <ul>
+            {% for prio, count in stats_priority.items() %}
+            <li>{{ prio }} : {{ count }}</li>
+            {% endfor %}
+        </ul>
             <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour à l'accueil</a>
-</div>
-
-
+    </div>
 </section>
+
+
 </body>
 </html>

@@ -1,3 +1,7 @@
+
+/*  CSS DE LA PAGE DE CONNEXION/INSCRIPTION */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +33,6 @@
       color: var(--text-color);
   }
 
-
   .header {
       position: fixed;
       width: 100%;
@@ -54,9 +57,6 @@
       background-clip: text;
       color : transparent;
   }
-
-
-
 
   .navbar a{
       font-size: 1.8rem;
@@ -165,7 +165,7 @@
   transition: 0.3s ease;
 }
 
-/*
+
 .form-container input:focus {
   outline: none;
   border-color: var(--second-bg-color);
@@ -173,10 +173,3 @@
 }
 
 
-
-.form-container button:hover {
-  transform: scale(1.05);
-  background: linear-gradient(270deg, #1d7dde 10%, #0cabea 100%);
-}
-
-*/

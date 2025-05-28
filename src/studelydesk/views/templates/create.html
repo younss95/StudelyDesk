@@ -9,6 +9,7 @@
 {% include 'navbar.html' %}
 
 
+<!--  SECTION DE CREATION DE TICKET  -->
 <section class="form-container-parent">
     <div class="form-container">
         <h1 class="text-center">Ajouter un ticket</h1>
@@ -78,11 +79,18 @@
 
     <div class="form-row">
         <div class="form-group">
+            <label for="souscategorie">Sous catégorie :</label>
+            <select id="souscategorie" name="souscategorie">
+                <option value=""> </option>
+            </select>
+        </div>
+
+        <div class="form-group">
             <label for="status">Statut :</label>
             <select id="status" name="status">
                 <option value="ouvert">Ouvert</option>
-                <option value="en cours">En cours</option>
-                <option value="résolu">Fermé</option>
+                <option value="encours">En cours</option>
+                <option value="ferme">Fermé</option>
             </select>
         </div>
 
@@ -117,16 +125,25 @@
                     </select>
                 </div>
             </div>
+
         </div>
     </div>
 
+            <button type="submit" class="form-button" style="cursor:pointer;">Ajouter</button>
+            <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour</a>
 
 
 </form>
-<button type="submit" class="form-button">Ajouter</button>
-<a href="{{ url_for('web_ui.home') }}" class="form-button">Retour</a>
 
 
+    </div>
+
+</section>
+
+
+
+
+<!--  SCRIPT JS POUR DEROULER LES INFOS OBLIGATOIRES  -->
 <script>
 function toggleAdditionalFields() {
     const fields = document.getElementById("additional-fields");
@@ -148,7 +165,7 @@ const departementAssigneMap = {
     "customer": "Kassandra",
     "treso": "Marc",
     "product": "Sarah",
-    "test": "jerdy",
+    "test": "Jerdy",
     "support": "Brice",
     "conformite": "Marc",
     "engagement": "Marc"
@@ -167,7 +184,74 @@ document.getElementById("departement").addEventListener("change", function() {
     }
 });
 
+
+
+const sousCategoriesMap = {
+    "avi": ["Suivi d'AVI", "Signature du contrat échouée"],
+    "beneficiaire": ["Ajout bénéficiaire", "Suppression Bénéficiaire", "Non réception du code OTP B"],
+    "bourse": [],
+    "carte": ["Commande de carte impossible", "Non réception de la carte à domicile"],
+    "comptepaiement": ["Compte MANGOPAY bloqué"],
+    "connexion": ["Mot de passe oublié", "Non réception du code OTP C"],
+    "logement": [],
+    "Menu": [],
+    "profil": [],
+    "postvisa": [
+        "Absence du bouton validé",
+        "Absence du bouton POST VISA",
+        "Validation inchangée de KYC (en attente de validation)",
+        "Justificatif de domicile non conforme",
+        "Justificatif de domicile non reçu"
+    ],
+    "remboursement": [],
+    "treso": [
+        "Demande d'un virement hors MANGOPAY (KYC issu)",
+        "Montant virement incorrect",
+        "Virement échoué",
+        "Virement exceptionnel",
+        "Virement non reçu"
+    ],
+    "virement": ["Non réception du code OTP V", "Rejet virement", "Validation virement"]
+};
+
+
+// Mettre à jour les sous-catégories dynamiquement
+document.getElementById("categorie").addEventListener("change", function() {
+    const selectedCat = this.value;
+    const statusSelect = document.getElementById("souscategorie");
+
+    // Réinitialiser les options
+    statusSelect.innerHTML = "";
+
+    const options = sousCategoriesMap[selectedCat];
+
+    if (options && options.length > 0) {
+        options.forEach(opt => {
+            const option = document.createElement("option");
+            option.value = opt;
+            option.textContent = opt;
+            statusSelect.appendChild(option);
+        });
+    } else {
+        const option = document.createElement("option");
+        option.value = "";
+        option.textContent = "Aucune sous-catégorie";
+        statusSelect.appendChild(option);
+    }
+});
+
 </script>
+
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+    const catSelect = document.getElementById("categorie");
+    if (catSelect) {
+        const event = new Event("change");
+        catSelect.dispatchEvent(event);
+    }
+});
+</script>
+
 
 </body>
 </html>

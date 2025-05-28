@@ -4,6 +4,7 @@ import studelydesk.models as models
 import tabulate
 
 
+#  FICHIER CLI POUR GERER LES LIGNES DE COMMANDE
 @click.group()
 def cli():
     pass

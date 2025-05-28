@@ -11,56 +11,61 @@
 
     <!--<h1>Consulter un ticket</h1>  -->
 
-    {% if ticket %}
-    <h2>Détails du ticket</h2>
-    <p><strong>ID :</strong> {{ ticket.id }}</p>
-    <p><strong>Titre :</strong> {{ ticket.title }}</p>
-    <p><strong>Date :</strong> {{ ticket.date }}</p>
-    <p><strong>Description :</strong> {{ ticket.description }}</p>
-    <p><strong>Nom :</strong> {{ ticket.name }}</p>
-    <p><strong>Département :</strong> {{ ticket.departement }}</p>
-    <p><strong>Catégorie :</strong> {{ ticket.categorie }}</p>
-    <p><strong>Assigné à :</strong> {{ ticket.assigne_a }}</p>
-    <p><strong>Statut :</strong> {{ ticket.status }}</p>
-    <p><strong>Priorité :</strong> {{ ticket.priority }}</p>
-    <p><strong>Adresse e-mail de l'étudiant :</strong> {{ ticket.email }}</p>
-    <p><strong>Pays de destination :</strong> {{ ticket.pays }}</p>
+
+    <!--  CONTAINER POUR CONSULTER LES INFOS D'UN TICKET  -->
+{% if ticket %}
+<div class="ticket-flex-container">
+
+    <div class="ticket-info">
+        <h2>Détails du ticket</h2>
+        <p><strong>ID :</strong> {{ ticket.id }}</p>
+        <p><strong>Titre :</strong> {{ ticket.title }}</p>
+        <p><strong>Date :</strong> {{ ticket.date.strftime('%Y-%m-%d %H:%M:%S') }}</p>
+        <p><strong>Nom :</strong> {{ ticket.name }}</p>
+        <p><strong>Département :</strong> {{ ticket.departement }}</p>
+        <p><strong>Catégorie :</strong> {{ ticket.categorie }}</p>
+        <p><strong>Assigné à :</strong> {{ ticket.assigne_a }}</p>
+        <p><strong>Statut :</strong> {{ ticket.status }}</p>
+        <p><strong>Priorité :</strong> {{ ticket.priority }}</p>
+        <p><strong>Adresse e-mail de l'étudiant :<br></strong> {{ ticket.email }}</p>
+        <p><strong>Pays de destination :</strong> {{ ticket.pays }}</p>
+        <a href="{{ url_for('web_ui.getall_ticket') }}" class="form-button">Retour</a>
+    </div>
+
+ {% endif %}
+
+    <!--  PARTIE POUR REPONDRE AU TICKET  -->
+<!-- partie droite : réponse + historique -->
+<div class="ticket-reponse-wrapper">
+    <div class="ticket-reponse">
+        <p><strong>Description :</strong> {{ ticket.description }}</p><br>
+        <form action="{{ url_for('web_ui.repondre_ticket', ticket_id=ticket.id) }}" method="POST" class="form-reponse">
+            <label for="reponse"><strong>Réponse :</strong></label><br>
+            <textarea id="reponse" name="reponse" rows="5" placeholder="Écrire une réponse ici..." required></textarea><br><br>
+            <button type="submit" class="form-button" style="cursor: pointer">Envoyer la réponse</button>
+        </form>
+    </div>
+
+    {% if reponses %}
+    <div class="historique-reponses" style="overflow-y:scroll">
+        <h3>Historique des réponses</h3>
+        {% for reponse in reponses %}
+        <div class="reponse-item">
+            <p><strong>Le {{ reponse.date[:19]  }} par {{ reponse.auteur_nom}}:</strong></p>
+            <p>{{ reponse.contenu }}</p>
+            <hr>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="historique-reponses">
+        <p>Aucune réponse pour ce ticket pour le moment.</p>
+    </div>
+    {% endif %}
+</div>
 
 
-    <form action="{{ url_for('web_ui.repondre_ticket', ticket_id=ticket.id) }}" method="POST" class="form-reponse" style="margin-top: 20px;">
-        <label for="reponse"><strong>Réponse :</strong></label><br>
-        <textarea id="reponse" name="reponse" rows="5" cols="60" placeholder="Écrire une réponse ici..." required></textarea><br><br>
-        <button type="submit" class="form-button" style="cursor: pointer">Envoyer la réponse</button>
-    </form>
 
-
-
-
-{% else %}
-    <p>Aucun ticket trouvé.</p>
-{% endif %}
-
-
-     {% if reponses %}
-  <div class="historique-reponses">
-    <h3>Historique des réponses</h3>
-    {% for reponse in reponses %}
-      <div class="reponse-item">
-        <p><strong>Le {{ reponse.date[:19]  }} par {{ ticket.name}}:</strong></p>
-        <p>{{ reponse.contenu }}</p>
-        <hr>
-      </div>
-    {% endfor %}
-  </div>
-{% else %}
-  <div class="historique-reponses">
-    <p>Aucune réponse pour ce ticket pour le moment.</p>
-  </div>
-{% endif %}
-
-
-    <a href="{{ url_for('web_ui.getall_ticket') }}" class="form-button">Retour</a>
-
-
+</div>
 </body>
 </html>

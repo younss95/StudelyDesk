@@ -1,3 +1,7 @@
+
+/*  CSS DU SITE UNE FOIS CONNECTE */
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -20,7 +24,7 @@ body {
         width: 100%;
         top: 0;
         left: 0;
-        padding: 3rem 15%;
+        padding: 2rem 15%;
         background-color: #1d7dde;
         backdrop-filter: blur(10px);
         display: flex;
@@ -43,7 +47,7 @@ body {
 
 
     .navbar a {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: white;
         margin-left: 2rem;
         font-weight: 500;
@@ -95,6 +99,10 @@ body {
         gap: 20px;
         justify-content: space-between;
         margin-bottom: 8%;
+    }
+
+    .form-row label{
+        text-align: left;
     }
 
     .form-group {
@@ -167,19 +175,12 @@ body {
 /* PARTIE POUR LA DESCRIPTION DU TICKET
 
  */
-.form-reponse textarea {
-    width: 80%;
-    padding: 10px;
-    font-size: 16px;
-    resize: vertical;
-}
 
 .historique-reponses {
-    margin-top: 40px;
     background-color: #f7f7f7;
     padding: 15px;
     border-radius: 8px;
-    flex: 1;
+    margin-right: 30%;
 }
 
 .reponse-item {
@@ -190,4 +191,52 @@ body {
     margin: 5px 0;
 }
 
+.ticket-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.ticket-info {
+
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    margin-left: 20%;
+}
+
+.ticket-reponse {
+    flex: 0.8;
+    min-width: 300px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    margin-right: 30%;
+}
+
+.form-reponse textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    resize: vertical;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.ticket-reponse .form-button {
+    margin-top: 5px;
+}
+
+.ticket-reponse-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 

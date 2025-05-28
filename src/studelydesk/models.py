@@ -4,7 +4,6 @@ from dataclasses import dataclass
 from datetime import datetime
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String, DateTime, insert, select, update, delete
 from sqlalchemy.ext.declarative import declarative_base
-
 from studelydesk.db import get_db_connection  # Importation de la fonction get_db_connection
 
 DATABASE = "data.db"
@@ -26,6 +25,7 @@ entries_table = Table(
     Column("name", String, nullable=False),
     Column("date", DateTime, nullable=False),
     Column("status", String, nullable=False),
+    Column("souscategorie", String, nullable=False),
     Column("priority", String, nullable=False),
     Column("departement", String, nullable=True),
     Column("categorie", String, nullable=True),
@@ -47,6 +47,7 @@ class Entry:
     name: str
     date: datetime
     status: str
+    souscategorie : str
     priority: str
     departement: str
     categorie: str
@@ -56,14 +57,14 @@ class Entry:
     user_id: int  # ✅ Ajout de cette ligne
 
     @classmethod
-    def from_db(cls, _id, title, description, name, date, status, priority,
+    def from_db(cls, _id, title, description, name, date, status, souscategorie, priority,
                 departement, categorie, assigne_a, email, pays, user_id):  # ✅ Ajout de user_id ici aussi
-        return cls(_id, title, description, name, date, status, priority,
+        return cls(_id, title, description, name, date, status, souscategorie, priority,
                    departement, categorie, assigne_a, email, pays, user_id)
 
 
 # Fonction pour créer une entrée
-def create_entry(title, description, name, date, status, priority,
+def create_entry(title, description, name, date, status, souscategorie, priority,
                  departement, categorie, assigne_a, email, pays, user_id=None):
     stmt = insert(entries_table).values(
         title=title,
@@ -71,6 +72,7 @@ def create_entry(title, description, name, date, status, priority,
         name=name,
         date=date,
         status=status,
+        souscategorie=souscategorie,
         priority=priority,
         departement=departement,
         categorie=categorie,
@@ -102,13 +104,14 @@ def get_all_entries():
         return [Entry.from_db(*row) for row in results]
 
 # Fonction pour mettre à jour une entrée
-def update_entry(_id, title, description, name, status, priority,
+def update_entry(_id, title, description, name, status, souscategorie, priority,
                  departement, categorie, assigne_a, email, pays):
     stmt = update(entries_table).where(entries_table.c.id == _id).values(
         title=title,
         description=description,
         name=name,
         status=status,
+        souscategorie=souscategorie,
         priority=priority,
         departement=departement,
         categorie=categorie,
@@ -152,12 +155,12 @@ def get_tickets_by_user_id(user_id):
         return [dict(row._mapping) for row in results]
 
 
-def ajouter_reponse(ticket_id, contenu):
+def ajouter_reponse(ticket_id, contenu, user_id):
     conn = get_db_connection()
     try:
         conn.execute(
-            "INSERT INTO reponses (ticket_id, contenu, date) VALUES (?, ?, ?)",
-            (ticket_id, contenu, datetime.now())
+            "INSERT INTO reponses (ticket_id, contenu, date, user_id) VALUES (?, ?, ?, ?)",
+            (ticket_id, contenu, datetime.now(), user_id)
         )
         conn.commit()
     finally:

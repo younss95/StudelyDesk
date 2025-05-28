@@ -9,6 +9,8 @@
 <body>
 {% include 'navbar.html' %}
 
+
+<!-- SECTION POUR CONSULTER TOUT LES TICKETS SOUS FORME D'UN TABLEAU  -->
 <section class="form-container-parent">
     <div class="form-container">
         <h1 class="text-center">Consulter tous les tickets</h1>
@@ -40,6 +42,9 @@
                 <option value="treso">Treso Etudiant</option>
                 <option value="product">Product</option>
                 <option value="support">Support IT</option>
+                <option value="test">Test</option>
+                <option value="conformite">Conformité</option>
+                <option value="engagement">Engagement</option>
             </select>
 
             {% set demandeurs = entries | map(attribute='name') | unique | list %}
@@ -54,16 +59,17 @@
 
         </div>
 
+        <!--  CREATION DE LA TABLE -->
         <table>
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Titre</th>
-                    <th>Description</th>
                     <th>Demandeur</th>
                     <th>Assigné à</th>
                     <th>Département</th>
                     <th>Catégorie</th>
+                    <th>Sous Catégorie</th>
                     <th>Statut</th>
                     <th>Priorité</th>
                     <th>Date</th>
@@ -72,13 +78,13 @@
             <tbody>
                 {% for entry in entries %}
                 <tr>
-                    <td><a href="{{ url_for('web_ui.get_ticket_id', ticket_id=entry.id) }}">{{ entry.id }}</a></td>
+                    <td><a href="{{ url_for('web_ui.get_ticket_id', ticket_id=entry.id) }}">#{{ entry.id }}</a></td>
                     <td>{{ entry.title }}</td>
-                    <td>{{ entry.description }}</td>
                     <td>{{ entry.name }}</td>
                     <td>{{ entry.assigne_a }}</td>
                     <td>{{ entry.departement }}</td>
                     <td>{{ entry.categorie}}</td>
+                    <td>{{entry.souscategorie}}</td>
                     <td>{{ entry.status }}</td>
                     <td>
                     {% if entry.priority.lower() == 'basse' %}
@@ -100,11 +106,15 @@
         {% else %}
             <p>Aucun ticket pour le moment.</p>
         {% endif %}
-
+        <br>
         <a href="{{ url_for('web_ui.home') }}" class="form-button">Retour à l'accueil</a>
     </div>
 </section>
 
+
+
+
+<!--  SCRIPT JS POUR GERER LES FILTRES  -->
 <script>
 function filterTickets() {
     const status = document.getElementById("statusFilter").value.toLowerCase();
@@ -114,10 +124,10 @@ function filterTickets() {
 
     const rows = document.querySelectorAll("tbody tr");
     rows.forEach(row => {
-        const rowStatus = row.children[7].textContent.toLowerCase();
-        const rowPriority = row.children[8].textContent.toLowerCase();
-        const rowDemandeur = row.children[3].textContent.toLowerCase();
-        const rowDepartement = row.children[5].textContent.toLowerCase();
+        const rowStatus = row.children[6].textContent.toLowerCase();
+        const rowPriority = row.children[7].textContent.toLowerCase();
+        const rowDemandeur = row.children[2].textContent.toLowerCase();
+        const rowDepartement = row.children[4].textContent.toLowerCase();
 
         const showStatus = !status || rowStatus.includes(status);
         const showPriority = !priority || rowPriority.includes(priority);
