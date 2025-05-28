@@ -1,30 +1,28 @@
-# 🧾 StudelyDesk – Helpdesk Ticketing System with Docker & AKS
+🧾 StudelyDesk – Helpdesk Ticketing System with Docker & AKS
+StudelyDesk is a lightweight helpdesk and ticketing web application built with Flask. It enables users to easily submit support requests while providing administrators with a streamlined interface to manage and resolve tickets efficiently.
 
-**StudelyDesk** is a lightweight helpdesk/ticketing web application built with **Flask**.  
-It allows users to submit support requests and admins to manage tickets efficiently.  
-This app is containerized using **Docker** and deployed on **Azure Kubernetes Service (AKS)** for scalability and cloud-native orchestration.
+The application is containerized using Docker, ensuring consistency across development and production environments. For scalability and cloud-native orchestration, it is deployed on Azure Kubernetes Service (AKS), allowing it to handle growing workloads seamlessly.
 
----
+🚀 Features
+User-friendly submission and tracking of helpdesk tickets
 
-## 🚀 Features
+Admin dashboard to view, update, and resolve tickets
 
-- Submit and track helpdesk tickets
-- Admin interface to view and resolve issues
-- RESTful architecture
-- Containerized with Docker
-- Scalable deployment with Azure Kubernetes Service (AKS)
+RESTful API design for easy integration and extension
 
----
+Fully containerized for portability with Docker
 
-## 🛠️ Tech Stack
+Scalable, reliable deployment using Kubernetes on AKS
 
-- Python 3 / Flask
-- HTML, CSS (Bootstrap)
-- SQLite (for demo)
-- Docker
-- Kubernetes (AKS)
-- Azure CLI, kubectl
+🛠️ Tech Stack
+Backend: Python 3 with Flask framework
 
----
+Frontend: HTML and CSS with Bootstrap for responsive design
 
-## 📁 Project Structure
+Database: SQLite (used for demonstration and simplicity)
+
+Containerization: Docker for creating reproducible application images
+
+Orchestration: Kubernetes deployed via Azure Kubernetes Service (AKS)
+
+Tools: Azure CLI and kubectl for managing cloud resources and Kubernetes clusters
