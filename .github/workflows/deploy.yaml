@@ -26,7 +26,6 @@ jobs:
           docker build -t acrstudelydesk.azurecr.io/flask-desk:0.0.1.RELEASE .
           docker push acrstudelydesk.azurecr.io/flask-desk:0.0.1.RELEASE
 
-
       - name: Set up kubectl context
         uses: azure/aks-set-context@v1
         with:
@@ -34,6 +33,10 @@ jobs:
           cluster-name: aksstudelydesk
           resource-group: RG-STUDELY
 
-      - name: Restart deployment
+      - name: Update deployment image
         run: |
-          kubectl rollout restart deployment deployment-flaskdesk
+          kubectl set image deployment/deployment-flaskdesk flaskdesk=acrstudelydesk.azurecr.io/flask-desk:0.0.1.RELEASE
+
+      - name: Rollout restart deployment
+        run: |
+          kubectl rollout status deployment deployment-flaskdesk
