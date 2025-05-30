@@ -1,4 +1,4 @@
-name: Deploy to AKS
+name: Build and Deploy to AKS
 
 on:
   push:
@@ -6,32 +6,37 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Log in to Azure
-      uses: azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - name: Login to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-    - name: Azure CLI - AKS Credentials
-      run: az aks get-credentials --resource-group RG-STUDELY --name aksstudelydesk --overwrite-existing
+      - name: Azure Container Registry Login
+        uses: azure/docker-login@v1
+        with:
+          login-server: acrstudelydesk.azurecr.io
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
 
-    - name: Docker login to ACR
-      run: echo "${{ secrets.ACR_PASSWORD }}" | docker login ${{ secrets.REGISTRY_NAME }} -u ${{ secrets.ACR_USERNAME }} --password-stdin
+      - name: Build and Push Docker image
+        run: |
+          docker build -t acrstudelydesk.azurecr.io/studelydesk:latest .
+          docker push acrstudelydesk.azurecr.io/studelydesk:latest
 
-    - name: Build Docker image
-      run: |
-        docker build -t ${{ secrets.REGISTRY_NAME }}/flask-desk:0.0.1.RELEASE .
+      - name: Set up kubectl context
+        uses: azure/aks-set-context@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          cluster-name: aksstudelydesk
+          resource-group: RG-STUDELY
 
-    - name: Push Docker image to ACR
-      run: |
-        docker push ${{ secrets.REGISTRY_NAME }}/flask-desk:0.0.1.RELEASE
-
-    - name: Deploy to AKS
-      run: |
-        kubectl apply -f k8s/deploy.yaml
+      - name: Restart deployment
+        run: |
+          kubectl rollout restart deployment deployment-flaskdesk
