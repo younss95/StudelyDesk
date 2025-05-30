@@ -19,7 +19,7 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: Azure CLI - AKS Credentials
-      run: az aks get-credentials --resource-group RG-STUDELY --name aks-studelydesk --overwrite-existing
+      run: az aks get-credentials --resource-group RG-STUDELY --name aksstudelydesk --overwrite-existing
 
     - name: Docker login to ACR
       run: echo "${{ secrets.ACR_PASSWORD }}" | docker login ${{ secrets.REGISTRY_NAME }} -u ${{ secrets.ACR_USERNAME }} --password-stdin
