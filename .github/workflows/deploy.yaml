@@ -23,8 +23,9 @@ jobs:
 
       - name: Build and Push Docker image
         run: |
-          docker build -t acrstudelydesk.azurecr.io/flask-desk:0.0.1.RELEASE .
-          docker push acrstudelydesk.azurecr.io/flask-desk:0.0.1.RELEASE
+          IMAGE_TAG=${{ github.sha }}
+          docker build -t acrstudelydesk.azurecr.io/flask-desk:$IMAGE_TAG .
+          docker push acrstudelydesk.azurecr.io/flask-desk:$IMAGE_TAG
 
       - name: Set up kubectl context
         uses: azure/aks-set-context@v1
@@ -35,8 +36,8 @@ jobs:
 
       - name: Update deployment image
         run: |
-          kubectl set image deployment/deployment-flaskdesk flaskdesk=acrstudelydesk.azurecr.io/flask-desk:0.0.1.RELEASE
+          kubectl set image deployment/deployment-flaskdesk flaskdesk=acrstudelydesk.azurecr.io/flask-desk:${{ github.sha }}
 
-      - name: Rollout restart deployment
+      - name: Wait for rollout to finish
         run: |
           kubectl rollout status deployment deployment-flaskdesk
