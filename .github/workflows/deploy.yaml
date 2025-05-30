@@ -23,8 +23,9 @@ jobs:
 
       - name: Build and Push Docker image
         run: |
-          docker build -t acrstudelydesk.azurecr.io/studelydesk:latest .
-          docker push acrstudelydesk.azurecr.io/studelydesk:latest
+          docker build -t acrstudelydesk.azurecr.io/flask-desk:0.0.1.RELEASE .
+          docker push acrstudelydesk.azurecr.io/flask-desk:0.0.1.RELEASE
+
 
       - name: Set up kubectl context
         uses: azure/aks-set-context@v1
