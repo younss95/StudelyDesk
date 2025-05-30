@@ -1,0 +1,37 @@
+name: Deploy to AKS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Log in to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Azure CLI - AKS Credentials
+      run: az aks get-credentials --resource-group RG-STUDELY --name aks-studelydesk --overwrite-existing
+
+    - name: Docker login to ACR
+      run: echo "${{ secrets.ACR_PASSWORD }}" | docker login ${{ secrets.REGISTRY_NAME }} -u ${{ secrets.ACR_USERNAME }} --password-stdin
+
+    - name: Build Docker image
+      run: |
+        docker build -t ${{ secrets.REGISTRY_NAME }}/flask-desk:0.0.1.RELEASE .
+
+    - name: Push Docker image to ACR
+      run: |
+        docker push ${{ secrets.REGISTRY_NAME }}/flask-desk:0.0.1.RELEASE
+
+    - name: Deploy to AKS
+      run: |
+        kubectl apply -f k8s/deploy.yaml
