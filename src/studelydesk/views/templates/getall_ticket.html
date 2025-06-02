@@ -124,10 +124,11 @@ function filterTickets() {
 
     const rows = document.querySelectorAll("tbody tr");
     rows.forEach(row => {
-        const rowStatus = row.children[6].textContent.toLowerCase();
-        const rowPriority = row.children[7].textContent.toLowerCase();
-        const rowDemandeur = row.children[2].textContent.toLowerCase();
-        const rowDepartement = row.children[4].textContent.toLowerCase();
+        const rowStatus = row.children[7].textContent.toLowerCase();     // Statut
+const rowPriority = row.children[8].textContent.toLowerCase();   // Priorité
+const rowDemandeur = row.children[2].textContent.toLowerCase();  // Demandeur
+const rowDepartement = row.children[4].textContent.toLowerCase();// Département
+
 
         const showStatus = !status || rowStatus.includes(status);
         const showPriority = !priority || rowPriority.includes(priority);

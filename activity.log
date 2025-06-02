@@ -17075,3 +17075,147 @@ WHERE entries.id = ?
 2025-05-26 10:57:47,299 [INFO] ROLLBACK
 2025-05-26 10:57:47,310 [INFO] 127.0.0.1 - - [26/May/2025 10:57:47] "GET /ticket/4 HTTP/1.1" 200 -
 2025-05-26 10:57:47,332 [INFO] 127.0.0.1 - - [26/May/2025 10:57:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:37:29,940 [INFO] BEGIN (implicit)
+2025-06-02 10:37:29,940 [INFO] PRAGMA main.table_info("entries")
+2025-06-02 10:37:29,940 [INFO] [raw sql] ()
+2025-06-02 10:37:29,956 [INFO] COMMIT
+2025-06-02 10:37:30,423 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-02 10:37:30,423 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-02 10:37:30,425 [INFO]  * Restarting with stat
+2025-06-02 10:37:32,187 [INFO] BEGIN (implicit)
+2025-06-02 10:37:32,188 [INFO] PRAGMA main.table_info("entries")
+2025-06-02 10:37:32,189 [INFO] [raw sql] ()
+2025-06-02 10:37:32,190 [INFO] COMMIT
+2025-06-02 10:37:32,386 [WARNING]  * Debugger is active!
+2025-06-02 10:37:32,393 [INFO]  * Debugger PIN: 117-906-151
+2025-06-02 10:37:38,384 [INFO] 127.0.0.1 - - [02/Jun/2025 10:37:38] "GET / HTTP/1.1" 200 -
+2025-06-02 10:37:38,634 [INFO] 127.0.0.1 - - [02/Jun/2025 10:37:38] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-06-02 10:37:38,634 [INFO] 127.0.0.1 - - [02/Jun/2025 10:37:38] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-06-02 10:37:38,724 [INFO] 127.0.0.1 - - [02/Jun/2025 10:37:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-02 10:37:47,551 [INFO] 127.0.0.1 - - [02/Jun/2025 10:37:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-06-02 10:37:47,600 [INFO] 127.0.0.1 - - [02/Jun/2025 10:37:47] "GET /home HTTP/1.1" 200 -
+2025-06-02 10:37:47,648 [INFO] 127.0.0.1 - - [02/Jun/2025 10:37:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:37:50,139 [INFO] 127.0.0.1 - - [02/Jun/2025 10:37:50] "[31m[1mGET /delete_ticket HTTP/1.1[0m" 401 -
+2025-06-02 10:37:53,609 [INFO] BEGIN (implicit)
+2025-06-02 10:37:53,609 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:37:53,609 [INFO] [generated in 0.00104s] ()
+2025-06-02 10:37:53,609 [INFO] ROLLBACK
+2025-06-02 10:37:53,644 [INFO] 127.0.0.1 - - [02/Jun/2025 10:37:53] "GET /delete_ticket HTTP/1.1" 200 -
+2025-06-02 10:37:53,680 [INFO] 127.0.0.1 - - [02/Jun/2025 10:37:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:37:56,879 [INFO] 127.0.0.1 - - [02/Jun/2025 10:37:56] "GET /home HTTP/1.1" 200 -
+2025-06-02 10:37:56,903 [INFO] 127.0.0.1 - - [02/Jun/2025 10:37:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:37:58,327 [INFO] BEGIN (implicit)
+2025-06-02 10:37:58,328 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:37:58,329 [INFO] [cached since 4.714s ago] ()
+2025-06-02 10:37:58,330 [INFO] ROLLBACK
+2025-06-02 10:37:58,398 [INFO] 127.0.0.1 - - [02/Jun/2025 10:37:58] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-02 10:37:58,425 [INFO] 127.0.0.1 - - [02/Jun/2025 10:37:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:37:59,242 [INFO] 127.0.0.1 - - [02/Jun/2025 10:37:59] "GET /home HTTP/1.1" 200 -
+2025-06-02 10:37:59,263 [INFO] 127.0.0.1 - - [02/Jun/2025 10:37:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:38:00,672 [INFO] 127.0.0.1 - - [02/Jun/2025 10:38:00] "GET /create_ticket HTTP/1.1" 200 -
+2025-06-02 10:38:00,706 [INFO] 127.0.0.1 - - [02/Jun/2025 10:38:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:38:08,223 [INFO] BEGIN (implicit)
+2025-06-02 10:38:08,223 [INFO] INSERT INTO entries (title, description, name, date, status, souscategorie, priority, departement, categorie, assigne_a, email, pays, user_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-02 10:38:08,224 [INFO] [generated in 0.00177s] ('ok', 'ok', 'Younes Azirgui', '2025-06-02 10:38:08.221560', 'ouvert', "Suivi d'AVI", 'basse', 'customer', 'avi', 'Kassandra', 'younesazirgui@gmail.com', 'france', 1)
+2025-06-02 10:38:08,229 [INFO] COMMIT
+2025-06-02 10:38:08,234 [INFO] 127.0.0.1 - - [02/Jun/2025 10:38:08] "[32mPOST /create_ticket HTTP/1.1[0m" 302 -
+2025-06-02 10:38:08,250 [INFO] 127.0.0.1 - - [02/Jun/2025 10:38:08] "GET /home HTTP/1.1" 200 -
+2025-06-02 10:38:08,284 [INFO] 127.0.0.1 - - [02/Jun/2025 10:38:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:38:09,691 [INFO] BEGIN (implicit)
+2025-06-02 10:38:09,691 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:38:09,693 [INFO] [cached since 16.08s ago] ()
+2025-06-02 10:38:09,694 [INFO] ROLLBACK
+2025-06-02 10:38:09,700 [INFO] 127.0.0.1 - - [02/Jun/2025 10:38:09] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-02 10:38:09,735 [INFO] 127.0.0.1 - - [02/Jun/2025 10:38:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:41:53,546 [INFO] BEGIN (implicit)
+2025-06-02 10:41:53,546 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:41:53,546 [INFO] [cached since 239.9s ago] ()
+2025-06-02 10:41:53,546 [INFO] ROLLBACK
+2025-06-02 10:41:53,564 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:53] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-02 10:41:53,574 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:41:54,084 [INFO] BEGIN (implicit)
+2025-06-02 10:41:54,084 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:41:54,084 [INFO] [cached since 240.5s ago] ()
+2025-06-02 10:41:54,084 [INFO] ROLLBACK
+2025-06-02 10:41:54,088 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:54] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-02 10:41:54,110 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:41:54,224 [INFO] BEGIN (implicit)
+2025-06-02 10:41:54,225 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:41:54,226 [INFO] [cached since 240.6s ago] ()
+2025-06-02 10:41:54,227 [INFO] ROLLBACK
+2025-06-02 10:41:54,230 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:54] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-02 10:41:54,248 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:41:54,370 [INFO] BEGIN (implicit)
+2025-06-02 10:41:54,370 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:41:54,370 [INFO] [cached since 240.8s ago] ()
+2025-06-02 10:41:54,370 [INFO] ROLLBACK
+2025-06-02 10:41:54,370 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:54] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-02 10:41:54,405 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:41:54,534 [INFO] BEGIN (implicit)
+2025-06-02 10:41:54,534 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:41:54,534 [INFO] [cached since 240.9s ago] ()
+2025-06-02 10:41:54,534 [INFO] ROLLBACK
+2025-06-02 10:41:54,534 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:54] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-02 10:41:54,554 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:41:54,696 [INFO] BEGIN (implicit)
+2025-06-02 10:41:54,696 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:41:54,696 [INFO] [cached since 241.1s ago] ()
+2025-06-02 10:41:54,696 [INFO] ROLLBACK
+2025-06-02 10:41:54,696 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:54] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-02 10:41:54,712 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:41:54,846 [INFO] BEGIN (implicit)
+2025-06-02 10:41:54,846 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:41:54,846 [INFO] [cached since 241.2s ago] ()
+2025-06-02 10:41:54,846 [INFO] ROLLBACK
+2025-06-02 10:41:54,855 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:54] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-02 10:41:54,870 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:41:55,034 [INFO] BEGIN (implicit)
+2025-06-02 10:41:55,034 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:41:55,034 [INFO] [cached since 241.4s ago] ()
+2025-06-02 10:41:55,034 [INFO] ROLLBACK
+2025-06-02 10:41:55,034 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:55] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-02 10:41:55,055 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:41:55,198 [INFO] BEGIN (implicit)
+2025-06-02 10:41:55,198 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:41:55,198 [INFO] [cached since 241.6s ago] ()
+2025-06-02 10:41:55,213 [INFO] ROLLBACK
+2025-06-02 10:41:55,213 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:55] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-02 10:41:55,249 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:41:55,347 [INFO] BEGIN (implicit)
+2025-06-02 10:41:55,347 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:41:55,348 [INFO] [cached since 241.7s ago] ()
+2025-06-02 10:41:55,349 [INFO] ROLLBACK
+2025-06-02 10:41:55,350 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:55] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-02 10:41:55,361 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:41:56,040 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:56] "GET /create_ticket HTTP/1.1" 200 -
+2025-06-02 10:41:56,069 [INFO] 127.0.0.1 - - [02/Jun/2025 10:41:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:42:05,601 [INFO] BEGIN (implicit)
+2025-06-02 10:42:05,602 [INFO] INSERT INTO entries (title, description, name, date, status, souscategorie, priority, departement, categorie, assigne_a, email, pays, user_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-02 10:42:05,602 [INFO] [cached since 237.4s ago] ('test', 'test', 'Younes Azirgui', '2025-06-02 10:42:05.600705', 'ouvert', "Suivi d'AVI", 'haute', 'support', 'avi', 'Brice', 'younesazirgui@gmail.com', 'allemagne', 1)
+2025-06-02 10:42:05,605 [INFO] COMMIT
+2025-06-02 10:42:05,610 [INFO] 127.0.0.1 - - [02/Jun/2025 10:42:05] "[32mPOST /create_ticket HTTP/1.1[0m" 302 -
+2025-06-02 10:42:05,619 [INFO] 127.0.0.1 - - [02/Jun/2025 10:42:05] "GET /home HTTP/1.1" 200 -
+2025-06-02 10:42:05,650 [INFO] 127.0.0.1 - - [02/Jun/2025 10:42:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:42:06,719 [INFO] BEGIN (implicit)
+2025-06-02 10:42:06,721 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:42:06,724 [INFO] [cached since 253.1s ago] ()
+2025-06-02 10:42:06,729 [INFO] ROLLBACK
+2025-06-02 10:42:06,735 [INFO] 127.0.0.1 - - [02/Jun/2025 10:42:06] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-02 10:42:06,772 [INFO] 127.0.0.1 - - [02/Jun/2025 10:42:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:42:32,555 [INFO] 127.0.0.1 - - [02/Jun/2025 10:42:32] "GET /home HTTP/1.1" 200 -
+2025-06-02 10:42:32,644 [INFO] 127.0.0.1 - - [02/Jun/2025 10:42:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
