@@ -101,7 +101,10 @@ def get_all_entries():
     stmt = select(entries_table)
     with engine.connect() as conn:
         results = conn.execute(stmt).fetchall()
-        return [Entry.from_db(*row) for row in results]
+        entries = [Entry.from_db(*row) for row in results]
+        print(">>> DEBUG: Nombre total de tickets =", len(entries))
+        print(">>> IDs =", [e.id for e in entries])
+        return entries
 
 # Fonction pour mettre à jour une entrée
 def update_entry(_id, title, description, name, status, souscategorie, priority,

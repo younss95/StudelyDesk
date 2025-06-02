@@ -17219,3 +17219,218 @@ FROM entries
 2025-06-02 10:42:06,772 [INFO] 127.0.0.1 - - [02/Jun/2025 10:42:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 2025-06-02 10:42:32,555 [INFO] 127.0.0.1 - - [02/Jun/2025 10:42:32] "GET /home HTTP/1.1" 200 -
 2025-06-02 10:42:32,644 [INFO] 127.0.0.1 - - [02/Jun/2025 10:42:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:53:11,527 [INFO] BEGIN (implicit)
+2025-06-02 10:53:11,527 [INFO] PRAGMA main.table_info("entries")
+2025-06-02 10:53:11,527 [INFO] [raw sql] ()
+2025-06-02 10:53:11,543 [INFO] COMMIT
+2025-06-02 10:53:11,861 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-02 10:53:11,861 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-02 10:53:11,877 [INFO]  * Restarting with stat
+2025-06-02 10:53:13,767 [INFO] BEGIN (implicit)
+2025-06-02 10:53:13,767 [INFO] PRAGMA main.table_info("entries")
+2025-06-02 10:53:13,768 [INFO] [raw sql] ()
+2025-06-02 10:53:13,769 [INFO] COMMIT
+2025-06-02 10:53:14,019 [WARNING]  * Debugger is active!
+2025-06-02 10:53:14,025 [INFO]  * Debugger PIN: 117-906-151
+2025-06-02 10:53:14,090 [INFO] BEGIN (implicit)
+2025-06-02 10:53:14,090 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:14,091 [INFO] [generated in 0.00112s] ()
+2025-06-02 10:53:14,092 [INFO] ROLLBACK
+2025-06-02 10:53:14,109 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:14] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-02 10:53:14,207 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:53:16,017 [INFO] BEGIN (implicit)
+2025-06-02 10:53:16,018 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:16,019 [INFO] [cached since 1.929s ago] ()
+2025-06-02 10:53:16,021 [INFO] ROLLBACK
+2025-06-02 10:53:16,022 [INFO] BEGIN (implicit)
+2025-06-02 10:53:16,022 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:16,022 [INFO] [cached since 1.935s ago] ()
+2025-06-02 10:53:16,022 [INFO] ROLLBACK
+2025-06-02 10:53:16,095 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:16] "GET /getstats HTTP/1.1" 200 -
+2025-06-02 10:53:16,123 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:53:17,574 [INFO] BEGIN (implicit)
+2025-06-02 10:53:17,575 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:17,575 [INFO] [cached since 3.486s ago] ()
+2025-06-02 10:53:17,575 [INFO] ROLLBACK
+2025-06-02 10:53:17,575 [INFO] BEGIN (implicit)
+2025-06-02 10:53:17,575 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:17,575 [INFO] [cached since 3.488s ago] ()
+2025-06-02 10:53:17,579 [INFO] ROLLBACK
+2025-06-02 10:53:17,582 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:17] "GET /getstats HTTP/1.1" 200 -
+2025-06-02 10:53:17,603 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:53:17,728 [INFO] BEGIN (implicit)
+2025-06-02 10:53:17,728 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:17,728 [INFO] [cached since 3.651s ago] ()
+2025-06-02 10:53:17,728 [INFO] ROLLBACK
+2025-06-02 10:53:17,728 [INFO] BEGIN (implicit)
+2025-06-02 10:53:17,728 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:17,728 [INFO] [cached since 3.653s ago] ()
+2025-06-02 10:53:17,744 [INFO] ROLLBACK
+2025-06-02 10:53:17,749 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:17] "GET /getstats HTTP/1.1" 200 -
+2025-06-02 10:53:17,763 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:53:17,910 [INFO] BEGIN (implicit)
+2025-06-02 10:53:17,910 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:17,910 [INFO] [cached since 3.83s ago] ()
+2025-06-02 10:53:17,910 [INFO] ROLLBACK
+2025-06-02 10:53:17,921 [INFO] BEGIN (implicit)
+2025-06-02 10:53:17,921 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:17,921 [INFO] [cached since 3.833s ago] ()
+2025-06-02 10:53:17,921 [INFO] ROLLBACK
+2025-06-02 10:53:17,921 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:17] "GET /getstats HTTP/1.1" 200 -
+2025-06-02 10:53:17,950 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:53:18,079 [INFO] BEGIN (implicit)
+2025-06-02 10:53:18,079 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:18,079 [INFO] [cached since 3.999s ago] ()
+2025-06-02 10:53:18,079 [INFO] ROLLBACK
+2025-06-02 10:53:18,079 [INFO] BEGIN (implicit)
+2025-06-02 10:53:18,079 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:18,079 [INFO] [cached since 4.003s ago] ()
+2025-06-02 10:53:18,079 [INFO] ROLLBACK
+2025-06-02 10:53:18,095 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:18] "GET /getstats HTTP/1.1" 200 -
+2025-06-02 10:53:18,125 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:53:18,242 [INFO] BEGIN (implicit)
+2025-06-02 10:53:18,242 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:18,243 [INFO] [cached since 4.154s ago] ()
+2025-06-02 10:53:18,244 [INFO] ROLLBACK
+2025-06-02 10:53:18,245 [INFO] BEGIN (implicit)
+2025-06-02 10:53:18,246 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:18,248 [INFO] [cached since 4.159s ago] ()
+2025-06-02 10:53:18,249 [INFO] ROLLBACK
+2025-06-02 10:53:18,251 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:18] "GET /getstats HTTP/1.1" 200 -
+2025-06-02 10:53:18,274 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:53:18,393 [INFO] BEGIN (implicit)
+2025-06-02 10:53:18,393 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:18,393 [INFO] [cached since 4.317s ago] ()
+2025-06-02 10:53:18,393 [INFO] ROLLBACK
+2025-06-02 10:53:18,408 [INFO] BEGIN (implicit)
+2025-06-02 10:53:18,408 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:18,408 [INFO] [cached since 4.32s ago] ()
+2025-06-02 10:53:18,408 [INFO] ROLLBACK
+2025-06-02 10:53:18,408 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:18] "GET /getstats HTTP/1.1" 200 -
+2025-06-02 10:53:18,445 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:53:18,569 [INFO] BEGIN (implicit)
+2025-06-02 10:53:18,570 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:18,571 [INFO] [cached since 4.482s ago] ()
+2025-06-02 10:53:18,573 [INFO] ROLLBACK
+2025-06-02 10:53:18,574 [INFO] BEGIN (implicit)
+2025-06-02 10:53:18,575 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:18,576 [INFO] [cached since 4.487s ago] ()
+2025-06-02 10:53:18,577 [INFO] ROLLBACK
+2025-06-02 10:53:18,580 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:18] "GET /getstats HTTP/1.1" 200 -
+2025-06-02 10:53:18,621 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:53:18,704 [INFO] BEGIN (implicit)
+2025-06-02 10:53:18,704 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:18,704 [INFO] [cached since 4.619s ago] ()
+2025-06-02 10:53:18,704 [INFO] ROLLBACK
+2025-06-02 10:53:18,704 [INFO] BEGIN (implicit)
+2025-06-02 10:53:18,704 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:18,711 [INFO] [cached since 4.622s ago] ()
+2025-06-02 10:53:18,713 [INFO] ROLLBACK
+2025-06-02 10:53:18,716 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:18] "GET /getstats HTTP/1.1" 200 -
+2025-06-02 10:53:18,737 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:53:18,839 [INFO] BEGIN (implicit)
+2025-06-02 10:53:18,839 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:18,839 [INFO] [cached since 4.754s ago] ()
+2025-06-02 10:53:18,839 [INFO] ROLLBACK
+2025-06-02 10:53:18,839 [INFO] BEGIN (implicit)
+2025-06-02 10:53:18,839 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:53:18,839 [INFO] [cached since 4.761s ago] ()
+2025-06-02 10:53:18,839 [INFO] ROLLBACK
+2025-06-02 10:53:18,854 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:18] "GET /getstats HTTP/1.1" 200 -
+2025-06-02 10:53:18,876 [INFO] 127.0.0.1 - - [02/Jun/2025 10:53:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:55:14,064 [INFO] BEGIN (implicit)
+2025-06-02 10:55:14,064 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:55:14,064 [INFO] [cached since 120s ago] ()
+2025-06-02 10:55:14,064 [INFO] ROLLBACK
+2025-06-02 10:55:14,064 [INFO] BEGIN (implicit)
+2025-06-02 10:55:14,064 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:55:14,064 [INFO] [cached since 120s ago] ()
+2025-06-02 10:55:14,067 [INFO] ROLLBACK
+2025-06-02 10:55:14,069 [INFO] 127.0.0.1 - - [02/Jun/2025 10:55:14] "GET /getstats HTTP/1.1" 200 -
+2025-06-02 10:55:14,090 [INFO] 127.0.0.1 - - [02/Jun/2025 10:55:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:55:14,518 [INFO] BEGIN (implicit)
+2025-06-02 10:55:14,518 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:55:14,518 [INFO] [cached since 120.4s ago] ()
+2025-06-02 10:55:14,534 [INFO] ROLLBACK
+2025-06-02 10:55:14,535 [INFO] BEGIN (implicit)
+2025-06-02 10:55:14,536 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:55:14,536 [INFO] [cached since 120.4s ago] ()
+2025-06-02 10:55:14,537 [INFO] ROLLBACK
+2025-06-02 10:55:14,539 [INFO] 127.0.0.1 - - [02/Jun/2025 10:55:14] "GET /getstats HTTP/1.1" 200 -
+2025-06-02 10:55:14,556 [INFO] 127.0.0.1 - - [02/Jun/2025 10:55:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:55:14,969 [INFO] BEGIN (implicit)
+2025-06-02 10:55:14,971 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:55:14,971 [INFO] [cached since 120.9s ago] ()
+2025-06-02 10:55:14,973 [INFO] ROLLBACK
+2025-06-02 10:55:14,974 [INFO] BEGIN (implicit)
+2025-06-02 10:55:14,975 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:55:14,975 [INFO] [cached since 120.9s ago] ()
+2025-06-02 10:55:14,977 [INFO] ROLLBACK
+2025-06-02 10:55:14,977 [INFO] 127.0.0.1 - - [02/Jun/2025 10:55:14] "GET /getstats HTTP/1.1" 200 -
+2025-06-02 10:55:14,987 [INFO] 127.0.0.1 - - [02/Jun/2025 10:55:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:55:15,361 [INFO] BEGIN (implicit)
+2025-06-02 10:55:15,361 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:55:15,361 [INFO] [cached since 121.3s ago] ()
+2025-06-02 10:55:15,362 [INFO] ROLLBACK
+2025-06-02 10:55:15,363 [INFO] BEGIN (implicit)
+2025-06-02 10:55:15,363 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:55:15,363 [INFO] [cached since 121.3s ago] ()
+2025-06-02 10:55:15,364 [INFO] ROLLBACK
+2025-06-02 10:55:15,365 [INFO] 127.0.0.1 - - [02/Jun/2025 10:55:15] "GET /getstats HTTP/1.1" 200 -
+2025-06-02 10:55:15,386 [INFO] 127.0.0.1 - - [02/Jun/2025 10:55:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:55:15,989 [INFO] BEGIN (implicit)
+2025-06-02 10:55:15,990 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:55:15,990 [INFO] [cached since 121.9s ago] ()
+2025-06-02 10:55:15,991 [INFO] ROLLBACK
+2025-06-02 10:55:15,992 [INFO] BEGIN (implicit)
+2025-06-02 10:55:15,993 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:55:15,993 [INFO] [cached since 121.9s ago] ()
+2025-06-02 10:55:15,993 [INFO] ROLLBACK
+2025-06-02 10:55:15,993 [INFO] 127.0.0.1 - - [02/Jun/2025 10:55:15] "GET /getstats HTTP/1.1" 200 -
+2025-06-02 10:55:16,014 [INFO] 127.0.0.1 - - [02/Jun/2025 10:55:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:55:16,354 [INFO] BEGIN (implicit)
+2025-06-02 10:55:16,355 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:55:16,355 [INFO] [cached since 122.3s ago] ()
+2025-06-02 10:55:16,357 [INFO] ROLLBACK
+2025-06-02 10:55:16,358 [INFO] BEGIN (implicit)
+2025-06-02 10:55:16,358 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-02 10:55:16,359 [INFO] [cached since 122.3s ago] ()
+2025-06-02 10:55:16,359 [INFO] ROLLBACK
+2025-06-02 10:55:16,361 [INFO] 127.0.0.1 - - [02/Jun/2025 10:55:16] "GET /getstats HTTP/1.1" 200 -
+2025-06-02 10:55:16,370 [INFO] 127.0.0.1 - - [02/Jun/2025 10:55:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-02 10:56:10,710 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\models.py', reloading
+2025-06-02 10:56:11,006 [INFO]  * Restarting with stat
