@@ -98,7 +98,7 @@
                     {% endif %}
                     </td>
 
-                    <td>{{ entry.date.strftime('%Y-%m-%d %H:%M') }}</td>
+                    <td>{{ entry.date.strftime('%Y-%m-%d %H:%M') if entry.date else '' }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
@@ -124,11 +124,10 @@ function filterTickets() {
 
     const rows = document.querySelectorAll("tbody tr");
     rows.forEach(row => {
-        const rowStatus = row.children[7].textContent.toLowerCase();     // Statut
-const rowPriority = row.children[8].textContent.toLowerCase();   // Priorité
-const rowDemandeur = row.children[2].textContent.toLowerCase();  // Demandeur
-const rowDepartement = row.children[4].textContent.toLowerCase();// Département
-
+        const rowStatus = row.children[6].textContent.toLowerCase();
+        const rowPriority = row.children[7].textContent.toLowerCase();
+        const rowDemandeur = row.children[2].textContent.toLowerCase();
+        const rowDepartement = row.children[4].textContent.toLowerCase();
 
         const showStatus = !status || rowStatus.includes(status);
         const showPriority = !priority || rowPriority.includes(priority);
