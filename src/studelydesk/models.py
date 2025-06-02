@@ -1,3 +1,4 @@
+import os
 import sqlite3
 from collections import Counter
 from dataclasses import dataclass
@@ -6,14 +7,11 @@ from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String, 
 from sqlalchemy.ext.declarative import declarative_base
 from studelydesk.db import get_db_connection  # Importation de la fonction get_db_connection
 
-DATABASE = "data.db"
+DATABASE_URL = os.getenv("ARCHILOG_DATABASE_URL", "sqlite:///data.db")
 
-# Crée une instance de base
-Base = declarative_base()
-
-# Connexion à la base de données
-engine = create_engine('sqlite:///data.db', echo=True)
+engine = create_engine(DATABASE_URL, echo=True)
 metadata = MetaData()
+Base = declarative_base()
 
 # Définition de la table 'entries'
 entries_table = Table(
