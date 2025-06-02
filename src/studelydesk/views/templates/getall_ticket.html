@@ -124,8 +124,8 @@ function filterTickets() {
 
     const rows = document.querySelectorAll("tbody tr");
     rows.forEach(row => {
-        const rowStatus = row.children[6].textContent.toLowerCase();
-        const rowPriority = row.children[7].textContent.toLowerCase();
+        const rowStatus = row.children[7].textContent.toLowerCase();
+        const rowPriority = row.children[8].textContent.toLowerCase();
         const rowDemandeur = row.children[2].textContent.toLowerCase();
         const rowDepartement = row.children[4].textContent.toLowerCase();
 
