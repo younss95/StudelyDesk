@@ -17434,3 +17434,27 @@ FROM entries
 2025-06-02 10:55:16,370 [INFO] 127.0.0.1 - - [02/Jun/2025 10:55:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 2025-06-02 10:56:10,710 [INFO]  * Detected change in 'C:\\Users\\YounesAZIRGUI\\PycharmProjects\\StudelyDesk\\src\\studelydesk\\models.py', reloading
 2025-06-02 10:56:11,006 [INFO]  * Restarting with stat
+2025-06-02 11:49:32,924 [INFO] BEGIN (implicit)
+2025-06-02 11:49:32,925 [INFO] PRAGMA main.table_info("entries")
+2025-06-02 11:49:32,925 [INFO] [raw sql] ()
+2025-06-02 11:49:32,930 [INFO] COMMIT
+2025-06-02 11:49:33,617 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-02 11:49:33,618 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-02 11:49:33,628 [INFO]  * Restarting with stat
+2025-06-02 11:49:37,984 [INFO] BEGIN (implicit)
+2025-06-02 11:49:37,984 [INFO] PRAGMA main.table_info("entries")
+2025-06-02 11:49:37,986 [INFO] [raw sql] ()
+2025-06-02 11:49:37,988 [INFO] COMMIT
+2025-06-02 11:49:38,398 [WARNING]  * Debugger is active!
+2025-06-02 11:49:38,417 [INFO]  * Debugger PIN: 117-906-151
+2025-06-02 11:49:38,590 [INFO] 127.0.0.1 - - [02/Jun/2025 11:49:38] "GET / HTTP/1.1" 200 -
+2025-06-02 11:49:38,848 [INFO] 127.0.0.1 - - [02/Jun/2025 11:49:38] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-06-02 11:49:38,851 [INFO] 127.0.0.1 - - [02/Jun/2025 11:49:38] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-06-02 11:54:18,775 [INFO] 127.0.0.1 - - [02/Jun/2025 11:54:18] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-06-02 11:54:18,783 [INFO] 127.0.0.1 - - [02/Jun/2025 11:54:18] "GET / HTTP/1.1" 200 -
+2025-06-02 11:54:18,823 [INFO] 127.0.0.1 - - [02/Jun/2025 11:54:18] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-06-02 11:54:18,826 [INFO] 127.0.0.1 - - [02/Jun/2025 11:54:18] "[36mGET /static/studely%20(1).png HTTP/1.1[0m" 304 -
+2025-06-02 11:54:28,986 [INFO] 127.0.0.1 - - [02/Jun/2025 11:54:28] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-06-02 11:54:29,028 [INFO] 127.0.0.1 - - [02/Jun/2025 11:54:29] "GET /home HTTP/1.1" 200 -
+2025-06-02 11:54:29,120 [INFO] 127.0.0.1 - - [02/Jun/2025 11:54:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
