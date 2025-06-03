@@ -25,7 +25,7 @@ spec:
         - containerPort: 3000
         env:
         - name: ARCHILOG_DATABASE_URL
-          value: postgresql://adminpg:Studelydb95!@studely-pg.postgres.database.azure.com:5432/studelydb?sslmode=require
+          value: postgresql://adminpg:Studely95!@studely-pg.postgres.database.azure.com:5432/studelydb?sslmode=require
         - name: ARCHILOG_DEBUG
           value: "True"
         - name: ARCHILOG_FLASK_SECRET_KEY
