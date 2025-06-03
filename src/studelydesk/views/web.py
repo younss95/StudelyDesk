@@ -6,6 +6,7 @@ from flask_wtf import FlaskForm
 from werkzeug.security import generate_password_hash, check_password_hash
 from wtforms import SelectField, SubmitField, IntegerField, StringField
 from wtforms.validators import DataRequired, Optional
+import psycopg2.extras
 
 # Redondant: `from studelydesk.db import get_db_connection` supprimé ici
 import studelydesk.models as models
@@ -60,19 +61,21 @@ def login():
     email = request.form['email']
     password = request.form['password']
 
-    conn = get_db_connection()  # ta fonction qui crée la connexion psycopg2
-    cursor = conn.cursor()
+    conn = get_db_connection()
+    cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)  # ✅ important
     cursor.execute("SELECT * FROM users WHERE email = %s", (email,))
     user = cursor.fetchone()
     cursor.close()
+    conn.close()
 
-    if user and check_password_hash(user[4], password):
+    if user and check_password_hash(user['password_hash'], password):  # ✅ accès par nom
         session['user_id'] = user['id']
         session['user'] = dict(user)
         return redirect('/home')
 
     flash("Identifiants incorrects.", "error")
     return redirect('/')
+
 
 
 @web_ui.route('/register', methods=['POST'])
