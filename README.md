@@ -53,3 +53,15 @@ This project uses **GitHub Actions** to automate the build, test, and deployment
 
 ---
 
+## 🐘 Migration from SQLite to PostgreSQL
+
+To prepare the application for production-level use, the database has been migrated from SQLite to **PostgreSQL**.
+
+### Why PostgreSQL?
+
+- Better handling of concurrent users and multiple connections  
+- Native support for distributed systems like Kubernetes  
+- Compatibility with managed cloud services (e.g. Azure Database for PostgreSQL)  
+- Richer data types and improved performance for larger datasets
+
+---
