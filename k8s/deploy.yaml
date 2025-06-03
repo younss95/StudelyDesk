@@ -1,17 +1,4 @@
-# PVC pour le stockage persistant SQLite
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: flaskdesk-pvc
-spec:
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 1Gi
-  storageClassName: default  # À adapter selon ton cluster AKS (ex: managed-premium)
----
-# Deployment qui monte le PVC dans /app/data
+# Deployment sans PVC, avec PostgreSQL distant
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -38,19 +25,16 @@ spec:
         - containerPort: 3000
         env:
         - name: ARCHILOG_DATABASE_URL
-          value: "sqlite:///app/data/data.db"
+          value: "postgresql://adminpg:Studelydb95%21@studely-pg.postgres.database.azure.com:5432/studelydb?sslmode=require"
+        - name: ARCHILOG_DEBUG
+          value: "True"
+        - name: ARCHILOG_FLASK_SECRET_KEY
+          value: "secret!"
         resources:
           requests:
             cpu: 250m
           limits:
             cpu: 500m
-        volumeMounts:
-        - mountPath: /app/data
-          name: data-volume
-      volumes:
-      - name: data-volume
-        persistentVolumeClaim:
-          claimName: flaskdesk-pvc
 ---
 # Service LoadBalancer exposant le pod
 apiVersion: v1

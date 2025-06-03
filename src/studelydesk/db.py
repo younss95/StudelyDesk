@@ -1,8 +1,30 @@
+import os
+from urllib.parse import urlparse
+import psycopg2
 import sqlite3
 
-
-#connection à la bd
 def get_db_connection():
-    conn = sqlite3.connect('data.db')
-    conn.row_factory = sqlite3.Row
-    return conn
+    database_url = os.getenv('ARCHILOG_DATABASE_URL')
+    if database_url.startswith("sqlite://"):
+        # Extraire chemin fichier SQLite
+        path = database_url.replace("sqlite:///", "")
+        conn = sqlite3.connect(path)
+        return conn
+    else:
+        # PostgreSQL
+        result = urlparse(database_url)
+        username = result.username
+        password = result.password
+        database = result.path[1:]
+        hostname = result.hostname
+        port = result.port
+
+        conn = psycopg2.connect(
+            dbname=database,
+            user=username,
+            password=password,
+            host=hostname,
+            port=port,
+            sslmode='require'
+        )
+        return conn
