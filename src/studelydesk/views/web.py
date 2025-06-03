@@ -66,7 +66,7 @@ def login():
     user = cursor.fetchone()
     cursor.close()
 
-    if user and check_password_hash(user['password_hash'], password):
+    if user and check_password_hash(user[4], password):
         session['user_id'] = user['id']
         session['user'] = dict(user)
         return redirect('/home')
