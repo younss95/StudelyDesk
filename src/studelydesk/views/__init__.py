@@ -8,7 +8,7 @@ def create_app():
     app = Flask(__name__)
 
     # Charger la configuration depuis l'objet config
-    app.config.from_prefixed_env(prefix="ARCHILOG_FLASK")
+    app.config.from_prefixed_env(prefix="ARCHILOG")
 
 
     # Enregistrer les Blueprints qui sont un moyen d'organiser un groupes de vues et d'autres codes
