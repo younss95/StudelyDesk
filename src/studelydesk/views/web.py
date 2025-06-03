@@ -115,7 +115,7 @@ def home():
     user_email = session['user']['email']
     conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM users WHERE email = ?", (user_email,))
+    cursor.execute("SELECT * FROM users WHERE email = %s", (user_email,))
     user_tickets = cursor.fetchall()
     conn.close()
 
