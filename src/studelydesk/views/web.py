@@ -60,10 +60,11 @@ def login():
     email = request.form['email']
     password = request.form['password']
 
-
-    conn = get_db_connection()
-    user = conn.execute("SELECT * FROM users WHERE email = ?", (email,)).fetchone()
-    conn.close()
+    conn = get_db_connection()  # ta fonction qui crée la connexion psycopg2
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM users WHERE email = %s", (email,))
+    user = cursor.fetchone()
+    cursor.close()
 
     if user and check_password_hash(user['password_hash'], password):
         session['user_id'] = user['id']
