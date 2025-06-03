@@ -84,18 +84,20 @@ def register():
     departement = request.form['departement']
 
     conn = get_db_connection()
+    cursor = conn.cursor()
+
     try:
-        conn.execute(
-            "INSERT INTO users (name, email, departement, password_hash) VALUES (?, ?, ?, ?)",
+        cursor.execute(
+            "INSERT INTO users (name, email, departement, password_hash) VALUES (%s, %s, %s, %s)",
             (name, email, departement, password_hash)
         )
-
         conn.commit()
     except Exception as e:
-        print("Erreur d'inscription :", e)  # ← À ajouter
+        print("Erreur d'inscription :", e)
         flash("Erreur lors de l'inscription : " + str(e), "error")
         return redirect('/')
     finally:
+        cursor.close()
         conn.close()
 
     flash("Inscription réussie. Connecte-toi maintenant.", "success")
