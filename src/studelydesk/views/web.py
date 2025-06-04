@@ -227,31 +227,25 @@ def get_ticket_id(ticket_id):
         flash("Ticket introuvable.", "error")
         return redirect(url_for("web_ui.mes_tickets"))
 
-    # Récupérer les réponses liées
-    try:
-        conn = get_db_connection()
-        cur = conn.cursor()
+    conn = get_db_connection()
+    cur = conn.cursor()
 
-        cur.execute(
-            """
-            SELECT r.*, u.name AS auteur_nom
-            FROM reponses r
-                     JOIN users u ON r.user_id = u.id
-            WHERE r.ticket_id = %s
-            ORDER BY r.date ASC
-            """,
-            (ticket_id,)
-        )
-        rows = cur.fetchall()
-    except Exception as e:
-        flash("Erreur lors de la récupération des réponses : " + str(e), "error")
-        reponses = [
-            {'contenu': row[0], 'date': row[1], 'auteur_nom': row[2]}
-            for row in rows
-        ]
-    finally:
-        cur.close()
-        conn.close()
+    cur.execute("""
+        SELECT r.contenu, r.date, u.name AS auteur_nom
+        FROM reponses r
+                 JOIN users u ON r.user_id = u.id
+        WHERE r.ticket_id = %s
+        ORDER BY r.date ASC
+    """, (ticket_id,))
+    rows = cur.fetchall()
+
+    reponses = [
+        {'contenu': row[0], 'date': row[1], 'auteur_nom': row[2]}
+        for row in rows
+    ]
+
+    cur.close()
+    conn.close()
 
     return render_template(
         'get_ticket.html',
