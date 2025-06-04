@@ -51,7 +51,7 @@
         <h3>Historique des réponses</h3>
         {% for reponse in reponses %}
         <div class="reponse-item">
-            <p><strong>Le {{ reponse.date[:19]  }} par {{ reponse.auteur_nom}}:</strong></p>
+            <p><strong>Le {{ reponse.date.strftime('%d %B %Y à %H:%M') }} par {{ reponse.auteur_nom}}:</strong></p>
             <p>{{ reponse.contenu }}</p>
             <hr>
         </div>
