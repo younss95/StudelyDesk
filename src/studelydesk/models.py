@@ -163,13 +163,17 @@ def get_tickets_by_user_id(user_id):
 def ajouter_reponse(ticket_id, contenu, user_id):
     conn = get_db_connection()
     try:
-        conn.execute(
-            "INSERT INTO reponses (ticket_id, contenu, date, user_id) VALUES (?, ?, ?, ?)",
+        cur = conn.cursor()  # ✅ utiliser un curseur
+        cur.execute(
+            "INSERT INTO reponses (ticket_id, contenu, date, user_id) VALUES (%s, %s, %s, %s)",  # ✅ utiliser %s avec psycopg2
             (ticket_id, contenu, datetime.now(), user_id)
         )
         conn.commit()
     finally:
+        cur.close()
         conn.close()
+
+
 
 
 
