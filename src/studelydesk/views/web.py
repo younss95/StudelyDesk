@@ -3,6 +3,7 @@ from datetime import datetime
 from flask import Flask, Blueprint, render_template, request, redirect, url_for, flash, session
 from flask_httpauth import HTTPBasicAuth
 from flask_wtf import FlaskForm
+from sqlalchemy.engine import row
 from werkzeug.security import generate_password_hash, check_password_hash
 from wtforms import SelectField, SubmitField, IntegerField, StringField
 from wtforms.validators import DataRequired, Optional
@@ -241,11 +242,13 @@ def get_ticket_id(ticket_id):
             """,
             (ticket_id,)
         )
-
-        reponses = cur.fetchall()
+        rows = cur.fetchall()
     except Exception as e:
         flash("Erreur lors de la récupération des réponses : " + str(e), "error")
-        reponses = []
+        reponses = [
+            {'contenu': row[0], 'date': row[1], 'auteur_nom': row[2]}
+            for row in rows
+        ]
     finally:
         cur.close()
         conn.close()
