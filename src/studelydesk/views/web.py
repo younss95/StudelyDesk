@@ -228,7 +228,8 @@ def get_ticket_id(ticket_id):
 
     # Récupérer les réponses liées
     conn = get_db_connection()
-    reponses = conn.execute(
+    cur = conn.cursor()
+    cur.execute(
         """
         SELECT r.*, u.name AS auteur_nom
         FROM reponses r
@@ -237,8 +238,9 @@ def get_ticket_id(ticket_id):
         ORDER BY r.date ASC
         """,
         (ticket_id,)
-    ).fetchall()
-
+    )
+    reponses = cur.fetchall()
+    cur.close()
     conn.close()
 
     return render_template(
