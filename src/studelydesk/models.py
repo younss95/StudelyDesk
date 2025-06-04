@@ -29,7 +29,7 @@ entries_table = Table(
     Column("status", String, nullable=False),
     Column("souscategorie", String, nullable=False),
     Column("priority", String, nullable=False),
-    Column("departement", String, nullable=True),
+    Column("department", String, nullable=True),
     Column("categorie", String, nullable=True),
     Column("assigne_a", String, nullable=True),
     Column("email", String, nullable=True),
@@ -51,7 +51,7 @@ class Entry:
     status: str
     souscategorie : str
     priority: str
-    departement: str
+    department: str
     categorie: str
     assigne_a: str
     email: str
@@ -60,14 +60,14 @@ class Entry:
 
     @classmethod
     def from_db(cls, _id, title, description, name, date, status, souscategorie, priority,
-                departement, categorie, assigne_a, email, pays, user_id):  # ✅ Ajout de user_id ici aussi
+                department, categorie, assigne_a, email, pays, user_id):  # ✅ Ajout de user_id ici aussi
         return cls(_id, title, description, name, date, status, souscategorie, priority,
-                   departement, categorie, assigne_a, email, pays, user_id)
+                   department, categorie, assigne_a, email, pays, user_id)
 
 
 # Fonction pour créer une entrée
 def create_entry(title, description, name, date, status, souscategorie, priority,
-                 departement, categorie, assigne_a, email, pays, user_id=None):
+                 department, categorie, assigne_a, email, pays, user_id=None):
     stmt = insert(entries_table).values(
         title=title,
         description=description,
@@ -76,7 +76,7 @@ def create_entry(title, description, name, date, status, souscategorie, priority
         status=status,
         souscategorie=souscategorie,
         priority=priority,
-        departement=departement,
+        department=department,
         categorie=categorie,
         assigne_a=assigne_a,
         email=email,
@@ -110,7 +110,7 @@ def get_all_entries():
 
 # Fonction pour mettre à jour une entrée
 def update_entry(_id, title, description, name, status, souscategorie, priority,
-                 departement, categorie, assigne_a, email, pays):
+                 department, categorie, assigne_a, email, pays):
     stmt = update(entries_table).where(entries_table.c.id == _id).values(
         title=title,
         description=description,
@@ -118,7 +118,7 @@ def update_entry(_id, title, description, name, status, souscategorie, priority,
         status=status,
         souscategorie=souscategorie,
         priority=priority,
-        departement=departement,
+        department=department,
         categorie=categorie,
         assigne_a=assigne_a,
         email=email,
