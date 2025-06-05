@@ -99,13 +99,13 @@ def register():
     except Exception as e:
         print("Erreur d'inscription :", e)
         flash("Erreur lors de l'inscription : " + str(e), "error")
-        return redirect('/')
+        return redirect(url_for('web_ui.index'))  # Redirection vers la page d'accueil
     finally:
         cursor.close()
         conn.close()
 
     flash("Inscription réussie. Connecte-toi maintenant.", "success")
-    return redirect('/')
+    return redirect(url_for('web_ui.index') + '#connexion')
 
 
 @web_ui.route('/home')
@@ -162,7 +162,7 @@ def create_ticket():
 
 
 @web_ui.route("/delete_ticket", methods=["GET", "POST"])
-@auth.login_required(role="admin")
+#@auth.login_required(role="admin")
 def delete_ticket():
     form = DeleteTicketForm()
     tickets = models.get_all_entries()

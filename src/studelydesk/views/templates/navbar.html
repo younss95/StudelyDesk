@@ -17,11 +17,14 @@
 <!--  NAVBAR LORSQUE L'ON EST CONNECTE AU SITE  -->
 <header class="header">
     <nav class="navbar">
-  <a href="{{ url_for('web_ui.home') }}">Accueil</a>
-  <a href="{{ url_for('web_ui.create_ticket') }}">Créer</a>
-  <a href="{{ url_for('web_ui.delete_ticket') }}">Supprimer</a>
-  <a href="{{ url_for('web_ui.getall_ticket') }}">Consulter</a>
-  <a href="{{ url_for('web_ui.getstats') }}">Statistiques</a>
-  <a href="{{ url_for('web_ui.logout') }}">Déconnexion</a>
-</nav>
+      <img src="../static/StudelyDeskLogo.png" class="logo" alt="StudelyDesk Logo">
+        <div class="nav-links">
+            <a href="{{ url_for('web_ui.home') }}">Accueil</a>
+            <a href="{{ url_for('web_ui.create_ticket') }}">Créer</a>
+            <a href="{{ url_for('web_ui.delete_ticket') }}">Supprimer</a>
+            <a href="{{ url_for('web_ui.getall_ticket') }}">Consulter</a>
+            <a href="{{ url_for('web_ui.getstats') }}">Statistiques</a>
+            <a href="{{ url_for('web_ui.logout') }}">Déconnexion</a>
+        </div>
+    </nav>
 </header>

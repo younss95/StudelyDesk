@@ -16,12 +16,16 @@
 
 <!--  FOOTER  -->
 <header class="header">
-    <nav class="navbar">
+  <nav class="navbar">
+    <img src="../static/StudelyDeskLogo.png" class="logo" alt="StudelyDesk Logo">
+    <div class="nav-links">
       <a href="#home">Accueil</a>
       <a href="#connexion">Connexion</a>
-        <a href="#inscription">Inscription</a>
-    </nav>
+      <a href="#inscription">Inscription</a>
+    </div>
+  </nav>
 </header>
+
 
 
 <!--  SECTION DE BIENVENUE  -->
@@ -31,7 +35,8 @@
     </div>
 
     <div class="home-img">
-        <a href="https://www.studely.com/fr/" target="_blank" alt="Logo de studely"><img src="../static/studely%20(1).png"></a>
+        <!-- <a href="https://www.studely.com/fr/" target="_blank" alt="Logo de studely"></a> -->
+        <img src="../static/StudelyDeskLogo.png">
       </div>
 
 </section>
@@ -39,7 +44,7 @@
 
 <!--  FORMILAIRE DE CONNEXION  -->
 <section class="form-section" id="connexion">
-  <h2>Connexion</h2>
+    <h2><span>Connexion</span></h2>
   <form action="{{ url_for('web_ui.login') }}" method="POST" class="form-container" enctype="application/x-www-form-urlencoded">
 
     <label for="email">Adresse e-mail :</label>
@@ -59,7 +64,7 @@
 
 <!-- FORMULAIRE D'INSCRIPTION -->
 <section class="form-section" id="inscription">
-  <h2>Inscription</h2>
+  <h2><span>Inscription</span></h2>
   <form action="{{ url_for('web_ui.register') }}" method="POST" class="form-container" enctype="application/x-www-form-urlencoded">
 
     <label for="name">Nom complet :</label>
