@@ -27,29 +27,14 @@ The application is containerized using **Docker**, ensuring consistency across d
 
 ---
 
-## ⚙️ CI/CD – Continuous Integration and Deployment
+## ⚙️ CI/CD – Continuous Integration & Deployment
 
-This project uses **GitHub Actions** to automate the build, test, and deployment process for the application on Azure Kubernetes Service (AKS).
+Deployment is automated using **GitHub Actions**, which builds, tags, and pushes the Docker image to **Azure Container Registry (ACR)**, then updates the app on **Azure Kubernetes Service (AKS)** using `kubectl`.
 
-### Workflow Details
-
-- Triggered on every push to the `main` branch
-- Steps included in the workflow:
-  1. Checkout source code  
-  2. Login to Azure using secure credentials stored in GitHub Secrets  
-  3. Login to Azure Container Registry (ACR)  
-  4. Build the Docker image and tag it  
-  5. Push the Docker image to ACR  
-  6. Set up `kubectl` context for AKS cluster  
-  7. Update the Kubernetes deployment with the new Docker image  
-  8. Monitor the deployment rollout status to ensure successful update  
-
-### Benefits of this CI/CD Pipeline
-
-- Automates deployment, reducing manual errors  
-- Ensures the latest code changes are immediately reflected in the production environment  
-- Maintains consistency between code, container image, and deployment  
-- Supports scaling and efficient resource management with Kubernetes  
+This ensures:
+- reliable, hands-off deployments  
+- continuous delivery of updates  
+- consistency between code, container image, and production
 
 ---
 
