@@ -18627,3 +18627,192 @@ FROM entries
 2025-06-05 10:50:53,680 [INFO] 127.0.0.1 - - [05/Jun/2025 10:50:53] "GET / HTTP/1.1" 200 -
 2025-06-05 10:50:53,725 [INFO] 127.0.0.1 - - [05/Jun/2025 10:50:53] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
 2025-06-05 10:50:53,743 [INFO] 127.0.0.1 - - [05/Jun/2025 10:50:53] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-10 12:12:27,321 [INFO] select pg_catalog.version()
+2025-06-10 12:12:27,323 [INFO] [raw sql] {}
+2025-06-10 12:12:27,340 [INFO] select current_schema()
+2025-06-10 12:12:27,342 [INFO] [raw sql] {}
+2025-06-10 12:12:27,367 [INFO] show standard_conforming_strings
+2025-06-10 12:12:27,368 [INFO] [raw sql] {}
+2025-06-10 12:12:27,384 [INFO] BEGIN (implicit)
+2025-06-10 12:12:27,403 [INFO] SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-06-10 12:12:27,406 [INFO] [generated in 0.00268s] {'table_name': 'entries', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-06-10 12:12:27,423 [INFO] COMMIT
+2025-06-10 12:12:28,687 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-10 12:12:28,687 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-10 12:12:28,699 [INFO]  * Restarting with stat
+2025-06-10 12:12:32,165 [INFO] select pg_catalog.version()
+2025-06-10 12:12:32,166 [INFO] [raw sql] {}
+2025-06-10 12:12:32,188 [INFO] select current_schema()
+2025-06-10 12:12:32,189 [INFO] [raw sql] {}
+2025-06-10 12:12:32,219 [INFO] show standard_conforming_strings
+2025-06-10 12:12:32,220 [INFO] [raw sql] {}
+2025-06-10 12:12:32,251 [INFO] BEGIN (implicit)
+2025-06-10 12:12:32,258 [INFO] SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-06-10 12:12:32,259 [INFO] [generated in 0.00192s] {'table_name': 'entries', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-06-10 12:12:32,283 [INFO] COMMIT
+2025-06-10 12:12:32,793 [WARNING]  * Debugger is active!
+2025-06-10 12:12:32,803 [INFO]  * Debugger PIN: 117-906-151
+2025-06-10 12:13:09,939 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:09] "GET / HTTP/1.1" 200 -
+2025-06-10 12:13:10,358 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:10] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-06-10 12:13:10,469 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:10] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-10 12:13:10,637 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-10 12:13:34,375 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:34] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-06-10 12:13:34,568 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:34] "GET /home HTTP/1.1" 200 -
+2025-06-10 12:13:34,651 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:34] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-10 12:13:34,668 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 12:13:37,863 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:37] "GET /create_ticket HTTP/1.1" 200 -
+2025-06-10 12:13:37,943 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 12:13:37,945 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:37] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-10 12:13:39,021 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:39] "GET /home HTTP/1.1" 200 -
+2025-06-10 12:13:39,078 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 12:13:39,095 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:39] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-10 12:13:40,538 [INFO] BEGIN (implicit)
+2025-06-10 12:13:40,540 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-10 12:13:40,542 [INFO] [generated in 0.00359s] {}
+2025-06-10 12:13:40,566 [INFO] ROLLBACK
+2025-06-10 12:13:40,679 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:40] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-10 12:13:40,726 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 12:13:40,756 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:40] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-10 12:13:41,844 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:41] "GET /home HTTP/1.1" 200 -
+2025-06-10 12:13:41,948 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 12:13:41,967 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:41] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-10 12:13:43,341 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:43] "GET /home HTTP/1.1" 200 -
+2025-06-10 12:13:43,400 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 12:13:43,427 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:43] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-10 12:13:44,363 [INFO] BEGIN (implicit)
+2025-06-10 12:13:44,363 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-10 12:13:44,364 [INFO] [cached since 3.826s ago] {}
+2025-06-10 12:13:44,392 [INFO] ROLLBACK
+2025-06-10 12:13:44,407 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:44] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-10 12:13:44,485 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 12:13:44,514 [INFO] 127.0.0.1 - - [10/Jun/2025 12:13:44] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-10 12:14:07,767 [INFO] 127.0.0.1 - - [10/Jun/2025 12:14:07] "GET /home HTTP/1.1" 200 -
+2025-06-10 12:14:07,811 [INFO] 127.0.0.1 - - [10/Jun/2025 12:14:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 12:14:07,826 [INFO] 127.0.0.1 - - [10/Jun/2025 12:14:07] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-10 12:50:24,547 [INFO] 127.0.0.1 - - [10/Jun/2025 12:50:24] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-06-10 12:50:24,569 [INFO] 127.0.0.1 - - [10/Jun/2025 12:50:24] "GET / HTTP/1.1" 200 -
+2025-06-10 12:50:24,608 [INFO] 127.0.0.1 - - [10/Jun/2025 12:50:24] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-06-10 12:50:24,620 [INFO] 127.0.0.1 - - [10/Jun/2025 12:50:24] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-11 10:48:28,229 [INFO] select pg_catalog.version()
+2025-06-11 10:48:28,244 [INFO] [raw sql] {}
+2025-06-11 10:48:28,260 [INFO] select current_schema()
+2025-06-11 10:48:28,261 [INFO] [raw sql] {}
+2025-06-11 10:48:28,277 [INFO] show standard_conforming_strings
+2025-06-11 10:48:28,278 [INFO] [raw sql] {}
+2025-06-11 10:48:28,297 [INFO] BEGIN (implicit)
+2025-06-11 10:48:28,313 [INFO] SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-06-11 10:48:28,320 [INFO] [generated in 0.00212s] {'table_name': 'entries', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-06-11 10:48:28,335 [INFO] COMMIT
+2025-06-11 10:48:30,029 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-11 10:48:30,032 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-11 10:48:30,046 [INFO]  * Restarting with stat
+2025-06-11 10:48:33,732 [INFO] select pg_catalog.version()
+2025-06-11 10:48:33,734 [INFO] [raw sql] {}
+2025-06-11 10:48:33,749 [INFO] select current_schema()
+2025-06-11 10:48:33,752 [INFO] [raw sql] {}
+2025-06-11 10:48:33,772 [INFO] show standard_conforming_strings
+2025-06-11 10:48:33,773 [INFO] [raw sql] {}
+2025-06-11 10:48:33,787 [INFO] BEGIN (implicit)
+2025-06-11 10:48:33,799 [INFO] SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-06-11 10:48:33,805 [INFO] [generated in 0.00305s] {'table_name': 'entries', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-06-11 10:48:33,829 [INFO] COMMIT
+2025-06-11 10:48:34,234 [WARNING]  * Debugger is active!
+2025-06-11 10:48:34,253 [INFO]  * Debugger PIN: 117-906-151
+2025-06-11 10:48:42,733 [INFO] 127.0.0.1 - - [11/Jun/2025 10:48:42] "GET / HTTP/1.1" 200 -
+2025-06-11 10:48:43,076 [INFO] 127.0.0.1 - - [11/Jun/2025 10:48:43] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-11 10:48:43,095 [INFO] 127.0.0.1 - - [11/Jun/2025 10:48:43] "[36mGET /static/sheet.css HTTP/1.1[0m" 304 -
+2025-06-11 10:48:43,204 [INFO] 127.0.0.1 - - [11/Jun/2025 10:48:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-11 12:08:59,991 [INFO] 127.0.0.1 - - [11/Jun/2025 12:08:59] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-06-11 12:09:00,356 [INFO] 127.0.0.1 - - [11/Jun/2025 12:09:00] "GET /home HTTP/1.1" 200 -
+2025-06-11 12:09:00,415 [INFO] 127.0.0.1 - - [11/Jun/2025 12:09:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-11 12:09:00,548 [INFO] 127.0.0.1 - - [11/Jun/2025 12:09:00] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-11 12:09:03,712 [INFO] 127.0.0.1 - - [11/Jun/2025 12:09:03] "GET /create_ticket HTTP/1.1" 200 -
+2025-06-11 12:09:03,738 [INFO] 127.0.0.1 - - [11/Jun/2025 12:09:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-11 12:09:03,747 [INFO] 127.0.0.1 - - [11/Jun/2025 12:09:03] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-11 12:10:42,908 [INFO] BEGIN (implicit)
+2025-06-11 12:10:42,909 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-11 12:10:42,912 [INFO] [generated in 0.00491s] {}
+2025-06-11 12:10:42,932 [INFO] ROLLBACK
+2025-06-11 12:10:43,031 [INFO] 127.0.0.1 - - [11/Jun/2025 12:10:43] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-11 12:10:43,070 [INFO] 127.0.0.1 - - [11/Jun/2025 12:10:43] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-11 12:10:43,071 [INFO] 127.0.0.1 - - [11/Jun/2025 12:10:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-11 12:13:54,580 [INFO] BEGIN (implicit)
+2025-06-11 12:13:54,581 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = %(id_1)s
+2025-06-11 12:13:54,582 [INFO] [generated in 0.00171s] {'id_1': 1}
+2025-06-11 12:13:54,602 [INFO] ROLLBACK
+2025-06-11 12:13:54,779 [INFO] 127.0.0.1 - - [11/Jun/2025 12:13:54] "GET /ticket/1 HTTP/1.1" 200 -
+2025-06-11 12:13:54,802 [INFO] 127.0.0.1 - - [11/Jun/2025 12:13:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-11 12:13:59,886 [INFO] BEGIN (implicit)
+2025-06-11 12:13:59,887 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-11 12:13:59,888 [INFO] [cached since 197s ago] {}
+2025-06-11 12:13:59,902 [INFO] ROLLBACK
+2025-06-11 12:13:59,906 [INFO] 127.0.0.1 - - [11/Jun/2025 12:13:59] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-11 12:13:59,933 [INFO] 127.0.0.1 - - [11/Jun/2025 12:13:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-11 12:13:59,941 [INFO] 127.0.0.1 - - [11/Jun/2025 12:13:59] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-11 12:14:01,351 [INFO] BEGIN (implicit)
+2025-06-11 12:14:01,351 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = %(id_1)s
+2025-06-11 12:14:01,360 [INFO] [cached since 6.779s ago] {'id_1': 2}
+2025-06-11 12:14:01,371 [INFO] ROLLBACK
+2025-06-11 12:14:01,491 [INFO] 127.0.0.1 - - [11/Jun/2025 12:14:01] "GET /ticket/2 HTTP/1.1" 200 -
+2025-06-11 12:14:01,526 [INFO] 127.0.0.1 - - [11/Jun/2025 12:14:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-11 12:14:02,463 [INFO] BEGIN (implicit)
+2025-06-11 12:14:02,464 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-11 12:14:02,464 [INFO] [cached since 199.6s ago] {}
+2025-06-11 12:14:02,475 [INFO] ROLLBACK
+2025-06-11 12:14:02,483 [INFO] 127.0.0.1 - - [11/Jun/2025 12:14:02] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-11 12:14:02,514 [INFO] 127.0.0.1 - - [11/Jun/2025 12:14:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-11 12:14:02,525 [INFO] 127.0.0.1 - - [11/Jun/2025 12:14:02] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-11 12:14:03,369 [INFO] BEGIN (implicit)
+2025-06-11 12:14:03,370 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = %(id_1)s
+2025-06-11 12:14:03,371 [INFO] [cached since 8.79s ago] {'id_1': 3}
+2025-06-11 12:14:03,385 [INFO] ROLLBACK
+2025-06-11 12:14:03,480 [INFO] 127.0.0.1 - - [11/Jun/2025 12:14:03] "GET /ticket/3 HTTP/1.1" 200 -
+2025-06-11 12:14:03,513 [INFO] 127.0.0.1 - - [11/Jun/2025 12:14:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-11 12:14:04,389 [INFO] BEGIN (implicit)
+2025-06-11 12:14:04,389 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-11 12:14:04,390 [INFO] [cached since 201.5s ago] {}
+2025-06-11 12:14:04,403 [INFO] ROLLBACK
+2025-06-11 12:14:04,411 [INFO] 127.0.0.1 - - [11/Jun/2025 12:14:04] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-11 12:14:04,431 [INFO] 127.0.0.1 - - [11/Jun/2025 12:14:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-11 12:14:04,439 [INFO] 127.0.0.1 - - [11/Jun/2025 12:14:04] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-11 12:14:05,145 [INFO] BEGIN (implicit)
+2025-06-11 12:14:05,146 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries 
+WHERE entries.id = %(id_1)s
+2025-06-11 12:14:05,146 [INFO] [cached since 10.57s ago] {'id_1': 1}
+2025-06-11 12:14:05,160 [INFO] ROLLBACK
+2025-06-11 12:14:05,244 [INFO] 127.0.0.1 - - [11/Jun/2025 12:14:05] "GET /ticket/1 HTTP/1.1" 200 -
+2025-06-11 12:14:05,267 [INFO] 127.0.0.1 - - [11/Jun/2025 12:14:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-11 13:33:34,004 [INFO] BEGIN (implicit)
+2025-06-11 13:33:34,024 [INFO] SELECT entries.id, entries.title, entries.description, entries.name, entries.date, entries.status, entries.souscategorie, entries.priority, entries.departement, entries.categorie, entries.assigne_a, entries.email, entries.pays, entries.user_id 
+FROM entries
+2025-06-11 13:33:34,030 [INFO] [cached since 4971s ago] {}
+2025-06-11 13:33:34,067 [INFO] ROLLBACK
+2025-06-11 13:33:34,092 [INFO] 127.0.0.1 - - [11/Jun/2025 13:33:34] "GET /getall_ticket HTTP/1.1" 200 -
+2025-06-11 13:33:34,167 [INFO] 127.0.0.1 - - [11/Jun/2025 13:33:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-11 13:33:34,181 [INFO] 127.0.0.1 - - [11/Jun/2025 13:33:34] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -
+2025-06-11 15:23:24,734 [INFO] 127.0.0.1 - - [11/Jun/2025 15:23:24] "GET /home HTTP/1.1" 200 -
+2025-06-11 15:23:24,872 [INFO] 127.0.0.1 - - [11/Jun/2025 15:23:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-11 15:23:24,877 [INFO] 127.0.0.1 - - [11/Jun/2025 15:23:24] "[36mGET /static/StudelyDeskLogo.png HTTP/1.1[0m" 304 -

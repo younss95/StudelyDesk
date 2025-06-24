@@ -1,10 +1,9 @@
-# Deployment sans PVC, avec PostgreSQL distant
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: deployment-flaskdesk
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: flaskdesk
@@ -32,11 +31,10 @@ spec:
           value: "secret!"
         resources:
           requests:
-            cpu: 250m
+            cpu: 100m
           limits:
-            cpu: 500m
+            cpu: 200m
 ---
-# Service LoadBalancer exposant le pod
 apiVersion: v1
 kind: Service
 metadata:
