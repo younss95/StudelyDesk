@@ -32,7 +32,7 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           cluster-name: aksstudelydesk
-          resource-group: RG-STUDELY-NEW
+          resource-group: RG-STUDELY
 
       - name: Update deployment image
         run: |
